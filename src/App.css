@@ -1,38 +1,173 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button{
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Navbar{
+  background-color: #026938;
+  width: 100%;
+  height: 50px;
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.Navbar .leftside {
+  flex: 80%;
+  display: flex;
+  justify-content: left;
+  padding-right: 10%;
+  padding-top: 20px;
+  
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.Navbar .leftside .links a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 30px;
+  font-size: 1rem;
+}
+
+.nav-link:hover{
+  border-bottom: 7px solid #ffffff;  
+  padding-bottom: 7px;
+  
+}
+
+.active-link{
+  border-bottom: 7px solid #ffffff;  
+  padding-bottom: 7px;
+}
+
+.PrjServee{   
+  padding: 20px 12%;
+  height: 85.25vh;  
+}
+
+.PrjServeeHead h1{
+  color: #026938;
+  display: inline;
+}
+
+.PrjServeeHead button{
+  background-image: linear-gradient(15deg, #92ca3c, #63aa3d);
+  border: none;
   color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  float: right;
 }
 
-.App-link {
-  color: #61dafb;
+.PrjServeeTab{
+  margin: 30px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.PrjServeeTab a{
+  margin-right: 20px;
+  text-decoration: none;
+  color: #666666;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.PrjServeeTab a:hover{
+  border-bottom: 5px solid #58a53d;
+  color: #58a53d;
+  transition: 0.5s;
+}
+
+.active-tab{
+  border-bottom: 5px solid #58a53d;
+  color: #58a53d !important;
+}
+
+.PrjServeeForm input{
+  width: 70%;
+  padding: 4px 4px 4px 40px;
+  border-radius: 3px;
+  border: 0.5px solid #b6b6b6;
+  box-shadow: 1px 4px 8px 2px rgba(0,0,0,0.2);
+  background-image: url(./images/search.png);
+  background-position: 7px 5px; 
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  cursor: pointer;
+}
+
+.PrjServeeForm select {
+  box-shadow: 1px 4px 8px 2px rgba(0,0,0,0.2);
+  border-radius: 3px;
+  border: 0.5px solid #b6b6b6;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.PrjServeeForm label{
+  margin: 0 10px;
+  color: #666666;
+}
+
+.PrjServeeResult{
+  background-color: #FFFFFF;
+  box-shadow: 1px 4px 8px 2px rgba(0,0,0,0.2);
+  transition: 0.3s;
+  min-height: 200px;
+  margin-top: 35px;
+  text-align: center;
+  padding-top: 75px;
+}
+
+.PrjServeeResult p{
+  color: #666666;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.PrjServeeResult button{
+  background-image: linear-gradient(15deg, #92ca3c, #63aa3d);
+  color: #ffffff;
+  border: none;
+  padding: 15px 50px;
+  border-radius: 50px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 850px){
+  .Navbar .leftside .links a {
+    font-size: 0.85rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .PrjServeeForm input{
+    width: 60%;
   }
+}
+
+@media only screen and (max-width: 750px){
+  .Navbar .leftside .links a {
+    font-size: 0.75rem;
+  }
+
+  .Navbar .leftside {
+    margin-left: 0;
+    margin-right: 0;
+    display: inline-block;
+  }
+  
+  .PrjServeeTab a{
+    font-size: .85rem;
+  }
+
+  .PrjServeeResult p{
+    font-size: 0.65rem;
+  }  
 }
