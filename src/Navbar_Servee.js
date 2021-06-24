@@ -1,11 +1,11 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import $ from 'jquery';
 
 export default function Navbar_Servee() {
 
-    useEffect(()=>{        
-        $('.nav-link').on('click', function() {
+    useEffect(() => {
+        $('.nav-link').on('click', function () {
             $('.active-link').removeClass('active-link');
             $(this).addClass('active-link');
         });

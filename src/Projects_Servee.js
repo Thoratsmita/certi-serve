@@ -1,11 +1,11 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import Navbar from './Navbar_Servee';
 import $ from 'jquery';
 
 export default function Projects_Servee() {
 
-    useEffect(()=>{        
-        $('.tab').on('click', function() {
+    useEffect(() => {
+        $('.tab').on('click', function () {
             $('.active-tab').removeClass('active-tab');
             $(this).addClass('active-tab');
         });
@@ -25,7 +25,7 @@ export default function Projects_Servee() {
                     <a className="tab " href="#pastproject">Past Project</a>
                 </div>
                 <form className="PrjServeeForm">
-                    <input type="text" name="search" placeholder="Search Project"/>
+                    <input type="text" name="search" placeholder="Search Project" />
                     <label id="show" htmlFor="show">Show</label>
                     <select id="show">
                         <option value="10">10</option>
@@ -39,7 +39,7 @@ export default function Projects_Servee() {
                         <option value="lorem">lorem</option>
                         <option value="lorem">lorem</option>
                         <option value="lorem">lorem</option>
-                        <option value="lorem">lorem</option>                        
+                        <option value="lorem">lorem</option>
                     </select>
                 </form>
                 <div className="PrjServeeResult">
