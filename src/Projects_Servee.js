@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import Navbar from './Navbar_Servee';
 import $ from 'jquery';
+import { Link } from "react-router-dom";
+
 
 export default function Projects_Servee() {
 
@@ -45,7 +47,9 @@ export default function Projects_Servee() {
                 <div className="PrjServeeResult">
                     <h3>Create a New Project</h3>
                     <p>Millions of talented Servers are ready to help you do amazing things</p>
-                    <button>Post a Project</button>
+                    <Link to='/servee/postproject'>
+                        <button>Post a Project</button>
+                    </Link>
                 </div>
             </div>
         </>

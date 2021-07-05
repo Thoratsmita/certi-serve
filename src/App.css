@@ -1,18 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
 }
 
 button {
   cursor: pointer;
 }
 
+/* =================================================================
+PROJECTS SERVEE (NAVBAR)
+==================================================================*/
+
 .Navbar {
   background-color: #026938;
   width: 100%;
   height: 50px;
-  font-family: Arial, Helvetica, sans-serif;
   display: flex;
 }
 
@@ -22,7 +28,6 @@ button {
   justify-content: left;
   padding-right: 10%;
   padding-top: 20px;
-
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -44,6 +49,10 @@ button {
   border-bottom: 7px solid #ffffff;
   padding-bottom: 7px;
 }
+
+/* =================================================================
+PROJECTS SERVEE (MAIN COMPONENT)
+==================================================================*/
 
 .PrjServee {
   padding: 20px 12%;
@@ -142,16 +151,468 @@ button {
   margin-top: 30px;
 }
 
+/* =================================================================
+  POST PROJECT (MAIN COMPONENT)
+  ==================================================================*/
+
+.PostPrj {
+  background-image: -webkit-linear-gradient(#ffffff 50%, #81be3d 50%);
+  height: 100vh;
+}
+
+.PostPrjLogo img {
+  height: 60px;
+  margin-left: 150px;
+  margin-top: 15px;
+}
+
+.PostPrjTxt {
+  margin: 0 150px;
+}
+
+.PostPrjTxt h1 {
+  color: #77b541;
+  font-weight: 600;
+  margin: 5px 0 2px;
+}
+
+.PostPrjTxt p {
+  color: #709b89;
+  margin-top: 0;
+  font-size: 1.05rem;
+  word-spacing: 1px;
+}
+
+.PostPrjForm {
+  margin: 0 155px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  height: 390px;
+  padding: 15px 45px;
+}
+
+.PostPrjForm label {
+  color: #8bbf52;
+  font-size: 1.75rem;
+  display: block;
+  font-weight: 500;
+}
+
+.PostPrjForm input[type="text"] {
+  width: 95%;
+  margin: 5px 0 15px;
+  font-size: 1rem;
+  padding: 7px 15px;
+  border: 1.5px solid #c1c1c1;
+}
+
+.PostPrjForm p {
+  margin: 0 0 10px;
+  color: #8b8b8b;
+  font-size: 1rem;
+}
+
+.PostPrjForm textarea {
+  resize: none;
+  border: 1.5px solid #c1c1c1;
+  width: 95%;
+  font-family: 'Roboto', sans-serif;
+  margin: 5px 0 0;
+  font-size: 1rem;
+  padding: 7px 15px;
+}
+
+.wordcount {
+  font-size: 0.75rem;
+  float: right;
+  color: #8b8b8b;
+}
+
+.formfile {
+  width: 95%;
+  margin-top: 30px;
+  padding: 10px 15px;
+  border: 1.5px solid #c1c1c1;
+}
+
+.dropdown {
+  display: flex;
+}
+
+#dropdownbtn {
+  flex: 20%;
+  color: #8b8b8b;
+  background-color: #ffffff;
+  padding: 3px 4px 5px;
+  border: 1.5px solid #c1c1c1;
+  margin: 10px 0 0 20px;
+}
+
+#dropdowntxt {
+  flex: 70%;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+#fileError {
+  font-size: 0.75rem;
+  color: red;
+}
+
+/* =================================================================
+  FIND JOB (MAIN COMPONENT)
+  ==================================================================*/
+
+.findJobHead {
+  margin: 20px 65px 0;
+  display: flex;
+}
+
+.findJobHead img {
+  height: 60px;
+}
+
+.findJobHeadNav {
+  flex: 35%;
+  display: flex;
+  margin: 0 75px 0;
+}
+
+.findJobIcon {
+  margin-right: 55px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.findJobSidebar {
+  flex: 35%;
+  display: flex;
+  margin-top: 20px;
+}
+
+#findJobProfile {
+  font-size: 0.85rem;
+}
+
+#findJobAcc {
+  font-size: 0.85rem;
+}
+
+.findJobBanner {
+  height: 80px;
+  display: flex;
+  padding: 0 65px;
+  background-image: linear-gradient(15deg, #98ce3c, #53a03c);
+}
+
+.findJobBannerText {
+  color: #ffffff;
+  font-weight: bold;
+  margin: 10px 0;
+  flex: 1;
+}
+
+.findJobBannerText p {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.findJobBannerText span {
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.findJobBannerBtn {
+  margin: 15px 80px 20px 0;
+}
+
+.bannerBtn {
+  margin-right: 20px;
+  padding: 10px 25px;
+  border-radius: 24px;
+  font-size: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.bannerBtn.selectbtn {
+  background-color: #ffffff;
+  color: #55a13c;
+  border: none;
+}
+
+.bannerBtn.unselectbtn {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1.5px solid #ffffff;
+}
+
+.findJobSearch {
+  margin: 20px 65px;
+}
+
+.findJobSearchBar {
+  display: inline;
+  width: 95%;
+  font-size: 1.25rem;
+  padding: 15px 0 15px 40px;
+  background-image: url(./images/search.png);
+  background-position: 7px 12px;
+  background-repeat: no-repeat;
+  background-size: 28px 28px;
+  cursor: pointer;
+  border-radius: 24px;
+  border: 1px solid #ccc;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.findJobPopUpOverlay {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(173, 173, 173, 0.4);
+}
+
+.findJobPopUp {
+  margin: auto;
+  border: 1px solid #ccc;
+  width: 350px;
+  height: 450px;
+  background-color: #ffffff;
+  padding: 12px 30px;
+  border-radius: 24px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.findJobPopUpHead h3 {
+  display: inline;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.findJobLabel {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+}
+
+.findJobInput {
+  width: 95%;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  font-size: 1rem;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-bottom: 8px;
+}
+
+.findJobLabelCheck {
+  position: relative;
+  left: 35%;
+  top: 7px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+input[type='checkbox'] {
+  /* outline: 2px solid #4b71ff; */
+  border: none;
+}
+
+.filterBtn {
+  padding: 7px 80px;
+  position: relative;
+  left: -4%;
+  top: 50px;
+  border-radius: 24px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  background-image: linear-gradient(15deg, #98ce3c, #53a03c);
+}
+
+.findJobResult {
+  display: grid;
+  grid-template-areas:
+    'side result result result result result result'
+    'side result result result result result result';
+  grid-gap: 30px;
+  margin: 15px 65px;
+}
+
+.findJobResultFilter {
+  grid-area: side;
+  background-color: #ffffff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  height: 330px;
+  width: 250px;
+  padding: 0 20px;
+  display: block;
+  color: #8b8b8b;
+}
+
+.findJobResultFilter h5 {
+  font-size: 1.25rem;
+  margin: 4px 0;
+}
+
+.findJobResultFilterDisplay {
+  grid-area: result;
+  background-color: #ffffff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  height: 330px;
+  width: 100%;
+  display: block;
+}
+
+.findJobFilter {
+  color: #8b8b8b;
+  padding: 0 12px;
+  font-size: 1rem;
+}
+
+.findJobFilter label {
+  display: block;
+  margin: 7px 0;
+}
+
+.findJobFilter select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Safari, Chrome, Opera */
+  -webkit-appearance: none;
+  width: 45px;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 8px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+}
+
+#sideFilterBtn {
+  padding: 5px 60px;
+  margin: 15px 15%;
+  color: #ffffff;
+  background-image: linear-gradient(15deg, #98ce3c, #53a03c);
+  font-size: 1rem;
+  border-radius: 24px;
+  border: none;
+}
+
+.filterDisplayHead {
+  margin: 15px 25px;
+}
+
+#postDate {
+  font-size: 1rem;
+  padding: 1px 3px;
+}
+
+#resultNum {
+  margin-left: 15px;
+}
+
+.filterDisplayBtnGrp {
+  display: inline;
+  float: right;
+  border: 1px solid #ccc;
+}
+
+.filterDisplayBtnGrp button {
+  background-color: #ffffff;
+  border: none;
+  border-left: 1px solid #ccc;
+}
+
+.filterbtnSelect {
+  background-color: #0fc80b;
+  color: #ffffff;
+}
+
+.jobResults {
+  margin: 0px 27px;
+  display: flex;
+}
+
+.jobs {
+  flex: 75%;
+}
+
+.jobResultsMain {
+  width: 100px;
+  display: inline;
+}
+
+.jobResultsHead {
+  margin-top: 15px;
+}
+
+.jobResultsHead h3 {
+  display: inline;
+}
+
+.jobResultsHead span {
+  margin-left: 65px;
+}
+
+.jobResultsDes {
+  width: 500px;
+  font-size: 0.85rem;
+}
+
+.jobResultsDes p {
+  margin: 5px;
+}
+
+.skillNeeded {
+  margin-left: 8px;
+  color: #4b71ff;
+}
+
+.jobResultsSide {
+  margin: 40px 0;
+}
+
+.jobResultsSingle {
+  margin: 0px 27px;
+  display: flex;
+}
+
 @media only screen and (max-width: 1240px) {
+
+  /* =================================================================
+  PROJECTS SERVEE (MAIN COMPONENT)
+  ==================================================================*/
+
   .PrjServeeForm input {
     width: 55%;
   }
 }
 
 @media only screen and (max-width: 850px) {
+
+  /* =================================================================
+  PROJECTS SERVEE (NAVBAR)
+  ==================================================================*/
+
   .Navbar .leftside .links a {
     font-size: 0.85rem;
   }
+
+  /* =================================================================
+  PROJECTS SERVEE (MAIN COMPONENT)
+  ==================================================================*/
 
   .PrjServeeForm input {
     width: 50%;
@@ -159,6 +620,11 @@ button {
 }
 
 @media only screen and (max-width: 750px) {
+
+  /* =================================================================
+  PROJECTS SERVEE (NAVBAR)
+  ==================================================================*/
+
   .Navbar .leftside .links a {
     font-size: 0.75rem;
   }
@@ -168,6 +634,10 @@ button {
     margin-right: 0;
     display: inline-block;
   }
+
+  /* =================================================================
+  PROJECTS SERVEE (MAIN COMPONENT)
+  ==================================================================*/
 
   .PrjServeeTab a {
     font-size: .85rem;
@@ -185,6 +655,10 @@ button {
 
 @media only screen and (max-width: 480px) {
 
+  /* =================================================================
+  PROJECTS SERVEE (MAIN COMPONENT)
+  ==================================================================*/
+
   .PrjServeeForm input {
     width: 25%;
     padding: 4px 4px 4px 25px;
@@ -199,7 +673,7 @@ button {
   }
 
   .PrjServeeForm select {
-    font-size: 0.75rem;    
+    font-size: 0.75rem;
   }
 
 }
