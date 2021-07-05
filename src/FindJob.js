@@ -136,12 +136,12 @@ export default function FindJob() {
                                 Fixed Price Projects
                             </label>
                             <div>
-                                <select name="prjPrice" id="prjPrice">
+                                <select name="prjPriceleft" id="prjPriceleft">
                                     <option value="min">min</option>
                                     <option value="max">max</option>
                                 </select>
                                 <span>to</span>
-                                <select name="prjPrice" id="prjPrice">
+                                <select name="prjPriceright" id="prjPriceright">
                                     <option value="max">max</option>
                                     <option value="min">min</option>
                                 </select>
@@ -151,12 +151,12 @@ export default function FindJob() {
                                 Project Duration
                             </label>
                             <div>
-                                <select name="prjPrice" id="prjPrice">
+                                <select name="prjDurleft" id="prjDurleft">
                                     <option value="min">min</option>
                                     <option value="max">max</option>
                                 </select>
                                 <span>to</span>
-                                <select name="prjPrice" id="prjPrice">
+                                <select name="prjDurright" id="prjDurright">
                                     <option value="max">max</option>
                                     <option value="min">min</option>
                                 </select>
@@ -166,7 +166,7 @@ export default function FindJob() {
                                 Working Hours
                             </label>
                             <div>
-                                <select name="prjPrice" id="prjPrice">
+                                <select name="prjHrsleft" id="prjPrice">
                                     <option value="min">min</option>
                                     <option value="max">max</option>
                                 </select>
@@ -231,7 +231,7 @@ export default function FindJob() {
                         </div>
 
                         <hr style={{ color: '#ccc' }} />
-
+                    
                         {jobs.map((job) => {
                             const { title, description, bid, days, skills } = job;
                             return (
