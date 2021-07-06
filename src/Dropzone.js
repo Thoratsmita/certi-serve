@@ -55,6 +55,7 @@ export default function Previews() {
                 <img
                     src={file.preview}
                     style={img}
+                    alt={file.name}
                 />
             </div>
         </div>

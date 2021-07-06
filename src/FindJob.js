@@ -166,7 +166,7 @@ export default function FindJob() {
                                 Working Hours
                             </label>
                             <div>
-                                <select name="prjHrsleft" id="prjPrice">
+                                <select name="prjHou" id="prjPrice">
                                     <option value="min">min</option>
                                     <option value="max">max</option>
                                 </select>
@@ -231,7 +231,7 @@ export default function FindJob() {
                         </div>
 
                         <hr style={{ color: '#ccc' }} />
-                    
+
                         {jobs.map((job) => {
                             const { title, description, bid, days, skills } = job;
                             return (
