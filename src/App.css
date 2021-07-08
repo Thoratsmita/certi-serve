@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;  
+  font-family: 'Roboto', sans-serif;
 }
 
 button {
@@ -129,12 +129,12 @@ PROJECTS SERVEE (MAIN COMPONENT)
   box-shadow: 1px 4px 8px 2px rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   height: 335px;
-  margin-top: 35px;  
+  margin-top: 35px;
 }
 
 .PrjServeeNew {
   text-align: center;
-  padding-top: 65px; 
+  padding-top: 65px;
 }
 
 .PrjServeeNew p {
@@ -161,9 +161,9 @@ PROJECTS SERVEE (MAIN COMPONENT)
 }
 
 .PrjServeePast thead tr {
-  background-color: #eeefef; 
+  background-color: #eeefef;
   text-align: left;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 .PrjServeePast th,
@@ -177,7 +177,7 @@ PROJECTS SERVEE (MAIN COMPONENT)
 
 .frstCol {
   color: #58a53d;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 .PrjServeePastIcon {
@@ -277,7 +277,7 @@ PROJECTS SERVEE (MAIN COMPONENT)
 }
 
 .postPrjBtn {
-  margin : 25px 0 10px;
+  margin: 25px 0 10px;
   padding: 10px 15px;
   font-size: 1rem;
   font-weight: bold;
@@ -517,9 +517,7 @@ input[type='checkbox'] {
 }
 
 .findJobFilter select {
-  /* for Firefox */
   -moz-appearance: none;
-  /* for Safari, Chrome, Opera */
   -webkit-appearance: none;
   width: 45px;
   text-align: center;
@@ -617,6 +615,200 @@ input[type='checkbox'] {
 .jobResultsSingle {
   margin: 0px 27px;
   display: flex;
+}
+
+/* =================================================================
+  FINANCIAL DASHBOARD (MAIN COMPONENT)
+  ==================================================================*/
+
+.finanDashboard {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  margin: 20px 0 0;
+  display: flex;
+  padding: 0 65px;
+  overflow: hidden;
+}
+
+.finanDashboard img {
+  height: 60px;
+}
+
+.finanDashboardHead {
+  padding: 20px 12%;
+}
+
+.finanDashboardMain {
+  margin: 10px 12%;
+  height: 290px;
+}
+
+.finanDashboardMain:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.dashLeftSide {
+  float: left;
+  width: 27%;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 6px;
+  padding: 15px 10px;
+}
+
+.dashLeftSide h3 {
+  margin: 0 0 10px;
+  color: #8b8b8b;
+  font-size: 1.1rem;
+}
+
+.dashMainBtn {
+  width: 100%;
+}
+
+.dashMainBtn button {
+  margin: 5px 0;
+  padding: 7px 15px;
+  font-size: 1rem;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  color: #8b8b8b;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.dashMainBtn button:hover {
+  background-color: #93cc3c;
+  color: #ffffff;
+}
+
+.dashSideSlt {
+  background-color: #d3ff97;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.dashRightSide {
+  float: left;
+  width: 65%;
+  height: 110%;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 6px;  
+  margin-left: 35px;
+}
+
+.payInfo {
+  margin-top: 5px;
+}
+
+.payInfoOut {
+  display: flex;
+  border: 2px solid #eeefef;
+  border-radius: 8px;
+  padding: 5px 10px;
+  margin-bottom: 0.5px;
+}
+
+.selectPay {
+  border: 2px solid #acd09e !important;
+}
+
+.innerBox {
+  border: 2px solid #eeefef;
+  border-radius: 8px;
+  width: 40px;
+  height: 20px;
+  margin-right: 15px;
+}
+
+#payDetailNum {
+  font-size: 0.8rem;
+  display: block;
+}
+
+#payDetailCmp {
+  font-size: 0.65rem;
+  color: #cccccc;
+}
+
+.selectPayNum {
+  color: #000000 !important;
+}
+
+.payCrl {
+  position: relative;
+  top: 5px;
+  left: 80px;
+  background-color: #eeefef;
+  width: 26.25px;
+  height: 26.25px;
+  border-radius: 50%;
+}
+
+.selectPayCir {
+  background-color: #59a23c;
+}
+
+.payDetailView {
+  color: #73b43c;
+  background-color: #edffdc;
+  border-radius: 24px;
+  border: none;
+  margin: 7px auto;
+  padding: 2px 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.payDetailAdd {
+  color: #afafae;
+  width: 100%;
+  border: none;
+  margin-top: 7px;
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 7px auto;
+}
+
+.dashTable {
+  border-collapse: collapse;
+  font-size: 1rem;
+  margin: 0;
+  width: 100%;
+  transition: 1s;
+}
+
+.dashTable thead tr {
+  background-color: #eeefef;
+  text-align: left;
+  font-weight: bold;
+}
+
+.dashTable th,
+.dashTable td {
+  padding: 12px 15px;
+}
+
+.dashTable tbody tr {
+  border-bottom: 3px solid #eeefef;
+}
+
+.dashIcon {
+  margin-top: 10px;
+  margin-right: 10px;
+  float: right;
+  background-color: rgb(226, 226, 226);
+  border: 1px solid #8f8f8f;
+}
+
+.traHis {
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 6px;
+  margin: 10px 12%;
+  height: 320px;
 }
 
 @media only screen and (max-width: 1240px) {

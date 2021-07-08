@@ -61,7 +61,7 @@ export default function FindJob() {
     return (
         <>
             <div className="findJob">
-                
+
                 <div className="findJobHead">
                     <img src={logo} alt="Certi Serve Logo" />
                     <div className="findJobHeadNav">
@@ -93,7 +93,7 @@ export default function FindJob() {
                 <form className="findJobSearch" onSubmit={(e) => handleSearch(e)}>
                     <input type="text" className="findJobSearchBar" placeholder="Search Keyword" onChange={(e) => setSearch(e.target.value)} required />
                     <TuneIcon style={{ marginLeft: '-50px', cursor: 'pointer' }} onClick={handleFilter} />
-                    
+
                     <div className="findJobPopUpOverlay">
                         <div className="findJobPopUp">
                             <div className="findJobPopUpHead">
@@ -124,7 +124,7 @@ export default function FindJob() {
                     </div>
 
                 </form>
-                
+
                 <div className="findJobResult">
                     <div className="findJobResultFilter">
                         <h2>Filter By:</h2>
@@ -202,9 +202,9 @@ export default function FindJob() {
                             </div>
 
                         </div>
-                        
-                        <hr style={{ color: '#ccc' }} />                        
-                        
+
+                        <hr style={{ color: '#ccc' }} />
+
                     </div>
 
                     <div className="findJobResultFilterDisplay">
@@ -217,7 +217,7 @@ export default function FindJob() {
                             </select>
 
                             <span id="resultNum">{resultNo} jobs found</span>
-                            
+
                             <div className="filterDisplayBtnGrp">
                                 <button id="filterLstBtn" type="button"><FirstPageIcon style={{ fontSize: '10px' }} /></button>
                                 <button type="button"><ChevronLeftIcon style={{ fontSize: '10px' }} /></button>
@@ -227,24 +227,29 @@ export default function FindJob() {
                                 <button type="button"><ChevronRightIcon style={{ fontSize: '10px' }} /></button>
                                 <button id="filterFstBtn" type="button"><LastPageIcon style={{ fontSize: '10px' }} /></button>
                             </div>
-                            
+
                         </div>
 
                         <hr style={{ color: '#ccc' }} />
 
                         {jobs.map((job) => {
+
                             const { title, description, bid, days, skills } = job;
+                            const daysLeft = days + ' days left';
+                            const skill = 'Skills Required:';
+                            const money = '$' + bid + ' - Avg Bid';
+
                             return (
                                 <div className="jobResults">
                                     <div className="jobs">
                                         <div className="jobResultsMain">
                                             <div className="jobResultsHead">
                                                 <h3>{title}</h3>
-                                                <span>{days} days left</span>
+                                                <span>{daysLeft}</span>
                                             </div>
                                             <div className="jobResultsDes">
                                                 <p>{description}</p>
-                                                <b>Skills Required:</b>
+                                                <b>{skill}</b>
                                                 {skills.map((skill) => {
                                                     return (
                                                         <span className="skillNeeded">{skill}</span>
@@ -254,7 +259,7 @@ export default function FindJob() {
                                         </div>
                                     </div>
                                     <div className="jobResultsSide">
-                                        <span>$ {bid} - Avg Bid</span>
+                                        <span>{money}</span>
                                         <div style={{ color: '#229548', marginTop: '10px' }}><VerifiedUserIcon style={{ fontSize: '16px' }} /> - Verified</div>
                                     </div>
                                 </div>
@@ -272,7 +277,7 @@ export default function FindJob() {
                                         <div className="jobResultsDes">
                                             <p>{jobsOb.description}</p>
                                             <b>Skills Required:</b>
-                                            <span className="skillNeeded" >{jobsOb.skills}</span>                                            
+                                            <span className="skillNeeded" >{jobsOb.skills}</span>
                                         </div>
                                     </div>
                                 </div>
