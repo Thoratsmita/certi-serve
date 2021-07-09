@@ -695,7 +695,7 @@ input[type='checkbox'] {
   height: 110%;
   background-color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-radius: 6px;  
+  border-radius: 6px;
   margin-left: 35px;
 }
 
@@ -809,6 +809,117 @@ input[type='checkbox'] {
   border-radius: 6px;
   margin: 10px 12%;
   height: 320px;
+}
+
+/* =================================================================
+  FINANCIAL DASHBOARD SERVER (MAIN COMPONENT)
+  ==================================================================*/
+
+.lftsideDash {
+  float: left;
+  width: 32%;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 6px;
+  padding: 15px 10px;
+}
+
+.lftsideDash h3 {
+  margin:0;
+  color: #8b8a8a;
+}
+
+.balance {
+  padding: 15px;
+  background-color: #d2fe97;
+  border-radius: 6px;
+  margin: 20px 0;
+}
+
+.balance h5 {
+  margin: 0;
+  color: #8b8a8a;
+  font-size: 0.8em;
+}
+
+.balance p {
+  margin: 5px 0 10px;
+  font-size: 3rem;
+  font-weight: bold;
+  color:#606161;
+  letter-spacing: 3px;
+}
+
+.mnyAdd {
+  font-weight: bold;
+  width: 100%;
+  text-align: left;
+}
+
+.head {
+  color: #8b8a8a;
+  font-size: 0.8em;
+}
+
+.r1 {
+  color:#7c7c7c;  
+}
+
+.r2 {
+  color: #cdd3c5;
+}
+
+.rghsideDash {
+  float: left;
+  width: 64%;
+  height: 110%;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 6px;
+  margin-left: 15px;
+}
+
+.ctnDash {
+  padding: 5px 30px;
+}
+
+.ctnDash h3 {
+  color: #848484;
+  font-size:1.2rem;
+}
+
+.ctnDash span {
+  color: #6aaf52;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.ctnDash p {
+  color: #aeafaf;
+  font-weight: bold;
+}
+
+.ctnDash input {
+  font-size: 1rem;
+  padding: 15px 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 60%;
+  display: block;
+}
+
+.ctnDash button {
+  background-color: #d2fe97;
+  color: #5ea83d;
+  width: 67%;
+  border: none;
+  border-radius: 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 15px 80px;
+  margin-top: 20px;
 }
 
 @media only screen and (max-width: 1240px) {

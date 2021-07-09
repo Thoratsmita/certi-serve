@@ -15,6 +15,11 @@ import FirstPageIcon from '@material-ui/icons/FirstPage';
 import LastPageIcon from '@material-ui/icons/LastPage';
 import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
 
+/**
+ * @author Parth Chaturvedi
+ * @version 01-07-21
+ */
+
 export default function FindJob() {
 
     const [search, setSearch] = useState('');

@@ -4,6 +4,10 @@ import './App.css';
 import logo from './images/certi-serv-logo.png';
 import Previews from './Dropzone';
 
+/**
+ * @author Parth Chaturvedi
+ * @version 29-06-21
+ */
 
 export default function PostProject() {
 

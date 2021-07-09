@@ -2,6 +2,11 @@ import React, { useEffect, useState } from 'react';
 import $ from 'jquery';
 import { useDropzone } from 'react-dropzone';
 
+/**
+ * @author Parth Chaturvedi
+ * @version 30-06-21
+ */
+
 const imageMaxSize = 26214400; //bytes
 
 const thumbsContainer = {
