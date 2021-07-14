@@ -826,7 +826,7 @@ input[type='checkbox'] {
 }
 
 .lftsideDash h3 {
-  margin:0;
+  margin: 0;
   color: #8b8a8a;
 }
 
@@ -847,7 +847,7 @@ input[type='checkbox'] {
   margin: 5px 0 10px;
   font-size: 3rem;
   font-weight: bold;
-  color:#606161;
+  color: #606161;
   letter-spacing: 3px;
 }
 
@@ -863,7 +863,7 @@ input[type='checkbox'] {
 }
 
 .r1 {
-  color:#7c7c7c;  
+  color: #7c7c7c;
 }
 
 .r2 {
@@ -886,7 +886,7 @@ input[type='checkbox'] {
 
 .ctnDash h3 {
   color: #848484;
-  font-size:1.2rem;
+  font-size: 1.2rem;
 }
 
 .ctnDash span {
@@ -920,6 +920,183 @@ input[type='checkbox'] {
   font-weight: bold;
   padding: 15px 80px;
   margin-top: 20px;
+}
+
+.PrjServerAll {
+  margin: 20px 200px;
+  text-align: center;
+}
+
+.PrjServerAll img {
+  height: 110px;
+  width: auto;
+}
+
+.PrjServerAll h3 {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  margin: 0 0 10px;
+  letter-spacing: 1px;
+}
+
+.PrjServerBtn {
+  background-color: #f8f9f8;
+  color: #528d31;
+  width: 45%;
+  height: 75px;
+}
+
+.PrjServerDis {
+  display: inline;
+}
+
+.PrjServerDis p {}
+
+.PrjServerDis span {
+  display: inline;
+}
+
+/* =================================================================
+  INBOX (MAIN COMPONENT)
+  ==================================================================*/
+
+.inbox {
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 85vh;
+  display: table;
+}
+
+.chat {
+  background-color: #ffffff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  height: 90%;
+  width: 375px;
+  margin: 6px 10px;
+  padding: 20px 15px;
+  border-collapse: collapse;
+  float: left;
+}
+
+.chat input[type='text'] {
+  padding: 5px 0px 5px 35px;
+  width: 90%;
+  border-radius: 24px;
+  background-image: url(./images/search.png);
+  background-position: 7px 5px;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.chat ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.chat ul li {
+  display: block;
+  color: #49906e;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: left;
+}
+
+.chats {
+  margin-top: 10px;
+}
+
+.chatbox {
+  margin: 7px 0;
+  padding: 7px 12px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 24px;
+  border: none;
+  height: 40px;
+}
+
+.chatDetail {
+  float: left;
+  display: inline;
+  margin-left: 30px;
+}
+
+.chatDetail p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #8b8b8b;
+}
+
+.chatTime {
+  float: right;
+}
+
+#notifiction {
+  background-color: #056839;
+  color: #fff;
+  margin: 0 25px;
+  padding: 0 5px;
+  border-radius: 50%;
+  display: block;
+}
+
+#time {
+  color: #8b8b8b;
+}
+
+.message {  
+  height: 97.5%;
+  width: 800px;
+  margin: 6px 10px;
+  border-collapse: collapse;
+  position: relative;
+  float: left;
+}
+
+.messageInput {
+  background-color: #ebebeb;
+  position: absolute;
+  padding: 10px 20px;
+  top: 458px;
+  width: 763px;
+}
+
+.messageInput input[type="text"] {
+  background-color: transparent;
+  border: none;
+  font-size: 1.1rem;
+  width: 650px;
+}
+
+.messageSend {
+  position: relative;
+  top: 320px;
+}
+
+.sender {
+  min-height: 20px;
+  background-color: #dedede;
+  width: 250px;
+  float: right;
+  padding: 7px 20px;
+  margin: 10px 0;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.reciever {
+  min-height: 20px;
+  background-color: #056839;
+  color: #ffffff;
+  width: 250px;
+  padding: 7px 20px;
+  margin: 10px 0;
+  text-align: center;
+  font-size: 1.1rem;
 }
 
 @media only screen and (max-width: 1240px) {
