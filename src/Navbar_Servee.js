@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import $ from 'jquery';
+import { Link } from "react-router-dom";
 
 /**
  * @author Parth Chaturvedi
@@ -24,7 +25,7 @@ export default function Navbar_Servee() {
                     <a className="nav-link" href="#dashboard">Dashboard</a>
                     <a className="nav-link" href="#inbox">Inbox</a>
                     <a className="nav-link" href="#feedback">Feedback</a>
-                    <a className="nav-link" href="#credit">Free Credit</a>
+                    <a className="nav-link" href="#portfolio">Portfolio</a>
                 </div>
             </div>
             <div className="rightside"></div>
