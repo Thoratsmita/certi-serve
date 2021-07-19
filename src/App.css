@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 button {
@@ -125,7 +125,7 @@ PROJECTS SERVEE (MAIN COMPONENT)
 }
 
 .PrjServeeResult {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 1px 4px 8px 2px rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   height: 335px;
@@ -252,7 +252,7 @@ PROJECTS SERVEE (MAIN COMPONENT)
   resize: none;
   border: 1.5px solid #c1c1c1;
   width: 95%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 5px 0 0;
   font-size: 1rem;
   padding: 7px 15px;
@@ -393,7 +393,8 @@ PROJECTS SERVEE (MAIN COMPONENT)
   cursor: pointer;
   border-radius: 24px;
   border: 1px solid #ccc;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .findJobPopUpOverlay {
@@ -418,7 +419,8 @@ PROJECTS SERVEE (MAIN COMPONENT)
   background-color: #ffffff;
   padding: 12px 30px;
   border-radius: 24px;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .findJobPopUpHead h3 {
@@ -438,7 +440,8 @@ PROJECTS SERVEE (MAIN COMPONENT)
 .findJobInput {
   width: 95%;
   border: none;
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   font-size: 1rem;
   border-radius: 3px;
   padding: 5px 10px;
@@ -453,7 +456,7 @@ PROJECTS SERVEE (MAIN COMPONENT)
   font-weight: bold;
 }
 
-input[type='checkbox'] {
+input[type="checkbox"] {
   /* outline: 2px solid #4b71ff; */
   border: none;
 }
@@ -474,8 +477,8 @@ input[type='checkbox'] {
 .findJobResult {
   display: grid;
   grid-template-areas:
-    'side result result result result result result'
-    'side result result result result result result';
+    "side result result result result result result"
+    "side result result result result result result";
   grid-gap: 30px;
   margin: 15px 65px;
 }
@@ -483,7 +486,8 @@ input[type='checkbox'] {
 .findJobResultFilter {
   grid-area: side;
   background-color: #ffffff;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   height: 330px;
   width: 250px;
   padding: 0 20px;
@@ -499,7 +503,8 @@ input[type='checkbox'] {
 .findJobResultFilterDisplay {
   grid-area: result;
   background-color: #ffffff;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   height: 330px;
   width: 100%;
   display: block;
@@ -622,7 +627,8 @@ input[type='checkbox'] {
   ==================================================================*/
 
 .finanDashboard {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   margin: 20px 0 0;
   display: flex;
   padding: 0 65px;
@@ -673,7 +679,8 @@ input[type='checkbox'] {
   padding: 7px 15px;
   font-size: 1rem;
   border: none;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   color: #8b8b8b;
   font-weight: bold;
   transition: 0.3s;
@@ -686,7 +693,8 @@ input[type='checkbox'] {
 
 .dashSideSlt {
   background-color: #d3ff97;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .dashRightSide {
@@ -950,7 +958,8 @@ input[type='checkbox'] {
   display: inline;
 }
 
-.PrjServerDis p {}
+.PrjServerDis p {
+}
 
 .PrjServerDis span {
   display: inline;
@@ -978,7 +987,7 @@ input[type='checkbox'] {
   float: left;
 }
 
-.chat input[type='text'] {
+.chat input[type="text"] {
   padding: 5px 0px 5px 35px;
   width: 90%;
   border-radius: 24px;
@@ -1048,7 +1057,7 @@ input[type='checkbox'] {
   color: #8b8b8b;
 }
 
-.message {  
+.message {
   height: 97.5%;
   width: 800px;
   margin: 6px 10px;
@@ -1100,7 +1109,6 @@ input[type='checkbox'] {
 }
 
 @media only screen and (max-width: 1240px) {
-
   /* =================================================================
   PROJECTS SERVEE (MAIN COMPONENT)
   ==================================================================*/
@@ -1111,7 +1119,6 @@ input[type='checkbox'] {
 }
 
 @media only screen and (max-width: 850px) {
-
   /* =================================================================
   PROJECTS SERVEE (NAVBAR)
   ==================================================================*/
@@ -1130,7 +1137,6 @@ input[type='checkbox'] {
 }
 
 @media only screen and (max-width: 750px) {
-
   /* =================================================================
   PROJECTS SERVEE (NAVBAR)
   ==================================================================*/
@@ -1150,7 +1156,7 @@ input[type='checkbox'] {
   ==================================================================*/
 
   .PrjServeeTab a {
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
 
   .PrjServeeResult p {
@@ -1164,7 +1170,6 @@ input[type='checkbox'] {
 }
 
 @media only screen and (max-width: 480px) {
-
   /* =================================================================
   PROJECTS SERVEE (MAIN COMPONENT)
   ==================================================================*/
@@ -1175,7 +1180,6 @@ input[type='checkbox'] {
     background-position: 7px 5px;
     background-size: 12px 12px;
     font-size: 0.75rem;
-
   }
 
   .PrjServeeForm label {
@@ -1185,5 +1189,4 @@ input[type='checkbox'] {
   .PrjServeeForm select {
     font-size: 0.75rem;
   }
-
 }

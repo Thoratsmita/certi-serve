@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+/* Nav-1*/
+.image {
+  height: 10rem;
+  width: 10rem;
+  margin-right: 4rem;
+}
+.nav_1 ul {
+  display: flex;
+  margin-left: 10rem;
+
+  list-style: none;
+}
+
+.empty {
+  margin-left: 30rem;
+}
+.list_items {
+  text-decoration: none;
+  font-size: 2.3rem;
+  color: #111;
+  margin-left: 2rem;
+  margin-top: 6rem;
+}
+
+.FindJob {
+  height: 5rem;
+  width: 16rem;
+  margin-top: 2.8rem;
+  margin-left: 3rem;
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2),
+    0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
+}
+.float {
+  display: flex;
+}
+
+/* Nav-2*/
+
+.icon {
+  display: flex;
+  align-items: baseline;
+}
+.nav_2 {
+  background-color: #056839;
+}
+
+.nav_2 ul {
+  display: flex;
+  margin-left: 9rem;
+
+  list-style: none;
+  align-items: baseline;
+}
+
+.empty_2 {
+  margin-left: 40rem;
+}
+.list_items_2 {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin: 1.5rem 0 1.5rem 1.8rem;
+}
+.btn {
+  color: #55a13c;
+  font-size: 2rem;
+
+  padding: 0.8rem 3rem 0.8rem 3rem;
+  border-radius: 2rem;
+  border: none;
+}
+
+.content {
+  background-image: url(../images/welcome_background_image.gif);
+  box-sizing: border-box;
+  width: 100%;
+  height: 60rem;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.p1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 4.5rem;
+  font-weight: bold;
+  padding-top: 4rem;
+  padding-left: 23rem;
+  color: #056839;
+}
+
+.p2 {
+  margin-top: 19rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  word-spacing: 0.6rem;
+  padding-left: 4rem;
+
+  color: #056839;
+}
+.EarnMoney {
+  height: 5.5rem;
+  width: 26rem;
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2),
+    0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
+
+  margin: 2rem 0 3rem 12rem;
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 60%;
+  }
+
+  /* Nav-1*/
+  .image {
+    margin-right: 1rem;
+  }
+  .nav_1 ul {
+    display: flex;
+    font-size: 3rem;
+    margin-left: 3rem;
+  }
+
+  .empty {
+    margin-left: 25rem;
+  }
+
+  /* Nav-2*/
+
+  .nav_2 ul {
+    margin-left: 5rem;
+  }
+
+  .empty_2 {
+    margin-left: 30rem;
+  }
+  .list_items_2 {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin: 1.5rem 0 1.5rem 1.8rem;
+  }
+
+  .content {
+    width: 100%;
+    height: auto;
+  }
+
+  .p1 {
+    font-size: 4.2rem;
+
+    padding-top: 3rem;
+    padding-left: 35rem;
+  }
+
+  .p2 {
+    margin-top: 18rem;
+    font-size: 1.8rem;
+
+    word-spacing: 0rem;
+    padding-left: 3rem;
+  }
+  .EarnMoney {
+    height: 4rem;
+    width: 20rem;
+
+    margin: 2rem 0 3rem 12rem;
+  }
+}
+@media (max-width: 1024px) {
+  html {
+    font-size: 60%;
+  }
+
+  /* Nav-1*/
+  .image {
+    margin-right: 1rem;
+  }
+  .nav_1 ul {
+    display: flex;
+    font-size: 3rem;
+    margin-left: 3rem;
+  }
+
+  .empty {
+    margin-left: 4rem;
+  }
+
+  /* Nav-2*/
+
+  .nav_2 ul {
+    margin-left: 5rem;
+  }
+
+  .empty_2 {
+    margin-left: 22rem;
+  }
+  .list_items_2 {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin: 1.5rem 0 1.5rem 1.8rem;
+  }
+
+  .content {
+    width: 100%;
+    height: auto;
+  }
+
+  .p1 {
+    font-size: 3.5rem;
+
+    padding-top: 2rem;
+    padding-left: 35rem;
+  }
+
+  .p2 {
+    margin-top: 17.5rem;
+    font-size: 1.7rem;
+
+    word-spacing: 0rem;
+    padding-left: 3rem;
+  }
+  .EarnMoney {
+    height: 4rem;
+    width: 18rem;
+
+    margin: 2rem 0 9rem 12rem;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  /* Nav-1*/
+  .image {
+    margin-right: 1rem;
+  }
+  .nav_1 ul {
+    display: flex;
+    font-size: 3rem;
+    margin-left: 3rem;
+  }
+
+  .empty {
+    margin-left: 5rem;
+  }
+  .FindJob {
+    height: 5rem;
+    width: 12rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    margin-left: 4%;
+  }
+  /* Nav-2*/
+
+  .nav_2 ul {
+    margin-left: 5rem;
+  }
+
+  .empty_2 {
+    margin-left: 8rem;
+  }
+  .list_items_2 {
+    font-size: 1.8rem;
+
+    margin: 1.5rem 0 1.5rem 1.8rem;
+  }
+
+  .content {
+    width: 100%;
+    height: auto;
+  }
+
+  .p1 {
+    font-size: 3rem;
+
+    padding-top: 2.5rem;
+    padding-left: 35rem;
+  }
+
+  .p2 {
+    margin-top: 19rem;
+    font-size: 1.7rem;
+
+    word-spacing: 0rem;
+    padding-left: 3rem;
+  }
+  .EarnMoney {
+    height: 4rem;
+    width: 15rem;
+
+    margin: 2rem 0 10rem 12rem;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 45%;
+  }
+  .image {
+    height: 10rem;
+    width: 10rem;
+  }
+  .nav_1 ul {
+    display: block;
+    margin-left: 40%;
+
+    list-style: none;
+  }
+
+  .FindJob {
+    height: 5rem;
+    width: 16rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    margin-left: 35%;
+  }
+  .float {
+    display: block;
+    align-items: flex-end;
+  }
+
+  .nav_2 ul {
+    display: flex;
+    margin-left: 0.7rem;
+  }
+
+  .empty_2 {
+    margin-left: 4rem;
+  }
+  .icon {
+    display: grid;
+    place-items: center;
+  }
+  .content {
+    width: 100%;
+    height: auto;
+  }
+  .p1 {
+    font-size: 2.8rem;
+
+    padding-top: 2rem;
+    padding-left: 48%;
+  }
+
+  .p2 {
+    margin-top: 13rem;
+    font-size: 1.6rem;
+
+    word-spacing: 0rem;
+    padding-left: 1rem;
+  }
+  .EarnMoney {
+    height: 4rem;
+    width: 17rem;
+
+    margin: 2rem 0rem 5rem 10rem;
+  }
+}
