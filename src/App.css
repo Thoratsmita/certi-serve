@@ -242,6 +242,16 @@ PROJECTS SERVEE (MAIN COMPONENT)
   border: 1.5px solid #c1c1c1;
 }
 
+.PostPrjForm select {
+  -webkit-appearance: none;
+  appearance: none;
+  font-size: 1rem;
+  padding: 7px 30px 7px 10px;
+  margin: 5px 20px 15px 0;
+  border: 1.5px solid #c1c1c1;
+  color: #8b8b8b;
+}
+
 .PostPrjForm p {
   margin: 0 0 10px;
   color: #8b8b8b;
@@ -958,9 +968,12 @@ input[type="checkbox"] {
   display: inline;
 }
 
+<<<<<<< HEAD
 .PrjServerDis p {
 }
 
+=======
+>>>>>>> c2d1fcbd4e585cf1dfec9eb4622f0b625dc33332
 .PrjServerDis span {
   display: inline;
 }
@@ -1106,6 +1119,178 @@ input[type="checkbox"] {
   margin: 10px 0;
   text-align: center;
   font-size: 1.1rem;
+}
+
+/* =================================================================
+  PORTFOLIO (MAIN COMPONENT)
+  ==================================================================*/
+
+.portfolio {
+  background-image: linear-gradient(#ffffff 50%, #81be3d 50%);
+  background-attachment: fixed;
+  padding: 0 75px 20px;
+  display: flex;
+}
+
+.portfolioLft {
+  width: 700px;
+  margin-right: 40px;
+}
+
+.portfolioHead {
+  color: #056839;
+  font-size: 1.35rem;
+}
+
+.portfolioCover {
+  background-color: #f5f5f5;
+  width: 100%;
+  border-radius: 12px;
+  height: 150px;
+}
+
+.portfolioName {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  margin-top: -90px;
+  padding: 60px 20px 10px;
+}
+
+.portfolioName h2 {
+  display: inline;
+  margin: 7px 0;
+}
+
+.portfolioName p {
+  margin: 0;
+}
+
+.portfolioName button {
+  border: none;
+  background-color: transparent;
+  color: #45a04b;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.portfolioName span {
+  display: block;
+  color: #8b8b8b;
+  font-weight: bold;
+}
+
+.portfolioName span::before {
+  content: '....';
+  color: #45a04b;
+  background-color: #45a04b;
+  border-radius: 50%;
+}
+
+.desig {
+  font-size: 1.25rem;
+}
+
+.address {
+  color: #8b8b8b;
+  font-weight: bold;
+  display: inline;
+}
+
+.portfolioEdu {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  padding: 20px 20px 10px;
+  margin-top: 20px;
+}
+
+.portfolioEdu h3 {
+  display: inline;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.eduDetail {
+  color: #606060;
+  font-size: 0.85rem;
+  margin-top: 10px;
+}
+
+.edu {
+  padding: 0 30px;
+}
+
+.edu p {
+  margin: 5px 0;
+}
+
+.portfolioRgh {
+  width: 450px;
+}
+
+.portfolioPast {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  padding: 20px 20px 10px;
+  margin-top: 20px;
+}
+
+.portfolioPast h3 {
+  margin: 0;
+}
+
+.prj {
+  font-size: 1rem;
+}
+
+.prj span {
+  color: #606060;
+}
+
+.prj table {
+  color: #606060;
+  border-collapse: collapse;
+}
+
+.prj table tr td:empty {
+  width: 50px;
+}
+
+.prj p {
+  margin: 0;
+  color: #606060;
+}
+
+.portfolioSkill {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  padding: 20px 20px 10px;
+  margin-top: 20px;
+}
+
+.portfolioSkill h3 {
+  margin-top: 0;
+}
+
+.portfolioSkill b {
+  padding: 2px 15px;
+  color: #606060;
+}
+
+.portfolioUpdate {
+  margin: 30px auto;
+  border: 3px solid #ffffff;
+  background-color: #58a43c;
+  border-radius: 28px;
+  padding: 15px 110px;
+  color: #ffffff;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (max-width: 1240px) {

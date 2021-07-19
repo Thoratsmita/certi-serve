@@ -12,8 +12,8 @@ import Previews from './Dropzone';
 export default function PostProject() {
 
     const [projectName, setProjectName] = useState('');
-    const [projectDescrp, setProjectDescrp] = useState(''); 
-    
+    const [projectDescrp, setProjectDescrp] = useState('');
+
     const handleSubmit = (e) => {
         e.preventDefault();
     }
@@ -22,7 +22,7 @@ export default function PostProject() {
 
         $('#projectdescription').on('input', function () {
             $('#count').text(4000 - $(this).val().length);
-        });     
+        });
     })
 
     return (
@@ -45,6 +45,15 @@ export default function PostProject() {
                     onChange={(e) => setProjectName(e.target.value)}
                     required
                 />
+                <label>Select Job Category</label>
+                <select>
+                    <option>Category</option>
+                    <option>...</option>
+                </select>
+                <select>
+                    <option>Sub Category</option>
+                    <option>...</option>
+                </select>
                 <label htmlFor="projectdescription">Tell us more about your project</label>
                 <p>Start with a bit about yourself or your business, and include an overview of what you need done.</p>
                 <textarea
@@ -59,12 +68,12 @@ export default function PostProject() {
                 />
                 <div className="wordcount"><span id="count">4000</span> characters remaining</div>
                 <div className="formfile">
-                    <Previews/>                
+                    <Previews />
                 </div>
                 {/* <span id="fileError"></span> */}
                 <button type="submit" className="postPrjBtn">Post Project</button>
             </form>
-            <div style={{height: '30px'}}></div>
+            <div style={{ height: '30px' }}></div>
         </div>
     )
 }
