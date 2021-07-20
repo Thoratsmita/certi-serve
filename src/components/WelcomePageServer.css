@@ -1,16 +1,24 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
-}
-html {
+} */
+
+/* html {
+  font-size: 62.5%;
+}  */
+
+.welcomeServer {
+
   font-size: 62.5%;
 }
+
 /* Nav-1*/
 .image {
   height: 10rem;
   width: 10rem;
   margin-right: 4rem;
 }
+
 .nav_1 ul {
   display: flex;
   margin-left: 10rem;
@@ -21,6 +29,7 @@ html {
 .empty {
   margin-left: 30rem;
 }
+
 .list_items {
   text-decoration: none;
   font-size: 2.3rem;
@@ -37,6 +46,7 @@ html {
   box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2),
     0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
 }
+
 .float {
   display: flex;
 }
@@ -47,6 +57,7 @@ html {
   display: flex;
   align-items: baseline;
 }
+
 .nav_2 {
   background-color: #056839;
 }
@@ -62,15 +73,18 @@ html {
 .empty_2 {
   margin-left: 40rem;
 }
+
 .list_items_2 {
   text-decoration: none;
   font-size: 1.8rem;
   color: #ffffff;
   margin: 1.5rem 0 1.5rem 1.8rem;
 }
+
 .btn {
   font-size: 10rem;
 }
+
 .content {
   background-image: url(../images/welcome_background_image.gif);
   box-sizing: border-box;
@@ -101,6 +115,7 @@ html {
 
   color: #056839;
 }
+
 .EarnMoney {
   height: 5.5rem;
   width: 26rem;
@@ -109,8 +124,9 @@ html {
 
   margin: 2rem 0 3rem 12rem;
 }
+
 @media (max-width: 1200px) {
-  html {
+  .welcomeServer {
     font-size: 60%;
   }
 
@@ -118,6 +134,7 @@ html {
   .image {
     margin-right: 1rem;
   }
+
   .nav_1 ul {
     display: flex;
     font-size: 3rem;
@@ -137,6 +154,7 @@ html {
   .empty_2 {
     margin-left: 30rem;
   }
+
   .list_items_2 {
     text-decoration: none;
     font-size: 1.8rem;
@@ -163,6 +181,7 @@ html {
     word-spacing: 0rem;
     padding-left: 3rem;
   }
+
   .EarnMoney {
     height: 4rem;
     width: 20rem;
@@ -170,8 +189,9 @@ html {
     margin: 2rem 0 3rem 12rem;
   }
 }
+
 @media (max-width: 1024px) {
-  html {
+  .welcomeServer {
     font-size: 60%;
   }
 
@@ -179,6 +199,7 @@ html {
   .image {
     margin-right: 1rem;
   }
+
   .nav_1 ul {
     display: flex;
     font-size: 3rem;
@@ -198,6 +219,7 @@ html {
   .empty_2 {
     margin-left: 22rem;
   }
+
   .list_items_2 {
     text-decoration: none;
     font-size: 1.8rem;
@@ -224,6 +246,7 @@ html {
     word-spacing: 0rem;
     padding-left: 3rem;
   }
+
   .EarnMoney {
     height: 4rem;
     width: 18rem;
@@ -231,8 +254,9 @@ html {
     margin: 2rem 0 9rem 12rem;
   }
 }
+
 @media (max-width: 768px) {
-  html {
+  .welcomeServer {
     font-size: 55%;
   }
 
@@ -240,6 +264,7 @@ html {
   .image {
     margin-right: 1rem;
   }
+
   .nav_1 ul {
     display: flex;
     font-size: 3rem;
@@ -249,6 +274,7 @@ html {
   .empty {
     margin-left: 5rem;
   }
+
   .FindJob {
     height: 5rem;
     width: 12rem;
@@ -256,6 +282,7 @@ html {
     margin-bottom: 1rem;
     margin-left: 4%;
   }
+
   /* Nav-2*/
 
   .nav_2 ul {
@@ -265,6 +292,7 @@ html {
   .empty_2 {
     margin-left: 8rem;
   }
+
   .list_items_2 {
     font-size: 1.8rem;
 
@@ -290,6 +318,7 @@ html {
     word-spacing: 0rem;
     padding-left: 3rem;
   }
+
   .EarnMoney {
     height: 4rem;
     width: 15rem;
@@ -297,14 +326,17 @@ html {
     margin: 2rem 0 10rem 12rem;
   }
 }
+
 @media (max-width: 500px) {
-  html {
+  .welcomeServer {
     font-size: 45%;
   }
+
   .image {
     height: 10rem;
     width: 10rem;
   }
+
   .nav_1 ul {
     display: block;
     margin-left: 40%;
@@ -319,6 +351,7 @@ html {
     margin-bottom: 1rem;
     margin-left: 35%;
   }
+
   .float {
     display: block;
     align-items: flex-end;
@@ -332,14 +365,17 @@ html {
   .empty_2 {
     margin-left: 4rem;
   }
+
   .icon {
     display: grid;
     place-items: center;
   }
+
   .content {
     width: 100%;
     height: auto;
   }
+
   .p1 {
     font-size: 2rem;
 
@@ -354,6 +390,7 @@ html {
     word-spacing: 0rem;
     padding-left: 1rem;
   }
+
   .EarnMoney {
     height: 4rem;
     width: 17rem;

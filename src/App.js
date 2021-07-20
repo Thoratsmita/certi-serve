@@ -1,5 +1,5 @@
 import "./App.css";
-import WelcomePage from "./components/WelcomePageServer";
+import SelectAccount from "./SelectAccount";
 import ProjectsServee from "./Projects_Servee";
 import PostProject from "./PostProject";
 import FindJob from "./FindJob";
@@ -21,6 +21,7 @@ function App() {
   return (
     <Router>
       <Switch>
+        <Route path="/selectaccount" exact component={SelectAccount}/>
         <Route path="/server" exact component={WelcomePageServer} />
         <Route path="/servee" exact component={WelcomePageServee} />
 

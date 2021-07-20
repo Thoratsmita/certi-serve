@@ -50,6 +50,75 @@ PROJECTS SERVEE (NAVBAR)
 }
 
 /* =================================================================
+SELECT ACCOUNT (SIGN UP)
+==================================================================*/
+
+.selectAction {
+  background-image: -webkit-linear-gradient(#ffffff 50%, #81be3d 50%);
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selectCointainer {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 450px;  
+  padding: 25px 30px 40px;  
+}
+
+.selectAction img:first-child {
+  height: 40px;
+  float: left;
+}
+
+.selectActionLogo {
+  height: 125px;
+  margin-left: -40px;
+}
+
+.selectAction h3 {
+  margin: 0;
+}
+
+.selectAction p {
+  margin: 5px 0;
+}
+
+.selectActionBtn {
+  border-radius: 12px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 15px 10px;
+  display: flex;
+  margin: 20px 0;
+  border-left: 4px solid #60ac24;
+}
+
+.selectActionIco {
+  height: 70px;
+  border-right: 2px solid #c1c1c1;
+  padding-right: 15px;
+}
+
+.selectActionTxt {
+  flex: 3;
+}
+
+.selectActionTxt h2 {
+  display: inline;
+}
+
+.selectActionArr {  
+  height: 40px;
+  width: auto;
+  float: right;
+}
+
+/* =================================================================
 PROJECTS SERVEE (MAIN COMPONENT)
 ==================================================================*/
 
@@ -968,12 +1037,6 @@ input[type="checkbox"] {
   display: inline;
 }
 
-<<<<<<< HEAD
-.PrjServerDis p {
-}
-
-=======
->>>>>>> c2d1fcbd4e585cf1dfec9eb4622f0b625dc33332
 .PrjServerDis span {
   display: inline;
 }
