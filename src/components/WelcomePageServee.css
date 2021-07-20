@@ -1,9 +1,19 @@
+<<<<<<< HEAD
+=======
+.welcomeServee {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+>>>>>>> 9a33588f63f64651d93136feabbe1267c5ac86af
 /* Nav-1*/
 .image {
   height: 6.25rem;
   width: 6.25rem;
   margin-right: 2rem;
 }
+
 .nav_1 ul {
   display: flex;
   margin-left: 2rem;
@@ -14,6 +24,7 @@
 .empty {
   margin-left: 21rem;
 }
+
 .list_items {
   text-decoration: none;
   font-size: 1.5rem;
@@ -30,6 +41,7 @@
   box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2),
     0 0.37rem 1.2rem 0 rgba(0, 0, 0, 0.19);
 }
+
 .float {
   display: flex;
 }
@@ -40,6 +52,7 @@
   display: flex;
   align-items: baseline;
 }
+
 .nav_2 {
   background-color: #056839;
 }
@@ -55,13 +68,19 @@
 .empty_2 {
   margin-left: 25rem;
 }
+
 .list_items_2 {
   text-decoration: none;
   font-size: 1.3rem;
   color: #ffffff;
   margin: 0.9rem 0 0.9rem 1.1rem;
 }
+<<<<<<< HEAD
 .Subscription {
+=======
+
+.btn {
+>>>>>>> 9a33588f63f64651d93136feabbe1267c5ac86af
   color: #55a13c;
   font-size: 1.2rem;
 
@@ -101,20 +120,38 @@
 
   color: #056839;
 }
+<<<<<<< HEAD
 .HireServer {
   height: 3.43rem;
   width: 16.25rem;
   box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2),
     0 0.37rem 1.2rem 0 rgba(0, 0, 0, 0.19);
+=======
+
+.EarnMoney {
+  height: 5.5rem;
+  width: 26rem;
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2),
+    0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
+>>>>>>> 9a33588f63f64651d93136feabbe1267c5ac86af
 
   margin: 1.2rem 0 1.87rem 7.5rem;
 }
+<<<<<<< HEAD
+=======
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 60%;
+  }
+>>>>>>> 9a33588f63f64651d93136feabbe1267c5ac86af
 
 @media (max-width: 1200px) {
   /* Nav-1*/
   .image {
     margin-right: 0.6rem;
   }
+
   .nav_1 ul {
     display: flex;
     font-size: 1.8rem;
@@ -134,6 +171,7 @@
   .empty_2 {
     margin-left: 18rem;
   }
+
   .list_items_2 {
     text-decoration: none;
     font-size: 1.08rem;
@@ -160,6 +198,7 @@
     word-spacing: 0rem;
     padding-left: 1.8rem;
   }
+
   .EarnMoney {
     height: 2.4rem;
     width: 12rem;
@@ -167,11 +206,13 @@
     margin: 1.2rem 0 1.8rem 7.2rem;
   }
 }
+
 @media (max-width: 1024px) {
   /* Nav-1*/
   .image {
     margin-right: 0.6rem;
   }
+
   .nav_1 ul {
     display: flex;
     font-size: 1.8rem;
@@ -199,6 +240,7 @@
   .empty_2 {
     margin-left: 13.2rem;
   }
+
   .list_items_2 {
     font-size: 1.2rem;
     margin: 0.9rem 0 0.9rem 1.08rem;
@@ -223,13 +265,21 @@
     word-spacing: 0rem;
     padding-left: 1.8rem;
   }
+<<<<<<< HEAD
   .HireServer {
     height: 2.7rem;
     width: 12rem;
+=======
+
+  .EarnMoney {
+    height: 4rem;
+    width: 18rem;
+>>>>>>> 9a33588f63f64651d93136feabbe1267c5ac86af
 
     margin: 0rem 0 5.4rem 7.2rem;
   }
 }
+
 @media (max-width: 768px) {
   /* Nav-1*/
   .image {
@@ -238,6 +288,7 @@
 
     margin-right: 0.55rem;
   }
+
   .nav_1 ul {
     display: flex;
     font-size: 1.65rem;
@@ -249,12 +300,22 @@
   .empty {
     margin-left: 2rem;
   }
+<<<<<<< HEAD
   .PostProject {
     height: 2.75rem;
     width: 6.9rem;
     margin-top: 3.9rem;
     margin-bottom: 0.55rem;
     margin-left: 15%;
+=======
+
+  .FindJob {
+    height: 5rem;
+    width: 12rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    margin-left: 4%;
+>>>>>>> 9a33588f63f64651d93136feabbe1267c5ac86af
   }
 
   /* Nav-2*/
@@ -266,6 +327,7 @@
   .empty_2 {
     margin-left: 4.4rem;
   }
+
   .list_items_2 {
     font-size: 1.1rem;
 
@@ -296,18 +358,34 @@
     word-spacing: 0rem;
     padding-left: 1.65rem;
   }
+<<<<<<< HEAD
   .HireServer {
     height: 2.4rem;
     width: 9.5rem;
+=======
+
+  .EarnMoney {
+    height: 4rem;
+    width: 15rem;
+>>>>>>> 9a33588f63f64651d93136feabbe1267c5ac86af
 
     margin: 0rem 0 4.5rem 6.6rem;
   }
 }
+
 @media (max-width: 500px) {
+<<<<<<< HEAD
+=======
+  html {
+    font-size: 45%;
+  }
+
+>>>>>>> 9a33588f63f64651d93136feabbe1267c5ac86af
   .image {
     height: 8rem;
     width: 8rem;
   }
+
   .nav_1 ul {
     display: block;
     margin-left: 25%;
@@ -322,6 +400,7 @@
     margin-bottom: 0.45rem;
     margin-left: 28%;
   }
+
   .float {
     display: block;
     align-items: flex-end;
@@ -347,10 +426,12 @@
     display: grid;
     place-items: center;
   }
+
   .content {
     width: 100%;
     height: auto;
   }
+
   .p1 {
     font-size: 1.28rem;
 
@@ -365,9 +446,16 @@
     word-spacing: 0rem;
     padding-left: 0.45rem;
   }
+<<<<<<< HEAD
   .HireServer {
     height: 1.9rem;
     width: 8rem;
+=======
+
+  .EarnMoney {
+    height: 4rem;
+    width: 17rem;
+>>>>>>> 9a33588f63f64651d93136feabbe1267c5ac86af
 
     margin: 0rem 5rem 1rem 3.5rem;
   }

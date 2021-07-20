@@ -26,7 +26,7 @@ export default function portfolio() {
 
     return (
         <>
-            <Navbar_Servee />
+            <Navbar_Servee nav='4'/>
             <div className="portfolio">
                 <div className="portfolioLft">
                     <h3 className="portfolioHead">My portfolio</h3>
@@ -137,13 +137,13 @@ export default function portfolio() {
                     <div className="portfolioSkill">
                         <EditIcon style={{ color: '#0a6b3d', float: 'right' }} />
                         <h3>Skills</h3>
-                        <hr/>
+                        <hr />
                         <b>Abode XD</b>
-                        <hr/>
+                        <hr />
                         <b>HTML</b>
-                        <hr/>
+                        <hr />
                         <b>C#</b>
-                        <hr/>
+                        <hr />
                         <button className="payDetailView" type="button">View All <ExpandMoreIcon style={{ fontSize: '16px', color: '#73b43c' }} /></button>
                     </div>
                     <button className="portfolioUpdate">Update All</button>
