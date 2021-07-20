@@ -26,7 +26,7 @@ export default function portfolio() {
 
     return (
         <>
-            <Navbar_Servee />
+            <Navbar_Servee nav='4'/>
             <div className="portfolio">
                 <div className="portfolioLft">
                     <h3 className="portfolioHead">My portfolio</h3>

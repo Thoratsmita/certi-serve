@@ -54,7 +54,7 @@ export default function Projects_Servee() {
 
     return (
         <>
-            <Navbar />
+            <Navbar nav='1'/>
             <div className="PrjServee">
                 <div className="PrjServeeHead">
                     <h1>Projects</h1>
