@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import './App.css';
 import $ from 'jquery';
 import { Link } from "react-router-dom";
+import PersonOutlineOutlinedIcon from '@material-ui/icons/PersonOutlineOutlined';
 
 /**
  * @author Parth Chaturvedi
@@ -11,14 +12,12 @@ import { Link } from "react-router-dom";
 export default function Navbar_Servee(props) {
 
     useEffect(() => {
-        // $('.nav-link').on('click', function () {
-        //     $('.active-link').removeClass('active-link');
-        //     $(this).addClass('active-link');
-        // });
-        console.log(props.nav);
-
         switch (props.nav) {
             case '1': $('#project').addClass('active-link');
+                break;
+            case '2': $('#dashboard').addClass('active-link');
+                break;
+            case '3': $('#inbox').addClass('active-link');
                 break;
             case '4': $('#portfolio').addClass('active-link');
                 break;
@@ -35,7 +34,13 @@ export default function Navbar_Servee(props) {
                     <Link id="portfolio" to='/portfolio' className="nav-link">Portfolio</Link>
                 </div>
             </div>
-            <div className="rightside"></div>
+            <div className="rightside">
+                <PersonOutlineOutlinedIcon style={{color: '#ffffff', borderRadius: '50%', border: '2px solid #a1f6a5', fontSize: '28px'}}/>
+                <div className="rightName">
+                    <span>Lorem Ipsum</span>
+                    <div>@0.00 INR</div>
+                </div>
+            </div>
         </div>
     )
 }

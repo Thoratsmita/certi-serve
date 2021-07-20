@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import $ from 'jquery';
 import './App.css';
+import Navbar_Servee from './Navbar_Servee';
 import logo from './images/certi-serv-logo.png';
 import ExploreOutlinedIcon from '@material-ui/icons/ExploreOutlined';
 import LocalMallOutlinedIcon from '@material-ui/icons/LocalMallOutlined';
@@ -20,7 +21,7 @@ export default function Inbox() {
 
     return (
         <>
-            <div className="finanDashboard">
+            {/* <div className="finanDashboard">
                 <img src={logo} alt="Certi Serve Logo" />
                 <div className="findJobHeadNav">
                     <div className="findJobIcon"><ExploreOutlinedIcon style={{ fontSize: '18px' }} /> Browse</div>
@@ -35,7 +36,8 @@ export default function Inbox() {
                         <span id='findJobAcc'>000.00 INR</span>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            <Navbar_Servee nav='3'/>
             <div className="inbox">
                 <div className="chat">
                     <input type="text" id="people" placeholder="| Search for people" />

@@ -1,12 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import $ from 'jquery';
 import './App.css';
-import logo from './images/certi-serv-logo.png';
-import ExploreOutlinedIcon from '@material-ui/icons/ExploreOutlined';
-import LocalMallOutlinedIcon from '@material-ui/icons/LocalMallOutlined';
-import NotificationsNoneOutlinedIcon from '@material-ui/icons/NotificationsNoneOutlined';
-import ChatBubbleOutlineOutlinedIcon from '@material-ui/icons/ChatBubbleOutlineOutlined';
-import PersonOutlineOutlinedIcon from '@material-ui/icons/PersonOutlineOutlined';
+import Navbar_Servee from './Navbar_Servee';
 import AccountBalanceWalletOutlinedIcon from '@material-ui/icons/AccountBalanceWalletOutlined';
 import DoneIcon from '@material-ui/icons/Done';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -64,7 +59,7 @@ export default function FinancialDashboardServee() {
 
     return (
         <>
-            <div className="finanDashboard">
+            {/* <div className="finanDashboard">
                 <img src={logo} alt="Certi Serve Logo" />
                 <div className="findJobHeadNav">
                     <div className="findJobIcon"><ExploreOutlinedIcon style={{ fontSize: '18px' }} /> Browse</div>
@@ -79,7 +74,8 @@ export default function FinancialDashboardServee() {
                         <span id='findJobAcc'>000.00 INR</span>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            <Navbar_Servee nav='2'/>
             <div className="finanDashboardHead">
                 <div className="PrjServeeHead">
                     <h1>Financial Dashboard</h1>
