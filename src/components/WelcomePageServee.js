@@ -2,7 +2,6 @@ import React from "react";
 import "./WelcomePageServee.css";
 import Logo from "../images/certi-serv-logo.png";
 import PostProject from "../images/Project_overlay.png";
-
 import HireServer from "../images/Hire_server_overlay.png";
 import Sub_icon from "../images/subscription_icon.png";
 import { Link } from "react-router-dom";
@@ -33,7 +32,7 @@ const WelcomePageServee = () => {
             </Link>
           </ul>
           <Link to="/">
-            <img src={PostProject} className="FindJob" />
+            <img src={PostProject} className="PostProject" />
           </Link>
         </div>
       </div>
@@ -41,7 +40,7 @@ const WelcomePageServee = () => {
         <div className="icon">
           <ul>
             <Link to="/" className="list_items_2">
-              <li>My Job</li>
+              <li>Projects</li>
             </Link>
             <Link to="/" className="list_items_2">
               <li>DashBoard</li>
@@ -52,31 +51,27 @@ const WelcomePageServee = () => {
             <Link to="/" className="list_items_2">
               <li>Feedback</li>
             </Link>
-            <Link to="/" className="list_items_2">
-              <li>Portfolio</li>
-            </Link>
+
             <li className="empty_2"></li>
           </ul>
           <Link to="/" className="list_items_2 test">
-            <button className="btn">Subscription</button>
+            <button className="Subscription">Subscription</button>
           </Link>
         </div>
       </div>
 
       <div className="content">
-        <div>
-          <p className="p1">
-            Hire the best <br />
-            Servers for any <br />
-            online
-          </p>
-          <p className="p2">
-            Millions of people use to turn their ideas into reality
-          </p>
-          <Link to="/">
-            <img className="EarnMoney" src={HireServer} alt="EarnMoney" />
-          </Link>
-        </div>
+        <p className="p1">
+          Hire the best <br />
+          Servers for any <br />
+          online
+        </p>
+        <p className="p2">
+          Millions of people use to turn their ideas into reality
+        </p>
+        <Link to="/">
+          <img className="HireServer" src={HireServer} alt="HireServer" />
+        </Link>
       </div>
     </div>
   );

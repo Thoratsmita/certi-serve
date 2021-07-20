@@ -1,41 +1,34 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-html {
-  font-size: 62.5%;
-}
 /* Nav-1*/
 .image {
-  height: 10rem;
-  width: 10rem;
-  margin-right: 4rem;
+  height: 6.25rem;
+  width: 6.25rem;
+  margin-right: 2rem;
 }
 .nav_1 ul {
   display: flex;
-  margin-left: 10rem;
-
+  margin-left: 2rem;
+  margin-bottom: 0.1rem;
   list-style: none;
 }
 
 .empty {
-  margin-left: 30rem;
+  margin-left: 21rem;
 }
 .list_items {
   text-decoration: none;
-  font-size: 2.3rem;
+  font-size: 1.5rem;
   color: #111;
-  margin-left: 2rem;
-  margin-top: 6rem;
+  margin-left: 1.2rem;
+  margin-top: 3.75rem;
 }
 
-.FindJob {
-  height: 5rem;
-  width: 16rem;
-  margin-top: 2.8rem;
-  margin-left: 3rem;
-  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2),
-    0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
+.PostProject {
+  height: 3.5rem;
+  width: 11rem;
+  margin-top: 2.5rem;
+  margin-left: 1.87rem;
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2),
+    0 0.37rem 1.2rem 0 rgba(0, 0, 0, 0.19);
 }
 .float {
   display: flex;
@@ -53,27 +46,27 @@ html {
 
 .nav_2 ul {
   display: flex;
-  margin-left: 9rem;
+  margin-left: 5.6rem;
 
   list-style: none;
   align-items: baseline;
 }
 
 .empty_2 {
-  margin-left: 40rem;
+  margin-left: 25rem;
 }
 .list_items_2 {
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   color: #ffffff;
-  margin: 1.5rem 0 1.5rem 1.8rem;
+  margin: 0.9rem 0 0.9rem 1.1rem;
 }
-.btn {
+.Subscription {
   color: #55a13c;
-  font-size: 2rem;
+  font-size: 1.2rem;
 
-  padding: 0.8rem 3rem 0.8rem 3rem;
-  border-radius: 2rem;
+  padding: 0.5rem 1.8rem 0.5rem 1.8rem;
+  border-radius: 1.2rem;
   border: none;
 }
 
@@ -81,73 +74,71 @@ html {
   background-image: url(../images/welcome_background_image.gif);
   box-sizing: border-box;
   width: 100%;
-  height: 60rem;
+  height: 45rem;
 
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .p1 {
+  margin: 0;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  font-size: 4.5rem;
+  font-size: 3.2rem;
   font-weight: bold;
-  padding-top: 4rem;
-  padding-left: 23rem;
+  padding-top: 3rem;
+  padding-left: 40%;
   color: #056839;
 }
 
 .p2 {
-  margin-top: 19rem;
-  font-size: 2.4rem;
+  margin-top: 15rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  word-spacing: 0.6rem;
-  padding-left: 4rem;
+  word-spacing: 0.37rem;
+  padding-left: 2.5rem;
 
   color: #056839;
 }
-.EarnMoney {
-  height: 5.5rem;
-  width: 26rem;
-  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2),
-    0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
+.HireServer {
+  height: 3.43rem;
+  width: 16.25rem;
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2),
+    0 0.37rem 1.2rem 0 rgba(0, 0, 0, 0.19);
 
-  margin: 2rem 0 3rem 12rem;
+  margin: 1.2rem 0 1.87rem 7.5rem;
 }
-@media (max-width: 1200px) {
-  html {
-    font-size: 60%;
-  }
 
+@media (max-width: 1200px) {
   /* Nav-1*/
   .image {
-    margin-right: 1rem;
+    margin-right: 0.6rem;
   }
   .nav_1 ul {
     display: flex;
-    font-size: 3rem;
-    margin-left: 3rem;
+    font-size: 1.8rem;
+    margin-left: 1.8rem;
   }
 
   .empty {
-    margin-left: 25rem;
+    margin-left: 15rem;
   }
 
   /* Nav-2*/
 
   .nav_2 ul {
-    margin-left: 5rem;
+    margin-left: 3rem;
   }
 
   .empty_2 {
-    margin-left: 30rem;
+    margin-left: 18rem;
   }
   .list_items_2 {
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 1.08rem;
     color: #ffffff;
-    margin: 1.5rem 0 1.5rem 1.8rem;
+    margin: 0.9rem 0 0.9rem 1.08rem;
   }
 
   .content {
@@ -156,59 +147,61 @@ html {
   }
 
   .p1 {
-    font-size: 4.2rem;
+    font-size: 2.52rem;
 
-    padding-top: 3rem;
-    padding-left: 35rem;
+    padding-top: 1.8rem;
+    padding-left: 21rem;
   }
 
   .p2 {
-    margin-top: 18rem;
-    font-size: 1.8rem;
+    margin-top: 10.8rem;
+    font-size: 1.08rem;
 
     word-spacing: 0rem;
-    padding-left: 3rem;
+    padding-left: 1.8rem;
   }
   .EarnMoney {
-    height: 4rem;
-    width: 20rem;
+    height: 2.4rem;
+    width: 12rem;
 
-    margin: 2rem 0 3rem 12rem;
+    margin: 1.2rem 0 1.8rem 7.2rem;
   }
 }
 @media (max-width: 1024px) {
-  html {
-    font-size: 60%;
-  }
-
   /* Nav-1*/
   .image {
-    margin-right: 1rem;
+    margin-right: 0.6rem;
   }
   .nav_1 ul {
     display: flex;
-    font-size: 3rem;
-    margin-left: 3rem;
+    font-size: 1.8rem;
+    margin-left: 1.8rem;
   }
-
+  .list_items {
+    font-size: 1.5rem;
+  }
   .empty {
-    margin-left: 4rem;
+    margin-left: 6.8rem;
   }
-
+  .PostProject {
+    height: 3.3rem;
+    width: 9.5rem;
+    margin-top: 3.9rem;
+    margin-bottom: 0.55rem;
+    margin-left: 15%;
+  }
   /* Nav-2*/
 
   .nav_2 ul {
-    margin-left: 5rem;
+    margin-left: 2.5rem;
   }
 
   .empty_2 {
-    margin-left: 22rem;
+    margin-left: 13.2rem;
   }
   .list_items_2 {
-    text-decoration: none;
-    font-size: 1.8rem;
-    color: #ffffff;
-    margin: 1.5rem 0 1.5rem 1.8rem;
+    font-size: 1.2rem;
+    margin: 0.9rem 0 0.9rem 1.08rem;
   }
 
   .content {
@@ -217,127 +210,139 @@ html {
   }
 
   .p1 {
-    font-size: 3.5rem;
+    font-size: 2.4rem;
 
     padding-top: 2rem;
-    padding-left: 35rem;
+    padding-left: 17rem;
   }
 
   .p2 {
-    margin-top: 17.5rem;
-    font-size: 1.7rem;
+    margin-top: 10.5rem;
+    font-size: 1.2rem;
 
     word-spacing: 0rem;
-    padding-left: 3rem;
+    padding-left: 1.8rem;
   }
-  .EarnMoney {
-    height: 4rem;
-    width: 18rem;
+  .HireServer {
+    height: 2.7rem;
+    width: 12rem;
 
-    margin: 2rem 0 9rem 12rem;
+    margin: 0rem 0 5.4rem 7.2rem;
   }
 }
 @media (max-width: 768px) {
-  html {
-    font-size: 55%;
-  }
-
   /* Nav-1*/
   .image {
-    margin-right: 1rem;
+    height: 6rem;
+    width: 6rem;
+
+    margin-right: 0.55rem;
   }
   .nav_1 ul {
     display: flex;
-    font-size: 3rem;
-    margin-left: 3rem;
+    font-size: 1.65rem;
+    margin-left: 1rem;
+  }
+  .list_items {
+    font-size: 1.1rem;
+  }
+  .empty {
+    margin-left: 2rem;
+  }
+  .PostProject {
+    height: 2.75rem;
+    width: 6.9rem;
+    margin-top: 3.9rem;
+    margin-bottom: 0.55rem;
+    margin-left: 15%;
   }
 
-  .empty {
-    margin-left: 5rem;
-  }
-  .FindJob {
-    height: 5rem;
-    width: 12rem;
-    margin-top: 5rem;
-    margin-bottom: 1rem;
-    margin-left: 4%;
-  }
   /* Nav-2*/
 
   .nav_2 ul {
-    margin-left: 5rem;
+    margin-left: 2.75rem;
   }
 
   .empty_2 {
-    margin-left: 8rem;
+    margin-left: 4.4rem;
   }
   .list_items_2 {
-    font-size: 1.8rem;
+    font-size: 1.1rem;
 
-    margin: 1.5rem 0 1.5rem 1.8rem;
+    margin: 0.82rem 0 0.82rem 1rem;
   }
+  .Subscription {
+    font-size: 1rem;
 
+    padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+    border-radius: 1.2rem;
+  }
   .content {
     width: 100%;
     height: auto;
   }
 
   .p1 {
-    font-size: 3rem;
+    font-size: 2.1rem;
 
-    padding-top: 2.5rem;
-    padding-left: 35rem;
+    padding-top: 1.7rem;
+    padding-left: 28rem;
   }
 
   .p2 {
-    margin-top: 19rem;
-    font-size: 1.7rem;
+    margin-top: 9rem;
+    font-size: 1rem;
 
     word-spacing: 0rem;
-    padding-left: 3rem;
+    padding-left: 1.65rem;
   }
-  .EarnMoney {
-    height: 4rem;
-    width: 15rem;
+  .HireServer {
+    height: 2.4rem;
+    width: 9.5rem;
 
-    margin: 2rem 0 10rem 12rem;
+    margin: 0rem 0 4.5rem 6.6rem;
   }
 }
 @media (max-width: 500px) {
-  html {
-    font-size: 45%;
-  }
   .image {
-    height: 10rem;
-    width: 10rem;
+    height: 8rem;
+    width: 8rem;
   }
   .nav_1 ul {
     display: block;
-    margin-left: 40%;
-
-    list-style: none;
+    margin-left: 25%;
   }
-
-  .FindJob {
-    height: 5rem;
-    width: 16rem;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-    margin-left: 35%;
+  .list_items {
+    font-size: 1.5rem;
+  }
+  .PostProject {
+    height: 2.9rem;
+    width: 10rem;
+    margin-top: 1.35rem;
+    margin-bottom: 0.45rem;
+    margin-left: 28%;
   }
   .float {
     display: block;
     align-items: flex-end;
   }
+  .Subscription {
+    font-size: 1.2rem;
 
+    padding: 0.5rem 1.8rem 0.5rem 1.8rem;
+    border-radius: 1.2rem;
+  }
   .nav_2 ul {
-    display: flex;
-    margin-left: 0.7rem;
+    margin-left: 0;
+  }
+  .list_items_2 {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+  }
+  .empty_2 {
+    margin-left: 1.5rem;
   }
 
-  .empty_2 {
-    margin-left: 4rem;
-  }
   .icon {
     display: grid;
     place-items: center;
@@ -347,23 +352,23 @@ html {
     height: auto;
   }
   .p1 {
-    font-size: 2.8rem;
+    font-size: 1.28rem;
 
-    padding-top: 2rem;
-    padding-left: 48%;
+    padding-top: 0.9rem;
+    padding-left: 55%;
   }
 
   .p2 {
-    margin-top: 13rem;
-    font-size: 1.6rem;
-
+    margin-top: 6rem;
+    font-size: 0.73rem;
+    font-weight: bold;
     word-spacing: 0rem;
-    padding-left: 1rem;
+    padding-left: 0.45rem;
   }
-  .EarnMoney {
-    height: 4rem;
-    width: 17rem;
+  .HireServer {
+    height: 1.9rem;
+    width: 8rem;
 
-    margin: 2rem 0rem 5rem 10rem;
+    margin: 0rem 5rem 1rem 3.5rem;
   }
 }

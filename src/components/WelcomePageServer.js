@@ -56,33 +56,24 @@ const WelcomePageServer = () => {
             </Link>
             <li className="empty_2"></li>
           </ul>
-          <Link to="/" className="list_items_2">
-            <Button
-              variant="contained"
-              color="#ffffff"
-              className="btn"
-              endIcon={<AcUnitIcon>Subscribe</AcUnitIcon>}
-            >
-              Subscribe
-            </Button>
+          <Link to="/" className="list_items_2 test">
+            <button className="Subscription">Subscription</button>
           </Link>
         </div>
       </div>
 
       <div className="content">
-        <div>
-          <p className="p1">
-            Hire the best <br />
-            Servers for any <br />
-            online
-          </p>
-          <p className="p2">
-            Millions of people use to turn their ideas into reality
-          </p>
-          <Link to="/">
-            <img className="EarnMoney" src={earnmoney} alt="EarnMoney" />
-          </Link>
-        </div>
+        <p className="p1">
+          Hire the best <br />
+          Servers for any <br />
+          online
+        </p>
+        <p className="p2">
+          Millions of people use to turn their ideas into reality
+        </p>
+        <Link to="/">
+          <img className="EarnMoney" src={earnmoney} alt="EarnMoney" />
+        </Link>
       </div>
     </div>
   );
