@@ -11,6 +11,7 @@ import Inbox from "./Inbox";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import WelcomePageServer from "./components/WelcomePageServer";
 import WelcomePageServee from "./components/WelcomePageServee";
+import Login from "./components/Login/Login";
 
 /**
  * @author Parth Chaturvedi
@@ -24,7 +25,7 @@ function App() {
         <Route path="/selectaccount" exact component={SelectAccount}/>
         <Route path="/server" exact component={WelcomePageServer} />
         <Route path="/servee" exact component={WelcomePageServee} />
-
+        <Route path="/login" exact component={Login} />
         <Route path="/servee/projects" exact component={ProjectsServee} />
         <Route path="/servee/postproject" exact component={PostProject} />
         <Route
