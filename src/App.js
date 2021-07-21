@@ -22,7 +22,7 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/selectaccount" exact component={SelectAccount}/>
+        <Route path="/" exact component={SelectAccount}/>
         <Route path="/server" exact component={WelcomePageServer} />
         <Route path="/servee" exact component={WelcomePageServee} />
         <Route path="/login" exact component={Login} />

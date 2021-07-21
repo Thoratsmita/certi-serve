@@ -40,17 +40,17 @@ const WelcomePageServee = () => {
       <div className="nav_2">
         <div className="icon">
           <ul>
-            <Link to="/" className="list_items_2">
+            <Link to="/servee/projects" className="list_items_2">
               <li>Projects</li>
             </Link>
-            <Link to="/" className="list_items_2">
+            <Link to="/servee/financialdashboard" className="list_items_2">
               <li>DashBoard</li>
             </Link>
-            <Link to="/" className="list_items_2">
+            <Link to="/inbox" className="list_items_2">
               <li>Inbox</li>
             </Link>
-            <Link to="/" className="list_items_2">
-              <li>Feedback</li>
+            <Link to="/portfolio" className="list_items_2">
+              <li>Portfolio</li>
             </Link>
 
             <li className="empty_2"></li>
