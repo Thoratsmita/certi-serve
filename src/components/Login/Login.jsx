@@ -8,7 +8,6 @@ import Reload from "../../images/Reload_icon.png";
 import Email from "../../images/Email_icon.png";
 import Key from "../../images/Key_icon.png";
 import Text from "../../images/Text_icon.png";
-
 import "./login.css";
 
 const Login = () => {
@@ -35,7 +34,7 @@ const Login = () => {
   const submitData = () => {
     const { name, password, captcha } = data;
     if (!name || !password || !captcha) {
-      toast.danger("Fill all the fields");
+      toast.success("Fill all the fields");
     } else if (captcha !== gcaptcha) {
       toast.success("Wrong Captcha");
     } else {

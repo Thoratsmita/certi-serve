@@ -17,7 +17,7 @@ ul {
 }
 
 .pageContainer .myToast {
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 
 .pageContainer .loginBox {
@@ -65,14 +65,16 @@ ul {
 }
 
 .mainLogo {
-  height: 9rem;
-  width: 10rem;
-  margin: 1.5rem 0 5rem 0;
-  padding: 0 5rem 0 5rem;
+  height: 5.2rem;
+  width: 6rem;
+  margin: 0.6rem 0 3rem 0;
+  padding: 0 3.1rem 0 3.1rem;
 }
 
 .pageContainer .loginBox .leftBox .inputFields {
-  margin-top: -4.5rem;
+  margin-top: -4rem;
+  margin-left: -2rem;
+
   width: 80%;
 }
 
@@ -80,17 +82,17 @@ ul {
   border-radius: 0.5rem;
   -webkit-box-shadow: 0 0 0.2rem 0.15rem #a0a0a0,
     -0.25rem 0 0.1rem 0.1rem #60ac24;
-  box-shadow: 0 0 0.2rem 0.15rem #a0a0a0, -0.45rem 0 0.1rem 0.1rem #60ac24;
-  margin-bottom: 1rem;
+  box-shadow: 0 0 0.2rem 0.15rem #a0a0a0, -0.3rem 0 0.1rem 0.1rem #60ac24;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 1rem 0;
+  padding: 0.6rem 0;
 
-  margin-bottom: 2rem;
+  margin-top: 1.5rem;
   color: grey;
 }
 .input input {
@@ -112,8 +114,8 @@ ul {
 }
 
 .pageContainer .loginBox .leftBox .inputFields .inputs .input span img {
-  height: 2rem;
-  width: 2rem;
+  height: 1.2rem;
+  width: 1.2rem;
 }
 
 .pageContainer .loginBox .leftBox .inputFields .inputs .input input {
@@ -122,7 +124,7 @@ ul {
   flex: 1;
   outline: none;
   border: none;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 
 .pageContainer .loginBox .leftBox .captchaField {
@@ -138,7 +140,6 @@ ul {
 }
 
 .pageContainer .loginBox .leftBox .captchaField .captchaDiv {
-  padding: 0.5 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -148,15 +149,15 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 12rem;
-  height: 3.2rem;
+  width: 8rem;
+  height: 2rem;
   border-radius: 5rem;
   -webkit-box-shadow: 0 0 0.2rem 0.15rem rgba(163, 163, 163, 0.507);
   box-shadow: 0 0 0.2rem 0.15rem rgba(163, 163, 163, 0.507);
 }
 
 .pageContainer .loginBox .leftBox .captchaField .captchaDiv .getCaptcha {
-  font-size: 1.5rem;
+  font-size: 1rem;
 
   letter-spacing: 0.5rem;
   color: #c1c1c1;
@@ -177,11 +178,11 @@ ul {
 }
 
 .pageContainer .loginBox .leftBox .captchaField span img {
-  height: 2rem;
+  height: 1.5rem;
 }
 
 .pageContainer .loginBox .leftBox .btnDiv {
-  width: 80%;
+  width: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,11 +196,13 @@ ul {
   -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
-  margin-top: 3rem;
+
+  margin-top: 1.3rem;
 }
 
 .pageContainer .loginBox .leftBox .btnDiv a {
   color: #58b1ff;
+  font-size: 0.85rem;
 }
 
 .pageContainer .loginBox .leftBox .btnDiv button {
@@ -208,17 +211,17 @@ ul {
   font-weight: bold;
   border-radius: 1.5rem;
   color: white;
-  font-size: 1.3rem;
-  width: 7rem;
-  height: 3.2rem;
+  font-size: 0.9rem;
+  width: 4.5rem;
+  height: 2rem;
   cursor: pointer;
-  background-color: #0fc80a;
+  background-image: linear-gradient(to right, #7abb45, #0aab09);
   -webkit-box-shadow: 0 0 0.2rem 0.15rem rgba(172, 172, 172, 0.644);
   box-shadow: 0 0 0.2rem 0.15rem rgba(172, 172, 172, 0.644);
 }
 
 .pageContainer .loginBox .rightBox {
-  background-image: linear-gradient(45deg, #7abb45, #0aab09);
+  background-image: linear-gradient(20deg, #7abb45, #0aab09);
 
   -webkit-box-shadow: 0 0.2rem 0.2rem 0.1rem rgba(172, 172, 172, 0.644);
   box-shadow: 0 0.2rem 0.2rem 0.1rem rgba(172, 172, 172, 0.644);
@@ -244,12 +247,12 @@ ul {
 
 .pageContainer .loginBox .rightBox h1 {
   font-weight: bold;
-  font-size: 2rem;
-  margin: 0 0 1.3rem 0;
+  font-size: 1.5rem;
+  margin: 0 0 0 0;
 }
 
 .pageContainer .loginBox .rightBox p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-left: 1rem;
 }
 
@@ -261,8 +264,8 @@ ul {
 .pageContainer .loginBox .rightBox button {
   cursor: pointer;
 
-  margin-top: 2rem;
-  padding: 1rem 1.6rem;
+  margin-top: 1rem;
+  padding: 0.6rem 0.9rem;
   border-radius: 5rem;
   outline: none;
   border: none;
@@ -271,6 +274,367 @@ ul {
   background-color: white;
   color: #0fc80b;
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 0.9rem;
 }
-/*# sourceMappingURL=login.css.map */
+
+/*
+@media screen and (max-width: 1024px) {
+  .pageContainer {
+    margin: 4rem;
+  }
+
+  .pageContainer .myToast {
+    font-size: 1.25rem;
+  }
+
+  .pageContainer .loginBox {
+    height: 100vh;
+    width: 80vw;
+  }
+
+  .pageContainer .loginBox .leftBox {
+    left: 0;
+    border-radius: 1.5rem;
+    -webkit-box-shadow: 0.025rem 0.025rem 2.25rem 1rem rgba(163, 163, 163, 0.61);
+    box-shadow: 0.025rem 0.025rem 2.25rem 0.6rem rgba(163, 163, 163, 0.61);
+    height: 85%;
+    width: 39%;
+  }
+
+  .mainLogo {
+    height: 4.5rem;
+    width: 5.5rem;
+    margin: 0.3rem 0 3.1rem 0;
+    padding: 0 3.1rem 0 3.1rem;
+  }
+
+  .pageContainer .loginBox .leftBox .inputFields {
+    margin-top: -3rem;
+    margin-left: -3rem;
+
+    width: 80%;
+  }
+
+  .pageContainer .loginBox .leftBox .inputFields .inputs .input {
+    padding: 0.47rem 0;
+
+    margin-top: 1.2rem;
+    color: grey;
+  }
+
+  .pageContainer .loginBox .leftBox .inputFields .inputs .input span img {
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-left: 0.1rem;
+  }
+
+  .pageContainer .loginBox .leftBox .inputFields .inputs .input input {
+    margin-left: 0.3rem;
+    font-size: 0.8rem;
+  }
+
+  .pageContainer .loginBox .leftBox .captchaField .captchaDiv {
+    width: 6rem;
+    height: 1.3rem;
+  }
+
+  .pageContainer .loginBox .leftBox .captchaField .captchaDiv .getCaptcha {
+    font-size: 1.1rem;
+
+    letter-spacing: 0.3rem;
+  }
+
+  .pageContainer .loginBox .leftBox .captchaField span {
+    margin-left: 1rem;
+  }
+
+  .pageContainer .loginBox .leftBox .captchaField span img {
+    height: 1.4rem;
+  }
+
+  .pageContainer .loginBox .leftBox .btnDiv {
+    width: 80%;
+
+    margin-top: 0.5rem;
+  }
+
+  .pageContainer .loginBox .leftBox .btnDiv a {
+    color: #58b1ff;
+    font-size: 0.7rem;
+  }
+
+  .pageContainer .loginBox .leftBox .btnDiv button {
+    border-radius: 1.5rem;
+
+    font-size: 0.7rem;
+    width: 4rem;
+    height: 2rem;
+  }
+
+  .pageContainer .loginBox .rightBox {
+    -webkit-box-shadow: 0 0.2rem 0.2rem 0.1rem rgba(172, 172, 172, 0.644);
+    box-shadow: 0 0.2rem 0.2rem 0.1rem rgba(172, 172, 172, 0.644);
+    margin-left: 10rem;
+    margin-right: 1rem;
+
+    height: 82%;
+    width: 100%;
+  }
+
+  .pageContainer .loginBox .rightBox h1 {
+    font-size: 1.2rem;
+    margin-left: 1.2rem;
+  }
+
+  .pageContainer .loginBox .rightBox p {
+    font-size: 0.8rem;
+    margin-left: 3rem;
+    width: 70%;
+    line-height: 1.2rem;
+  }
+
+  .pageContainer .loginBox .rightBox button {
+    margin-top: 0.1rem;
+    padding: 0.4rem 0.7rem;
+
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pageContainer .myToast {
+    font-size: 1.25rem;
+  }
+  .pageContainer .loginBox {
+    height: 80vh;
+    width: 90vw;
+  }
+  .pageContainer .loginBox .leftBox {
+    height: 80%;
+    width: 52%;
+  }
+
+  .mainLogo {
+    height: 4.8rem;
+    width: 5.5rem;
+    margin: 0.2rem 0 2.5rem 0;
+    padding: 0 3.1rem 0 3.1rem;
+  }
+
+  .pageContainer .loginBox .leftBox .inputFields {
+    margin-top: -2.8rem;
+    margin-left: -3.3rem;
+
+    width: 85%;
+  }
+
+  .pageContainer .loginBox .leftBox .inputFields .inputs .input {
+    -webkit-box-shadow: 0 0 0.2rem 0.15rem #a0a0a0,
+      -0.25rem 0 0.1rem 0.1rem #60ac24;
+    box-shadow: 0 0 0.2rem 0.15rem #a0a0a0, -0.3rem 0 0.1rem 0.1rem #60ac24;
+
+    padding: 0.5rem 0;
+
+    margin-top: 1.4rem;
+    color: grey;
+  }
+
+  .pageContainer .loginBox .leftBox .inputFields .inputs .input span img {
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-left: 0.1rem;
+  }
+
+  .pageContainer .loginBox .leftBox .inputFields .inputs .input input {
+    margin-left: 0rem;
+    font-size: 0.8rem;
+  }
+
+  .pageContainer .loginBox .leftBox .captchaField .captchaDiv {
+    width: 5.9rem;
+    height: 1.8rem;
+  }
+
+  .pageContainer .loginBox .leftBox .captchaField .captchaDiv .getCaptcha {
+    font-size: 1.1rem;
+
+    letter-spacing: 0.3rem;
+  }
+
+  .pageContainer .loginBox .leftBox .captchaField span {
+    margin-left: 1rem;
+  }
+
+  .pageContainer .loginBox .leftBox .captchaField span img {
+    height: 1.5rem;
+  }
+
+  .pageContainer .loginBox .leftBox .btnDiv {
+    width: 85%;
+
+    margin-top: 1rem;
+  }
+  .pageContainer .loginBox .leftBox .btnDiv button {
+    border-radius: 1.5rem;
+
+    font-size: 0.9rem;
+    width: 5rem;
+    height: 2rem;
+  }
+  .pageContainer .loginBox .leftBox .btnDiv a {
+    color: #58b1ff;
+    font-size: 0.9rem;
+  }
+
+  .pageContainer .loginBox .rightBox {
+    margin-left: 15rem;
+
+    height: 92%;
+    width: 65%;
+  }
+
+  .pageContainer .loginBox .rightBox h1 {
+    font-size: 1.5rem;
+    margin-left: 3rem;
+  }
+
+  .pageContainer .loginBox .rightBox p {
+    font-size: 0.8rem;
+    margin-left: 11rem;
+    width: 100%;
+    line-height: 1.2rem;
+  }
+
+  .pageContainer .loginBox .rightBox button {
+    margin-top: 0.1rem;
+    padding: 0.5rem 0.7rem;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .pageContainer {
+    margin: 0.8rem;
+  }
+
+  .pageContainer .myToast {
+    font-size: 1.25rem;
+  }
+
+  .pageContainer .loginBox {
+    height: 80vh;
+    width: 95vw;
+  }
+
+  .pageContainer .loginBox .leftBox {
+    left: 0;
+    border-radius: 1.5rem;
+    -webkit-box-shadow: 0.025rem 0.025rem 2.25rem 1rem rgba(163, 163, 163, 0.61);
+    box-shadow: 0.025rem 0.025rem 2.25rem 0.6rem rgba(163, 163, 163, 0.61);
+    height: 70%;
+    width: 50%;
+  }
+
+  .mainLogo {
+    height: 4.4rem;
+    width: 5.4rem;
+    margin: 0.6rem 0 3rem 0;
+    padding: 0 3.1rem 0 3.1rem;
+  }
+
+  .pageContainer .loginBox .leftBox .inputFields {
+    margin-top: -3.5rem;
+    margin-left: -3rem;
+
+    width: 95%;
+  }
+
+  .pageContainer .loginBox .leftBox .inputFields .inputs .input {
+    -webkit-box-shadow: 0 0 0.2rem 0.15rem #a0a0a0,
+      -0.25rem 0 0.1rem 0.1rem #60ac24;
+    box-shadow: 0 0 0.2rem 0.15rem #a0a0a0, -0.3rem 0 0.1rem 0.1rem #60ac24;
+
+    padding: 0.3rem 0;
+
+    margin-top: 1.2rem;
+    color: grey;
+  }
+
+  .pageContainer .loginBox .leftBox .inputFields .inputs .input span img {
+    height: 1rem;
+    width: 1rem;
+    margin-left: 0.1rem;
+  }
+
+  .pageContainer .loginBox .leftBox .inputFields .inputs .input input {
+    margin-left: 0rem;
+    font-size: 0.8rem;
+  }
+
+  .pageContainer .loginBox .leftBox .captchaField .captchaDiv {
+    width: 6rem;
+    height: 1.3rem;
+  }
+
+  .pageContainer .loginBox .leftBox .captchaField .captchaDiv .getCaptcha {
+    font-size: 1rem;
+
+    letter-spacing: 0.3rem;
+  }
+
+  .pageContainer .loginBox .leftBox .captchaField span {
+    margin-left: 1rem;
+  }
+
+  .pageContainer .loginBox .leftBox .captchaField span img {
+    height: 1.3rem;
+  }
+
+  .pageContainer .loginBox .leftBox .btnDiv {
+    width: 90%;
+
+    margin-top: 1.5rem;
+  }
+
+  .pageContainer .loginBox .leftBox .btnDiv a {
+    color: #58b1ff;
+    font-size: 0.7rem;
+  }
+
+  .pageContainer .loginBox .leftBox .btnDiv button {
+    border-radius: 1.5rem;
+
+    font-size: 0.7rem;
+    width: 4rem;
+    height: 2rem;
+  }
+
+  .pageContainer .loginBox .rightBox {
+    -webkit-box-shadow: 0 0.2rem 0.2rem 0.1rem rgba(172, 172, 172, 0.644);
+    box-shadow: 0 0.2rem 0.2rem 0.1rem rgba(172, 172, 172, 0.644);
+    margin-left: 11rem;
+    margin-right: 1rem;
+
+    height: 80%;
+    width: 80%;
+  }
+
+  .pageContainer .loginBox .rightBox h1 {
+    font-size: 1.2rem;
+    margin-left: 2rem;
+  }
+
+  .pageContainer .loginBox .rightBox p {
+    font-size: 0.8rem;
+    margin-left: 4rem;
+    width: 70%;
+    line-height: 1.2rem;
+  }
+
+  .pageContainer .loginBox .rightBox button {
+    margin-top: 0;
+    padding: 0.5rem 0.7rem;
+
+    font-size: 0.8rem;
+  }
+}
+*/

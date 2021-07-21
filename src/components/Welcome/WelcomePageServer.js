@@ -1,16 +1,14 @@
 import React from "react";
-import "./WelcomePageServer.css";
-import Logo from "../images/certi-serv-logo.png";
-import FindJob from "../images/FindJob.png";
-import AcUnitIcon from "@material-ui/icons/AcUnit";
-import { Button } from "@material-ui/core";
-import earnmoney from "../images/Earn_money_overlay.png";
+import "./WelcomePageServee.css";
+import Logo from "../../images/certi-serv-logo.png";
+import FindJob from "../../images/FindJob.png";
+import earnmoney from "../../images/Earn_money_overlay.png";
 import { Link } from "react-router-dom";
 const WelcomePageServer = () => {
   return (
     <div className="container">
       <div className="nav_1">
-        <div className="float">
+        <div className="nav_1_div">
           <ul>
             <Link to="/">
               <li>
@@ -37,10 +35,10 @@ const WelcomePageServer = () => {
         </div>
       </div>
       <div className="nav_2">
-        <div className="icon">
+        <div className="nav_2_div">
           <ul>
             <Link to="/" className="list_items_2">
-              <li>My Job</li>
+              <li>MyJob</li>
             </Link>
             <Link to="/" className="list_items_2">
               <li>DashBoard</li>
@@ -63,7 +61,7 @@ const WelcomePageServer = () => {
         </div>
       </div>
 
-      <div className="content">
+      <div className="Image_div">
         <p className="p1">
           Hire the best <br />
           Servers for any <br />

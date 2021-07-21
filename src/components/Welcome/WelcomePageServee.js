@@ -1,16 +1,16 @@
 import React from "react";
 import "./WelcomePageServee.css";
-import Logo from "../images/certi-serv-logo.png";
-import PostProject from "../images/Project_overlay.png";
-import HireServer from "../images/Hire_server_overlay.png";
-import Sub_icon from "../images/subscription_icon.png";
+import Logo from "../../images/certi-serv-logo.png";
+import PostProject from "../../images/Project_overlay.png";
+import HireServer from "../../images/Hire_server_overlay.png";
+import Sub_icon from "../../images/subscription_icon.png";
 import { Link } from "react-router-dom";
 
 const WelcomePageServee = () => {
   return (
     <div className="container">
       <div className="nav_1">
-        <div className="float">
+        <div className="nav_1_div">
           <ul>
             <Link to="/">
               <li>
@@ -38,7 +38,7 @@ const WelcomePageServee = () => {
         </div>
       </div>
       <div className="nav_2">
-        <div className="icon">
+        <div className="nav_2_div">
           <ul>
             <Link to="/" className="list_items_2">
               <li>Projects</li>
@@ -52,7 +52,6 @@ const WelcomePageServee = () => {
             <Link to="/" className="list_items_2">
               <li>Feedback</li>
             </Link>
-
             <li className="empty_2"></li>
           </ul>
           <Link to="/" className="list_items_2 test">
@@ -60,7 +59,7 @@ const WelcomePageServee = () => {
           </Link>
         </div>
 
-        <div className="content">
+        <div className="Image_div">
           <p className="p1">
             Hire the best <br />
             Servers for any <br />

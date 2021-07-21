@@ -9,8 +9,8 @@ import ProjectsServer from "./Projects_Server";
 import Portfolio from "./Portfolio";
 import Inbox from "./Inbox";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import WelcomePageServer from "./components/WelcomePageServer";
-import WelcomePageServee from "./components/WelcomePageServee";
+import WelcomePageServer from "./components/Welcome/WelcomePageServer";
+import WelcomePageServee from "./components/Welcome/WelcomePageServee";
 import Login from "./components/Login/Login";
 
 /**
@@ -22,7 +22,7 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/selectaccount" exact component={SelectAccount}/>
+        <Route path="/selectaccount" exact component={SelectAccount} />
         <Route path="/server" exact component={WelcomePageServer} />
         <Route path="/servee" exact component={WelcomePageServee} />
         <Route path="/login" exact component={Login} />
