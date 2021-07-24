@@ -1,640 +1,151 @@
-ul {
-  list-style: none;
-}
-
-.pageContainer {
-  height: 100vh;
-  width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
+  
+/*Layout*/
+.container-login{
+  width:70%;
+  margin: 0 auto;
+  display:flex;
+  align-items: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+
 }
 
-.pageContainer .myToast {
-  font-size: 1.25rem;
+.left-box{
+  margin:7em 0;
+  text-align: center;
+  width:36.5%;
+  min-width: 270px;
+  border-radius: 8%;
+  z-index: 1000;
+ border:1px solid green;
+ background-color: white;   
 }
 
-.pageContainer .loginBox {
-  height: 84vh;
-  width: 54vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
+.rightbox{
+  margin:4em 0;
+  border-radius: 30px;
+  margin-left:-2em;
+  padding:10.5em 1em;
+  width:34%;
+  min-width:250px ;
+  z-index: -1000;
+  text-align:center;
+  color:white;
+  background-image: linear-gradient(30deg, #7abb45,#7abb45, #0aab09);
 }
 
-.pageContainer .loginBox .leftBox {
-  z-index: 1;
-  position: absolute;
-  background-color: white;
-  overflow: hidden;
-  left: 0;
-  border-radius: 1.5rem;
-  -webkit-box-shadow: 0.025rem 0.025rem 2.25rem 1rem rgba(163, 163, 163, 0.61);
-  box-shadow: 0.025rem 0.025rem 2.25rem 1.5rem rgba(163, 163, 163, 0.61);
-  height: 76%;
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+/*images*/
+
+.mainlogo{
+  width:6rem;
+  height:5rem;
 }
 
-.mainLogo {
-  height: 5.2rem;
-  width: 6rem;
-  margin: 0.6rem 0 3rem 0;
-  padding: 0 3.1rem 0 3.1rem;
+.icon{
+display: flex;
+
 }
 
-.pageContainer .loginBox .leftBox .inputFields {
-  margin-top: -4rem;
-  margin-left: -2rem;
-
-  width: 80%;
-}
-
-.pageContainer .loginBox .leftBox .inputFields .inputs .input {
-  border-radius: 0.5rem;
-  -webkit-box-shadow: 0 0 0.2rem 0.15rem #a0a0a0,
-    -0.25rem 0 0.1rem 0.1rem #60ac24;
-  box-shadow: 0 0 0.2rem 0.15rem #a0a0a0, -0.3rem 0 0.1rem 0.1rem #60ac24;
-
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 0.6rem 0;
-
-  margin-top: 1.5rem;
-  color: grey;
-}
-.input input {
-  opacity: 0.6;
-}
-.pageContainer .loginBox .leftBox .inputFields .inputs .input span {
-  -webkit-box-flex: 0.2;
-  -ms-flex: 0.2;
-  flex: 0.2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.pageContainer .loginBox .leftBox .inputFields .inputs .input span img {
+.image-icons{
   height: 1.2rem;
   width: 1.2rem;
+  margin-right: 10px;
 }
 
-.pageContainer .loginBox .leftBox .inputFields .inputs .input input {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  outline: none;
-  border: none;
-  margin-left: 0.5rem;
+.reload{
+  cursor: pointer;
+  height: 1.7rem;
+  width: 1.7rem;   
+  margin-left:2em;
+
 }
 
-.pageContainer .loginBox .leftBox .captchaField {
-  display: -webkit-box;
-  display: -ms-flexbox;
+/*Form-Inputs*/
+
+.form-input {
+  border-radius: 10px;
+  border:1px solid grey;
+  margin: 1.5em 3em 0 3em;
+  padding: 0 0.5em;
+  position: relative;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  align-items: center;   
 }
 
-.pageContainer .loginBox .leftBox .captchaField .captchaDiv {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 8rem;
-  height: 2rem;
-  border-radius: 5rem;
-  -webkit-box-shadow: 0 0 0.2rem 0.15rem rgba(163, 163, 163, 0.507);
-  box-shadow: 0 0 0.2rem 0.15rem rgba(163, 163, 163, 0.507);
+input {  
+  padding: 0 0.5rem;
+  border:none;
+  width: 100%;
+  font-size: 12px;
+  line-height: 30px;
+  opacity:0.8; 
 }
 
-.pageContainer .loginBox .leftBox .captchaField .captchaDiv .getCaptcha {
+/* Captcha */ 
+
+.captcha{
+ display:flex;
+  justify-content:center ;
+  margin:1em 0;
+ 
+}
+
+.left-p{
+  opacity: 0.6;
+  border:1px solid grey;
+  padding: 0.2em 1.8em;
+  text-align: center;
   font-size: 1rem;
-
-  letter-spacing: 0.5rem;
-  color: #c1c1c1;
+  margin:0;
+  border-radius: 14px;
+  letter-spacing:3px;
 }
 
-.pageContainer .loginBox .leftBox .captchaField span {
-  margin-left: 1rem;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+/* Login button*/
+
+.login-btn{
+   display: flex;
+   justify-content:space-between ;
+   width:80%;
+   margin:2em auto;
 }
 
-.pageContainer .loginBox .leftBox .captchaField span img {
-  height: 1.5rem;
-}
-
-.pageContainer .loginBox .leftBox .btnDiv {
-  width: 75%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  cursor: pointer;
-
-  margin-top: 1.3rem;
-}
-
-.pageContainer .loginBox .leftBox .btnDiv a {
-  color: #58b1ff;
-  font-size: 0.85rem;
-}
-
-.pageContainer .loginBox .leftBox .btnDiv button {
-  border: none;
-  outline: none;
+.btn-submit{
+  font-size:0.8rem;
   font-weight: bold;
-  border-radius: 1.5rem;
-  color: white;
-  font-size: 0.9rem;
-  width: 4.5rem;
-  height: 2rem;
-  cursor: pointer;
+  color:white;
+  border:none;
+  border-radius: 18px;
   background-image: linear-gradient(to right, #7abb45, #0aab09);
-  -webkit-box-shadow: 0 0 0.2rem 0.15rem rgba(172, 172, 172, 0.644);
-  box-shadow: 0 0 0.2rem 0.15rem rgba(172, 172, 172, 0.644);
+  padding:0.6em 1.2em;
 }
 
-.pageContainer .loginBox .rightBox {
-  background-image: linear-gradient(20deg, #7abb45, #0aab09);
-
-  -webkit-box-shadow: 0 0.2rem 0.2rem 0.1rem rgba(172, 172, 172, 0.644);
-  box-shadow: 0 0.2rem 0.2rem 0.1rem rgba(172, 172, 172, 0.644);
-  margin-left: auto;
-  overflow: hidden;
-  border-radius: 1.5rem;
-  height: 82%;
-  width: 55%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+.forgot-pass{
+  color:	#29B5E3;
+  font-size: 0.8rem;
+  margin-top: 0.5em;
 }
 
-.pageContainer .loginBox .rightBox h1 {
-  font-weight: bold;
-  font-size: 1.5rem;
-  margin: 0 0 0 0;
+/* Right Box*/
+
+.right-h2{
+  margin:0;
 }
-
-.pageContainer .loginBox .rightBox p {
-  font-size: 1rem;
-  margin-left: 1rem;
-}
-
-.pageContainer .loginBox .rightBox h1,
-.pageContainer .loginBox .rightBox p {
-  color: white;
-}
-
-.pageContainer .loginBox .rightBox button {
-  cursor: pointer;
-
-  margin-top: 1rem;
-  padding: 0.6rem 0.9rem;
-  border-radius: 5rem;
-  outline: none;
-  border: none;
-  -webkit-box-shadow: 0 0 0.2rem 0.15rem rgba(158, 158, 158, 0.658);
-  box-shadow: 0 0 0.2rem 0.15rem rgba(158, 158, 158, 0.658);
-  background-color: white;
-  color: #0fc80b;
-  font-weight: bold;
+.right-p{
+  margin:1em 1.1em;
   font-size: 0.9rem;
 }
+.right-btn{
+  padding:0.6em 0.8em;
+  border-radius: 20px;
+  border:none;
+  color:#31B400;
+  font-size: 0.9rem;
+  font-weight: bold;
 
-/*
-@media screen and (max-width: 1024px) {
-  .pageContainer {
-    margin: 4rem;
-  }
-
-  .pageContainer .myToast {
-    font-size: 1.25rem;
-  }
-
-  .pageContainer .loginBox {
-    height: 100vh;
-    width: 80vw;
-  }
-
-  .pageContainer .loginBox .leftBox {
-    left: 0;
-    border-radius: 1.5rem;
-    -webkit-box-shadow: 0.025rem 0.025rem 2.25rem 1rem rgba(163, 163, 163, 0.61);
-    box-shadow: 0.025rem 0.025rem 2.25rem 0.6rem rgba(163, 163, 163, 0.61);
-    height: 85%;
-    width: 39%;
-  }
-
-  .mainLogo {
-    height: 4.5rem;
-    width: 5.5rem;
-    margin: 0.3rem 0 3.1rem 0;
-    padding: 0 3.1rem 0 3.1rem;
-  }
-
-  .pageContainer .loginBox .leftBox .inputFields {
-    margin-top: -3rem;
-    margin-left: -3rem;
-
-    width: 80%;
-  }
-
-  .pageContainer .loginBox .leftBox .inputFields .inputs .input {
-    padding: 0.47rem 0;
-
-    margin-top: 1.2rem;
-    color: grey;
-  }
-
-  .pageContainer .loginBox .leftBox .inputFields .inputs .input span img {
-    height: 1.2rem;
-    width: 1.2rem;
-    margin-left: 0.1rem;
-  }
-
-  .pageContainer .loginBox .leftBox .inputFields .inputs .input input {
-    margin-left: 0.3rem;
-    font-size: 0.8rem;
-  }
-
-  .pageContainer .loginBox .leftBox .captchaField .captchaDiv {
-    width: 6rem;
-    height: 1.3rem;
-  }
-
-  .pageContainer .loginBox .leftBox .captchaField .captchaDiv .getCaptcha {
-    font-size: 1.1rem;
-
-    letter-spacing: 0.3rem;
-  }
-
-  .pageContainer .loginBox .leftBox .captchaField span {
-    margin-left: 1rem;
-  }
-
-  .pageContainer .loginBox .leftBox .captchaField span img {
-    height: 1.4rem;
-  }
-
-  .pageContainer .loginBox .leftBox .btnDiv {
-    width: 80%;
-
-    margin-top: 0.5rem;
-  }
-
-  .pageContainer .loginBox .leftBox .btnDiv a {
-    color: #58b1ff;
-    font-size: 0.7rem;
-  }
-
-  .pageContainer .loginBox .leftBox .btnDiv button {
-    border-radius: 1.5rem;
-
-    font-size: 0.7rem;
-    width: 4rem;
-    height: 2rem;
-  }
-
-  .pageContainer .loginBox .rightBox {
-    -webkit-box-shadow: 0 0.2rem 0.2rem 0.1rem rgba(172, 172, 172, 0.644);
-    box-shadow: 0 0.2rem 0.2rem 0.1rem rgba(172, 172, 172, 0.644);
-    margin-left: 10rem;
-    margin-right: 1rem;
-
-    height: 82%;
-    width: 100%;
-  }
-
-  .pageContainer .loginBox .rightBox h1 {
-    font-size: 1.2rem;
-    margin-left: 1.2rem;
-  }
-
-  .pageContainer .loginBox .rightBox p {
-    font-size: 0.8rem;
-    margin-left: 3rem;
-    width: 70%;
-    line-height: 1.2rem;
-  }
-
-  .pageContainer .loginBox .rightBox button {
-    margin-top: 0.1rem;
-    padding: 0.4rem 0.7rem;
-
-    font-size: 0.8rem;
-  }
 }
-@media screen and (max-width: 768px) {
-  .pageContainer .myToast {
-    font-size: 1.25rem;
-  }
-  .pageContainer .loginBox {
-    height: 80vh;
-    width: 90vw;
-  }
-  .pageContainer .loginBox .leftBox {
-    height: 80%;
-    width: 52%;
-  }
 
-  .mainLogo {
-    height: 4.8rem;
-    width: 5.5rem;
-    margin: 0.2rem 0 2.5rem 0;
-    padding: 0 3.1rem 0 3.1rem;
-  }
 
-  .pageContainer .loginBox .leftBox .inputFields {
-    margin-top: -2.8rem;
-    margin-left: -3.3rem;
 
-    width: 85%;
-  }
 
-  .pageContainer .loginBox .leftBox .inputFields .inputs .input {
-    -webkit-box-shadow: 0 0 0.2rem 0.15rem #a0a0a0,
-      -0.25rem 0 0.1rem 0.1rem #60ac24;
-    box-shadow: 0 0 0.2rem 0.15rem #a0a0a0, -0.3rem 0 0.1rem 0.1rem #60ac24;
 
-    padding: 0.5rem 0;
 
-    margin-top: 1.4rem;
-    color: grey;
-  }
-
-  .pageContainer .loginBox .leftBox .inputFields .inputs .input span img {
-    height: 1.2rem;
-    width: 1.2rem;
-    margin-left: 0.1rem;
-  }
-
-  .pageContainer .loginBox .leftBox .inputFields .inputs .input input {
-    margin-left: 0rem;
-    font-size: 0.8rem;
-  }
-
-  .pageContainer .loginBox .leftBox .captchaField .captchaDiv {
-    width: 5.9rem;
-    height: 1.8rem;
-  }
-
-  .pageContainer .loginBox .leftBox .captchaField .captchaDiv .getCaptcha {
-    font-size: 1.1rem;
-
-    letter-spacing: 0.3rem;
-  }
-
-  .pageContainer .loginBox .leftBox .captchaField span {
-    margin-left: 1rem;
-  }
-
-  .pageContainer .loginBox .leftBox .captchaField span img {
-    height: 1.5rem;
-  }
-
-  .pageContainer .loginBox .leftBox .btnDiv {
-    width: 85%;
-
-    margin-top: 1rem;
-  }
-  .pageContainer .loginBox .leftBox .btnDiv button {
-    border-radius: 1.5rem;
-
-    font-size: 0.9rem;
-    width: 5rem;
-    height: 2rem;
-  }
-  .pageContainer .loginBox .leftBox .btnDiv a {
-    color: #58b1ff;
-    font-size: 0.9rem;
-  }
-
-  .pageContainer .loginBox .rightBox {
-    margin-left: 15rem;
-
-    height: 92%;
-    width: 65%;
-  }
-
-  .pageContainer .loginBox .rightBox h1 {
-    font-size: 1.5rem;
-    margin-left: 3rem;
-  }
-
-  .pageContainer .loginBox .rightBox p {
-    font-size: 0.8rem;
-    margin-left: 11rem;
-    width: 100%;
-    line-height: 1.2rem;
-  }
-
-  .pageContainer .loginBox .rightBox button {
-    margin-top: 0.1rem;
-    padding: 0.5rem 0.7rem;
-    margin-left: 1rem;
-    font-size: 0.9rem;
-  }
-}
-@media screen and (max-width: 500px) {
-  .pageContainer {
-    margin: 0.8rem;
-  }
-
-  .pageContainer .myToast {
-    font-size: 1.25rem;
-  }
-
-  .pageContainer .loginBox {
-    height: 80vh;
-    width: 95vw;
-  }
-
-  .pageContainer .loginBox .leftBox {
-    left: 0;
-    border-radius: 1.5rem;
-    -webkit-box-shadow: 0.025rem 0.025rem 2.25rem 1rem rgba(163, 163, 163, 0.61);
-    box-shadow: 0.025rem 0.025rem 2.25rem 0.6rem rgba(163, 163, 163, 0.61);
-    height: 70%;
-    width: 50%;
-  }
-
-  .mainLogo {
-    height: 4.4rem;
-    width: 5.4rem;
-    margin: 0.6rem 0 3rem 0;
-    padding: 0 3.1rem 0 3.1rem;
-  }
-
-  .pageContainer .loginBox .leftBox .inputFields {
-    margin-top: -3.5rem;
-    margin-left: -3rem;
-
-    width: 95%;
-  }
-
-  .pageContainer .loginBox .leftBox .inputFields .inputs .input {
-    -webkit-box-shadow: 0 0 0.2rem 0.15rem #a0a0a0,
-      -0.25rem 0 0.1rem 0.1rem #60ac24;
-    box-shadow: 0 0 0.2rem 0.15rem #a0a0a0, -0.3rem 0 0.1rem 0.1rem #60ac24;
-
-    padding: 0.3rem 0;
-
-    margin-top: 1.2rem;
-    color: grey;
-  }
-
-  .pageContainer .loginBox .leftBox .inputFields .inputs .input span img {
-    height: 1rem;
-    width: 1rem;
-    margin-left: 0.1rem;
-  }
-
-  .pageContainer .loginBox .leftBox .inputFields .inputs .input input {
-    margin-left: 0rem;
-    font-size: 0.8rem;
-  }
-
-  .pageContainer .loginBox .leftBox .captchaField .captchaDiv {
-    width: 6rem;
-    height: 1.3rem;
-  }
-
-  .pageContainer .loginBox .leftBox .captchaField .captchaDiv .getCaptcha {
-    font-size: 1rem;
-
-    letter-spacing: 0.3rem;
-  }
-
-  .pageContainer .loginBox .leftBox .captchaField span {
-    margin-left: 1rem;
-  }
-
-  .pageContainer .loginBox .leftBox .captchaField span img {
-    height: 1.3rem;
-  }
-
-  .pageContainer .loginBox .leftBox .btnDiv {
-    width: 90%;
-
-    margin-top: 1.5rem;
-  }
-
-  .pageContainer .loginBox .leftBox .btnDiv a {
-    color: #58b1ff;
-    font-size: 0.7rem;
-  }
-
-  .pageContainer .loginBox .leftBox .btnDiv button {
-    border-radius: 1.5rem;
-
-    font-size: 0.7rem;
-    width: 4rem;
-    height: 2rem;
-  }
-
-  .pageContainer .loginBox .rightBox {
-    -webkit-box-shadow: 0 0.2rem 0.2rem 0.1rem rgba(172, 172, 172, 0.644);
-    box-shadow: 0 0.2rem 0.2rem 0.1rem rgba(172, 172, 172, 0.644);
-    margin-left: 11rem;
-    margin-right: 1rem;
-
-    height: 80%;
-    width: 80%;
-  }
-
-  .pageContainer .loginBox .rightBox h1 {
-    font-size: 1.2rem;
-    margin-left: 2rem;
-  }
-
-  .pageContainer .loginBox .rightBox p {
-    font-size: 0.8rem;
-    margin-left: 4rem;
-    width: 70%;
-    line-height: 1.2rem;
-  }
-
-  .pageContainer .loginBox .rightBox button {
-    margin-top: 0;
-    padding: 0.5rem 0.7rem;
-
-    font-size: 0.8rem;
-  }
-}
-*/
