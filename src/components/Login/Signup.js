@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ToastContainer, toast, Flip } from "react-toastify";
+import { ToastContainer, toast,Flip } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import logo from "../../images/certi-serv-logo.png";
 import reload from "../../images/Reload_icon.png";
@@ -9,7 +9,7 @@ import key from "../../images/Key_icon.png";
 import text from "../../images/Text_icon.png";
 import "./login.css";
 
-const Login = () => {
+const Signup = () => {
   const [gencaptcha, setGencaptcha] = useState("");
   const [data, setData] = useState({
     email: "",
@@ -37,29 +37,16 @@ const Login = () => {
     e.preventDefault();
     if (email && password && captcha === gencaptcha) {
       console.log(data);
-      toast.success("Form submitted");
-      setData({ email: "", password: "", captcha: "" });
-    } else{
-
-    if(!email || !password || !captcha){
-      toast.error("Fill all fields");
+    } else {
       console.log("form not submitted");
-    }else{
-
-    if(captcha !== gencaptcha){
-      toast.error("Captcha doesn't match");
-      console.log("form not submitted");
- 
     }
-
-  }}
-    {/*setData({ email: "", password: "", captcha: "" });*/}
+    setData({ email: "", password: "", captcha: "" });
     generatecaptcha();
   }
   
   return (
 
-   <>
+    <>
     <ToastContainer
       className="myToast"
       position="top-center"
@@ -67,21 +54,20 @@ const Login = () => {
       transition={Flip}
     />
 
-     <div className="container-login">
+      <div className="container-login">
         <div className="left-box">
           <img className="mainlogo" src={logo} alt="Logo" />
           <form className="form" onSubmit={HandleSubmit}>
-
+        
             <div className="form-input">
               <span className="icon"><img className="image-icons" src={Email} alt="email" /> | </span>
                   <input type="email"
-                  name="email"   
-                  className="input"
+                  name="email" 
+                  className="input"  
                   value={email}
                   onChange={HandleChange}
                   autoComplete="off" 
                   placeholder="Enter Email-id" />
-               
               </div>
               
               <div className="form-input">
@@ -128,8 +114,8 @@ const Login = () => {
             </div>  {/*rightbox*/}
         
           </div>  {/*container*/}
-          </>        
-);
+        </>
+  );
 };
 
-export default Login;
+export default Signup;

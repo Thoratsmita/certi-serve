@@ -16,8 +16,8 @@
   min-width: 270px;
   border-radius: 8%;
   z-index: 1000;
- border:1px solid green;
  background-color: white;   
+ box-shadow: 0.025rem 0.025rem 2.25rem 1rem rgba(163, 163, 163, 0.61);
 }
 
 .rightbox{
@@ -31,6 +31,8 @@
   text-align:center;
   color:white;
   background-image: linear-gradient(30deg, #7abb45,#7abb45, #0aab09);
+  box-shadow:  0 3px 5px 2px #a0a0a0  ;
+
 }
 
 /*images*/
@@ -42,6 +44,7 @@
 
 .icon{
 display: flex;
+
 
 }
 
@@ -62,24 +65,27 @@ display: flex;
 /*Form-Inputs*/
 
 .form-input {
-  border-radius: 10px;
-  border:1px solid grey;
+  border-radius: 6px;
   margin: 1.5em 3em 0 3em;
-  padding: 0 0.5em;
+  padding: 0.15em 0.5em;
   position: relative;
   display: flex;
+  box-shadow: -3px 0 1px #60ac24, 0 0 5px 1px #a0a0a0  ;
   align-items: center;   
 }
 
-input {  
+.input {  
   padding: 0 0.5rem;
   border:none;
   width: 100%;
   font-size: 12px;
   line-height: 30px;
-  opacity:0.8; 
+  opacity:0.6; 
+  
 }
-
+.input:focus {
+  outline: none;
+}
 /* Captcha */ 
 
 .captcha{
@@ -90,14 +96,16 @@ input {
 }
 
 .left-p{
-  opacity: 0.6;
+  opacity: 0.45;
   border:1px solid grey;
-  padding: 0.2em 1.8em;
+  padding: 0.5em 1.8em;
   text-align: center;
   font-size: 1rem;
   margin:0;
-  border-radius: 14px;
+  border-radius: 16px;
   letter-spacing:3px;
+  box-shadow:  0 0 4px 2.5px #a0a0a0;
+
 }
 
 /* Login button*/
@@ -117,10 +125,12 @@ input {
   border-radius: 18px;
   background-image: linear-gradient(to right, #7abb45, #0aab09);
   padding:0.6em 1.2em;
+  box-shadow:  0 0 5px 1px #a0a0a0  ;
+
 }
 
 .forgot-pass{
-  color:	#29B5E3;
+  color:	#58b1ff;
   font-size: 0.8rem;
   margin-top: 0.5em;
 }
@@ -138,9 +148,10 @@ input {
   padding:0.6em 0.8em;
   border-radius: 20px;
   border:none;
-  color:#31B400;
+  color:#0fc80b;
   font-size: 0.9rem;
   font-weight: bold;
+  box-shadow:  0 0 5px 2px #a0a0a0;
 
 }
 

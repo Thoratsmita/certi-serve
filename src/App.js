@@ -12,6 +12,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import WelcomePageServer from "./components/Welcome/WelcomePageServer";
 import WelcomePageServee from "./components/Welcome/WelcomePageServee";
 import Login from "./components/Login/Login";
+import Signup from "./components/Login/Signup";
+
 
 /**
  * @author Parth Chaturvedi
@@ -26,6 +28,7 @@ function App() {
         <Route path="/server" exact component={WelcomePageServer} />
         <Route path="/servee" exact component={WelcomePageServee} />
         <Route path="/login" exact component={Login} />
+        <Route path="/signup" exact component={Signup} />
         <Route path="/servee/projects" exact component={ProjectsServee} />
         <Route path="/servee/postproject" exact component={PostProject} />
         <Route
