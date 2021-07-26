@@ -3,20 +3,28 @@ import { Link } from "react-router-dom";
 import { ToastContainer, toast,Flip } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import logo from "../../images/certi-serv-logo.png";
+import mobile from "../../images/Phone_icon.png";
+import user from "../../images/User_icon.png";
 import reload from "../../images/Reload_icon.png";
 import Email from "../../images/Email_icon.png";
 import key from "../../images/Key_icon.png";
 import text from "../../images/Text_icon.png";
-import "./login.css";
+import "./signup.css";
 
 const Signup = () => {
   const [gencaptcha, setGencaptcha] = useState("");
   const [data, setData] = useState({
+    username:"",
     email: "",
     password: "",
+    repeatpassword:"",
+    mobilenumber:"",
     captcha: "",
+    checkbox:false,
   });
 
+  // const [checkbox, setCheckbox] = useState(false);
+  
 
   const generatecaptcha = () => {
     const c = Math.random().toString(36).substring(7);
@@ -25,22 +33,61 @@ const Signup = () => {
 
   useEffect(() => {
     generatecaptcha();
+   
   }, []);
 
-  const { email, password, captcha } = data;
+  const { username, email, password, repeatpassword, mobilenumber, captcha, checkbox } = data;
 
   const HandleChange = (e) => {
-    setData({ ...data, [e.target.name]: e.target.value });
+    setData({ ...data, [e.target.name]: e.target.value, checkbox:e.target.checked });
   };
+
+  // const HandleCheckbox=(e)=>{
+  //   setCheckbox({  [e.target.name]:e.target.checked});
+  // }
 
   const HandleSubmit = (e) => {
     e.preventDefault();
-    if (email && password && captcha === gencaptcha) {
-      console.log(data);
-    } else {
+    if( !password || !captcha || !repeatpassword || !username || !mobilenumber || !checkbox  ){
+      toast.error("Fill all fields");
       console.log("form not submitted");
-    }
-    setData({ email: "", password: "", captcha: "" });
+   
+        
+    }else{
+     if(password !== repeatpassword){
+      toast.error("password doesn't match");
+      console.log("password doesnt match");
+      // setData({ username:username, email:email, password:password, repeatpassword:"", mobilenumber:mobilenumber, captcha:captcha, checkbox })
+      setData({ username, email, password, repeatpassword:"", mobilenumber, captcha, checkbox } )
+    }else{ 
+      if(captcha !== gencaptcha){
+      toast.error("Captcha doesn't match");
+      console.log("captcha doesnt match");
+      setData({ username, email, password, repeatpassword, mobilenumber, captcha:"", checkbox } )
+
+     
+    }else{
+       if (username && email && password === repeatpassword && mobilenumber && captcha === gencaptcha && checkbox   ) {
+        console.log(data);
+        console.log('form submitted')
+        toast.success("Form submitted");
+        setData({
+          username:"",
+          email: "",
+          password: "",
+          repeatpassword:"",
+          mobilenumber:"",
+          captcha: "",
+          checkbox:false,
+        });
+        
+      }}}}
+    
+     
+      
+     
+    
+    {/*setData({ email: "", password: "", captcha: "" });*/}
     generatecaptcha();
   }
   
@@ -50,28 +97,29 @@ const Signup = () => {
     <ToastContainer
       className="myToast"
       position="top-center"
-      autoClose={1000}
+      autoClose={1500}
       transition={Flip}
     />
 
-      <div className="container-login">
-        <div className="left-box">
-          <img className="mainlogo" src={logo} alt="Logo" />
+      <div className="container-register">
+        <div className="left-box-register">
+          <img className="mainlogo-register" src={logo} alt="Logo" />
           <form className="form" onSubmit={HandleSubmit}>
         
-            <div className="form-input">
-              <span className="icon"><img className="image-icons" src={Email} alt="email" /> | </span>
-                  <input type="email"
-                  name="email" 
-                  className="input"  
-                  value={email}
-                  onChange={HandleChange}
-                  autoComplete="off" 
-                  placeholder="Enter Email-id" />
-              </div>
+
+          <div className="form-input-register">
+          <span className="icon"><img className="image-icons" src={user} alt="username" /> | </span>
+              <input type="text"
+              name="username" 
+              className="input"  
+              value={username}
+              onChange={HandleChange}
+              autoComplete="off" 
+              placeholder="Enter User Name" />
+          </div>
               
-              <div className="form-input">
-              <span className="icon"><img className="image-icons" src={key} alt="email" />|</span>
+              <div className="form-input-register">
+              <span className="icon"><img className="image-icons" src={key} alt="password" />|</span>
                   <input type="password"
                   name="password"   
                   className="input"
@@ -80,8 +128,41 @@ const Signup = () => {
                   autoComplete="off" 
                   placeholder="Enter Password" />
               </div>
+              
+              <div className="form-input-register">
+              <span className="icon"><img className="image-icons" src={key} alt="repeat-password" />|</span>
+                  <input type="password"
+                  name="repeatpassword"   
+                  className="input"
+                  value={repeatpassword}
+                  onChange={HandleChange}
+                  autoComplete="off" 
+                  placeholder="Re-enter Password" />
+              </div>
 
-              <div className="form-input">
+              <div className="form-input-register">
+              <span className="icon"><img className="image-icons" src={mobile} alt="mobile-number " /> | </span>
+                  <input type="text"
+                  name="mobilenumber" 
+                  className="input"  
+                  value={mobilenumber}
+                  onChange={HandleChange}
+                  autoComplete="off" 
+                  placeholder="Enter Mobile no." />
+              </div>
+
+              <div className="form-input-register">
+              <span className="icon"><img className="image-icons" src={Email} alt="email" /> | </span>
+                  <input type="email"
+                  name="email" 
+                  className="input"  
+                  value={email}
+                  onChange={HandleChange}
+                  autoComplete="off" 
+                  placeholder="Enter Email-id(optional)" />
+              </div>
+
+              <div className="form-input-register">
               <span className="icon"><img className="image-icons" src={text} alt="email" />|</span>
                   <input type="text"
                   name="captcha"   
@@ -98,19 +179,31 @@ const Signup = () => {
              </div>{/*captcha*/}
       
 
-              <div className="login-btn">
-                <button className="btn-submit" type="submit">
-                LOG IN  
+              <div className="checkbox-register">
+              <div className="checkbox">
+               <span className="checkbox-span">
+               <input 
+               name="checkbox"
+               className="input-checkbox"
+               checked={checkbox} 
+               onChange={HandleChange}
+               type="checkbox"/>
+                i accept the <span className="terms-color">Terms & Conditons</span></span> 
+               </div> 
+               <button className="btn-register" type="submit">
+                REGISTER 
                 </button>
-                <a href="#" className="forgot-pass">Forgot Password?</a>
-              </div>{/*login-btn*/}
+                
+              </div>{/*register-btn*/}
             </form>
           </div>  {/*leftbox*/}
       
-            <div className="rightbox">
+            <div className="rightbox-register">
               <h2 className="right-h2">WELCOME!</h2>
               <p className="right-p">Enter your details and start journey with us.</p>
-              <button className="right-btn">SIGN UP</button>
+              <Link to='/login'>
+              <button className="right-btn">LOG IN </button>
+              </Link>
             </div>  {/*rightbox*/}
         
           </div>  {/*container*/}

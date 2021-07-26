@@ -96,15 +96,20 @@ display: flex;
 }
 
 .left-p{
-  opacity: 0.45;
+  opacity: 1;
   border:1px solid grey;
-  padding: 0.5em 1.8em;
+  padding: 0.4em 1.5em;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  text-decoration: line-through;
+  text-decoration-color:white;
+  text-decoration-style:wavy;
+ 
+  /* font-family: 'Shadows Into Light', cursive; */
   margin:0;
   border-radius: 16px;
-  letter-spacing:3px;
-  box-shadow:  0 0 4px 2.5px #a0a0a0;
+  letter-spacing:5px;
+  box-shadow:  0 0 3px 2px #a0a0a0;
 
 }
 
@@ -125,7 +130,8 @@ display: flex;
   border-radius: 18px;
   background-image: linear-gradient(to right, #7abb45, #0aab09);
   padding:0.6em 1.2em;
-  box-shadow:  0 0 5px 1px #a0a0a0  ;
+  box-shadow:  0 0 5px 1px #a0a0a0 ;
+  cursor: pointer;
 
 }
 
@@ -145,6 +151,7 @@ display: flex;
   font-size: 0.9rem;
 }
 .right-btn{
+  cursor: pointer;
   padding:0.6em 0.8em;
   border-radius: 20px;
   border:none;

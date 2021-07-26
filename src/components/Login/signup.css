@@ -1,0 +1,180 @@
+  
+/*Layout*/
+.container-register{
+    width:70%;
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .left-box-register{
+    margin:2.5em 0;
+    text-align: center;
+    width:40%;
+    min-width: 280px;
+    border-radius: 8%;
+    z-index: 1000;
+   background-color: white;   
+   box-shadow: 0.025rem 0.025rem 2.25rem 1rem rgba(163, 163, 163, 0.61);
+  }
+  
+  .rightbox-register{
+    margin:3.5em 0;
+    border-radius: 30px;
+    margin-left:-1.5em;
+    padding:10.5em 1em;
+    width:37%;
+    min-width:230px ;
+    z-index: -1000;
+    text-align:center;
+    color:white;
+    background-image: linear-gradient(30deg, #7abb45,#7abb45, #0aab09);
+    box-shadow:  0 3px 5px 2px #a0a0a0  ;
+  
+  }
+  
+  /*images*/
+  
+  .mainlogo-register{
+    margin-top:0.4em;
+    width:6rem;
+    height:5rem;
+  }
+  
+  .icon{
+  display: flex;
+  
+  
+  }
+  
+  .image-icons{
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-right: 10px;
+  }
+  
+  .reload{
+    cursor: pointer;
+    height: 1.7rem;
+    width: 1.7rem;   
+    margin-left:2em;
+  
+  }
+  
+  /*Form-Inputs*/
+  
+  .form-input-register {
+    border-radius: 6px;
+    margin: 1.1em 3em 0 3em;
+    padding: 0.15em 0.5em;
+    position: relative;
+    display: flex;
+    box-shadow: -4px 0 1px #60ac24, 0 0 5px 1px #a0a0a0  ;
+    align-items: center;   
+  }
+  
+  .form-input-register:first-child{
+      margin-top:0.3em;
+  }
+
+  .input {  
+    padding: 0 0.5rem;
+    border:none;
+    width: 100%;
+    font-size: 12px;
+    line-height: 30px;
+    opacity:0.6; 
+    
+  }
+  .input:focus {
+    outline: none;
+  }
+  /* Captcha */ 
+  
+  .captcha{
+   display:flex;
+ 
+    margin:0.5em 0 0 3em;
+   
+  }
+  
+  .left-p{
+    opacity: 1;
+    border:1px solid grey;
+    padding: 0.4em 1.5em;
+    text-align: center;
+    font-size: 1.1rem;
+    text-decoration: line-through;
+    text-decoration-color:white;
+    text-decoration-style:wavy;
+   
+    /* font-family: 'Shadows Into Light', cursive; */
+    margin:0;
+    border-radius: 16px;
+    letter-spacing:5px;
+    box-shadow:  0 0 4px 2.5px #a0a0a0;
+  
+  }
+  
+  /* Register button & checkbox*/
+  .checkbox-register{
+     margin:0 auto;     
+  }
+
+  .checkbox{
+    margin:0.2em 0 0.6em 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .checkbox-span{
+      font-size:0.8rem;
+  }
+
+  .terms-color{
+    color:	#58b1ff;
+  }
+
+  .btn-register{
+    font-size:0.8rem;
+    font-weight: bold;
+    color:white;
+    border:none;
+    border-radius: 18px;
+    background-image: linear-gradient(to right, #7abb45, #0aab09);
+    padding:1em 7em;
+    margin-bottom: 1em;
+    box-shadow:  0 0 5px 1px #a0a0a0  ;
+  
+  }
+  
+  
+  /* Right Box*/
+  
+  .right-h2{
+    margin:0;
+  }
+  .right-p{
+    margin:1em 1.1em;
+    font-size: 0.9rem;
+  }
+  .right-btn{
+    cursor: pointer;
+    padding:0.6em 0.8em;
+    border-radius: 20px;
+    border:none;
+    color:#0fc80b;
+    font-size: 0.9rem;
+    font-weight: bold;
+    box-shadow:  0 0 5px 2px #a0a0a0;
+  
+  }
+  
+  
+  
+  
+  
+  
+  

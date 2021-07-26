@@ -35,24 +35,25 @@ const Login = () => {
 
   const HandleSubmit = (e) => {
     e.preventDefault();
-    if (email && password && captcha === gencaptcha) {
-      console.log(data);
-      toast.success("Form submitted");
-      setData({ email: "", password: "", captcha: "" });
-    } else{
+      if (email && password && captcha === gencaptcha) {
+        console.log(data);
+        toast.success("Form submitted");
+        setData({ email: "", password: "", captcha: "" });
+      } else{
 
-    if(!email || !password || !captcha){
-      toast.error("Fill all fields");
-      console.log("form not submitted");
-    }else{
+      if(!email || !password || !captcha){
+        toast.error("Fill all fields");
+        console.log("form not submitted");
+      }else{
 
-    if(captcha !== gencaptcha){
-      toast.error("Captcha doesn't match");
-      console.log("form not submitted");
- 
-    }
+      if(captcha !== gencaptcha){
+        toast.error("Captcha doesn't match");
+        console.log("form not submitted");
+        setData({ email:email, password:password, captcha:""});
+  
+      }
 
-  }}
+    }}    
     {/*setData({ email: "", password: "", captcha: "" });*/}
     generatecaptcha();
   }
@@ -124,7 +125,9 @@ const Login = () => {
             <div className="rightbox">
               <h2 className="right-h2">WELCOME!</h2>
               <p className="right-p">Enter your details and start journey with us.</p>
+              <Link to='/signup'>
               <button className="right-btn">SIGN UP</button>
+              </Link>
             </div>  {/*rightbox*/}
         
           </div>  {/*container*/}
