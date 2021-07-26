@@ -1,4 +1,5 @@
 import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SelectAccount from "./SelectAccount";
 import ProjectsServee from "./Projects_Servee";
 import PostProject from "./PostProject";
@@ -8,10 +9,10 @@ import FinancialDashboardServer from "./FinancialDashboard_Server";
 import ProjectsServer from "./Projects_Server";
 import Portfolio from "./Portfolio";
 import Inbox from "./Inbox";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import WelcomePageServer from "./components/Welcome/WelcomePageServer";
 import WelcomePageServee from "./components/Welcome/WelcomePageServee";
 import Login from "./components/Login/Login";
+import Signup from "./components/Signup/Signup";
 
 /**
  * @author Parth Chaturvedi
@@ -26,6 +27,7 @@ function App() {
         <Route path="/server" exact component={WelcomePageServer} />
         <Route path="/servee" exact component={WelcomePageServee} />
         <Route path="/login" exact component={Login} />
+        <Route path="/signup" exact component={Signup} />
         <Route path="/servee/projects" exact component={ProjectsServee} />
         <Route path="/servee/postproject" exact component={PostProject} />
         <Route
