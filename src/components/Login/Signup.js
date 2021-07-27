@@ -101,96 +101,96 @@ const Signup = () => {
       transition={Flip}
     />
 
-      <div className="container-register">
-        <div className="left-box-register">
-          <img className="mainlogo-register" src={logo} alt="Logo" />
-          <form className="form" onSubmit={HandleSubmit}>
+      <div className="regcontainer">
+        <div className="regleftbox">
+          <img className="regmainlogo" src={logo} alt="Logo" />
+          <form className="regform" onSubmit={HandleSubmit}>
         
 
-          <div className="form-input-register">
-          <span className="icon"><img className="image-icons" src={user} alt="username" /> | </span>
+          <div className="regforminput">
+          <span className="regicon"><img className="regimageicons" src={user} alt="username" /> | </span>
               <input type="text"
               name="username" 
-              className="input"  
+              className="reginput"  
               value={username}
               onChange={HandleChange}
               autoComplete="off" 
               placeholder="Enter User Name" />
           </div>
               
-              <div className="form-input-register">
-              <span className="icon"><img className="image-icons" src={key} alt="password" />|</span>
+              <div className="regforminput">
+              <span className="regicon"><img className="regimageicons" src={key} alt="password" />|</span>
                   <input type="password"
                   name="password"   
-                  className="input"
+                  className="reginput"
                   value={password}
                   onChange={HandleChange}
                   autoComplete="off" 
                   placeholder="Enter Password" />
               </div>
               
-              <div className="form-input-register">
-              <span className="icon"><img className="image-icons" src={key} alt="repeat-password" />|</span>
+              <div className="regforminput">
+              <span className="regicon"><img className="regimageicons" src={key} alt="repeat-password" />|</span>
                   <input type="password"
                   name="repeatpassword"   
-                  className="input"
+                  className="reginput"
                   value={repeatpassword}
                   onChange={HandleChange}
                   autoComplete="off" 
                   placeholder="Re-enter Password" />
               </div>
 
-              <div className="form-input-register">
-              <span className="icon"><img className="image-icons" src={mobile} alt="mobile-number " /> | </span>
+              <div className="regforminput">
+              <span className="regicon"><img className="regimageicons" src={mobile} alt="mobile-number " /> | </span>
                   <input type="text"
                   name="mobilenumber" 
-                  className="input"  
+                  className="reginput"  
                   value={mobilenumber}
                   onChange={HandleChange}
                   autoComplete="off" 
                   placeholder="Enter Mobile no." />
               </div>
 
-              <div className="form-input-register">
-              <span className="icon"><img className="image-icons" src={Email} alt="email" /> | </span>
+              <div className="regforminput">
+              <span className="regicon"><img className="regimageicons" src={Email} alt="email" /> | </span>
                   <input type="email"
                   name="email" 
-                  className="input"  
+                  className="reginput"  
                   value={email}
                   onChange={HandleChange}
                   autoComplete="off" 
                   placeholder="Enter Email-id(optional)" />
               </div>
 
-              <div className="form-input-register">
-              <span className="icon"><img className="image-icons" src={text} alt="email" />|</span>
+              <div className="regforminput">
+              <span className="regicon"><img className="regimageicons" src={text} alt="email" />|</span>
                   <input type="text"
                   name="captcha"   
-                  className="input"
+                  className="reginput"
                   value={captcha}
                   onChange={HandleChange}
                   autoComplete="off" 
                   placeholder="Enter Captcha" />
               </div>
 
-             <div className="captcha">
-               <p className="left-p">{gencaptcha}</p>
-               <img src={reload} className="reload" onClick={e=>generatecaptcha()} alt="img-reload" />
+             <div className="regcaptcha">
+               <p className="regleftP">{gencaptcha}</p>
+               <img src={reload} className="regreloads" onClick={e=>generatecaptcha()} alt="img-reload" />
              </div>{/*captcha*/}
       
 
-              <div className="checkbox-register">
-              <div className="checkbox">
-               <span className="checkbox-span">
+              <div className="regcheckboxinput">
+              <div className="regcheckbox">
+               <span className="regcheckboxspan">
                <input 
                name="checkbox"
-               className="input-checkbox"
+               className="reginputcheckbox"
                checked={checkbox} 
                onChange={HandleChange}
                type="checkbox"/>
                 i accept the <span className="terms-color">Terms & Conditons</span></span> 
                </div> 
-               <button className="btn-register" type="submit">
+               <button className="regbtn" type="submit">
                 REGISTER 
                 </button>
                 
@@ -198,11 +198,11 @@ const Signup = () => {
             </form>
           </div>  {/*leftbox*/}
       
-            <div className="rightbox-register">
-              <h2 className="right-h2">WELCOME!</h2>
-              <p className="right-p">Enter your details and start journey with us.</p>
+            <div className="regrightbox">
+              <h2 className="regrightH2">WELCOME!</h2>
+              <p className="regrightP">Enter your details and start journey with us.</p>
               <Link to='/login'>
-              <button className="right-btn">LOG IN </button>
+              <button className="regrightbtn">LOG IN </button>
               </Link>
             </div>  {/*rightbox*/}
         

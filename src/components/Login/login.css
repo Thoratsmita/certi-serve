@@ -1,6 +1,6 @@
   
 /*Layout*/
-.container-login{
+.Logincontainer{
   width:70%;
   margin: 0 auto;
   display:flex;
@@ -9,25 +9,24 @@
 
 }
 
-.left-box{
+.Loginleftbox{
   margin:7em 0;
   text-align: center;
   width:36.5%;
   min-width: 270px;
   border-radius: 8%;
-  z-index: 1000;
+  z-index: 1;
  background-color: white;   
  box-shadow: 0.025rem 0.025rem 2.25rem 1rem rgba(163, 163, 163, 0.61);
 }
 
-.rightbox{
+.Loginrightbox{
   margin:4em 0;
   border-radius: 30px;
   margin-left:-2em;
   padding:10.5em 1em;
   width:34%;
-  min-width:250px ;
-  z-index: -1000;
+  min-width:240px ;
   text-align:center;
   color:white;
   background-image: linear-gradient(30deg, #7abb45,#7abb45, #0aab09);
@@ -37,24 +36,24 @@
 
 /*images*/
 
-.mainlogo{
+.Loginmainlogo{
   width:6rem;
   height:5rem;
 }
 
-.icon{
+.Loginicon{
 display: flex;
 
 
 }
 
-.image-icons{
+.Loginimageicons{
   height: 1.2rem;
   width: 1.2rem;
   margin-right: 10px;
 }
 
-.reload{
+.Loginreloads{
   cursor: pointer;
   height: 1.7rem;
   width: 1.7rem;   
@@ -64,9 +63,9 @@ display: flex;
 
 /*Form-Inputs*/
 
-.form-input {
+.Loginforminput {
   border-radius: 6px;
-  margin: 1.5em 3em 0 3em;
+  margin: 1.5em 2.5em 0 2.5em;
   padding: 0.15em 0.5em;
   position: relative;
   display: flex;
@@ -74,7 +73,7 @@ display: flex;
   align-items: center;   
 }
 
-.input {  
+.Logininput {  
   padding: 0 0.5rem;
   border:none;
   width: 100%;
@@ -83,19 +82,22 @@ display: flex;
   opacity:0.6; 
   
 }
-.input:focus {
+.Logininput:focus {
   outline: none;
 }
+
 /* Captcha */ 
 
-.captcha{
+.Logincaptcha{
  display:flex;
   justify-content:center ;
   margin:1em 0;
+  width:100%;
+  min-width: 10px;
  
 }
 
-.left-p{
+.LoginleftP{
   opacity: 1;
   border:1px solid grey;
   padding: 0.4em 1.5em;
@@ -104,7 +106,8 @@ display: flex;
   text-decoration: line-through;
   text-decoration-color:white;
   text-decoration-style:wavy;
- 
+  width:25%;
+  /* min-width: 10%; */
   /* font-family: 'Shadows Into Light', cursive; */
   margin:0;
   border-radius: 16px;
@@ -115,14 +118,14 @@ display: flex;
 
 /* Login button*/
 
-.login-btn{
+.Loginbtn{
    display: flex;
    justify-content:space-between ;
    width:80%;
    margin:2em auto;
 }
 
-.btn-submit{
+.Loginbtnsubmit{
   font-size:0.8rem;
   font-weight: bold;
   color:white;
@@ -135,7 +138,7 @@ display: flex;
 
 }
 
-.forgot-pass{
+.Loginforgotpass{
   color:	#58b1ff;
   font-size: 0.8rem;
   margin-top: 0.5em;
@@ -143,14 +146,14 @@ display: flex;
 
 /* Right Box*/
 
-.right-h2{
+.LoginrightH2{
   margin:0;
 }
-.right-p{
+.LoginrightP{
   margin:1em 1.1em;
   font-size: 0.9rem;
 }
-.right-btn{
+.Loginrightbtn{
   cursor: pointer;
   padding:0.6em 0.8em;
   border-radius: 20px;
@@ -163,7 +166,92 @@ display: flex;
 }
 
 
+@media screen and (max-width:550px){
+  /*Layout*/
+  .Loginleftbox{
+    min-width: 220px;
+    border-radius: 20px;
+  }
+  
+  .Loginrightbox{
+    margin-left:-3em;
+    padding:8.9em 1em;
+    min-width:190px ;
+  }
+
+
+
+/*images*/
+ 
+.Loginmainlogo{
+  width:5.2rem;
+  height:4.5rem;
+}
+
+.Loginreloads{
+  height: 1.5rem;
+  width: 1.5rem;   
+}
+
+/*Form-Inputs*/
+
+.Loginforminput {
+  margin: 1em 1.5em 0 1.5em; 
+}
+ 
+.Logininput {  
+  padding: 0 0.5rem;
+  width: 100%;
+  font-size: 11px;
+  line-height: 26px;
+}
+  
+
+/* Captcha */ 
+
+.Logincaptcha{
+   margin:1em 0;
+ }
+ 
+ .LoginleftP{
+   padding: 0.2em 0.9em;
+   font-size: 0.8rem;
+ }
+ 
+ /* Login button*/
+ 
+ .Loginbtn{
+    width:80%;
+    margin:1.5em auto;
+ }
+ 
+ .Loginbtnsubmit{
+   font-size:0.7rem;
+ }
+ 
+ .Loginforgotpass{
+ font-size: 0.7rem;
+ }
+ 
+ /* Right Box*/
+ 
+ .LoginrightH2{
+   font-size: 1.2rem;
+   margin-left:1em;
+ }
+
+ .LoginrightP{
+   margin:1em 0em 1em 3em;
+   font-size: 0.75rem;
+ }
+
+ .Loginrightbtn{
+   padding:0.5em 0.7em;
+   font-size: 0.75rem;
+ }
 
 
 
 
+
+}

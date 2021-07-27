@@ -1,6 +1,7 @@
   
 /*Layout*/
-.container-register{
+
+.regcontainer{
     width:70%;
     margin: 0 auto;
     display:flex;
@@ -9,25 +10,24 @@
   
   }
   
-  .left-box-register{
+  .regleftbox{
     margin:2.5em 0;
     text-align: center;
     width:40%;
     min-width: 280px;
     border-radius: 8%;
-    z-index: 1000;
+    z-index: 1;
    background-color: white;   
    box-shadow: 0.025rem 0.025rem 2.25rem 1rem rgba(163, 163, 163, 0.61);
   }
   
-  .rightbox-register{
+  .regrightbox{
     margin:3.5em 0;
     border-radius: 30px;
     margin-left:-1.5em;
     padding:10.5em 1em;
     width:37%;
     min-width:230px ;
-    z-index: -1000;
     text-align:center;
     color:white;
     background-image: linear-gradient(30deg, #7abb45,#7abb45, #0aab09);
@@ -37,25 +37,25 @@
   
   /*images*/
   
-  .mainlogo-register{
+  .regmainlogo{
     margin-top:0.4em;
     width:6rem;
     height:5rem;
   }
   
-  .icon{
+  .regicon{
   display: flex;
   
   
   }
   
-  .image-icons{
+  .regimageicons{
     height: 1.2rem;
     width: 1.2rem;
     margin-right: 10px;
   }
   
-  .reload{
+  .regreloads{
     cursor: pointer;
     height: 1.7rem;
     width: 1.7rem;   
@@ -65,7 +65,7 @@
   
   /*Form-Inputs*/
   
-  .form-input-register {
+  .regforminput {
     border-radius: 6px;
     margin: 1.1em 3em 0 3em;
     padding: 0.15em 0.5em;
@@ -75,11 +75,11 @@
     align-items: center;   
   }
   
-  .form-input-register:first-child{
+  .regforminput:first-child{
       margin-top:0.3em;
   }
 
-  .input {  
+  .reginput{  
     padding: 0 0.5rem;
     border:none;
     width: 100%;
@@ -88,19 +88,21 @@
     opacity:0.6; 
     
   }
-  .input:focus {
+  .reginputcheckbox:focus {
+    outline: none;
+  }
+  .reginput:focus {
     outline: none;
   }
   /* Captcha */ 
   
-  .captcha{
+  .regcaptcha{
    display:flex;
- 
-    margin:0.5em 0 0 3em;
-   
+   justify-content: center;
+    margin-top:0.5em;
   }
   
-  .left-p{
+  .regleftP{
     opacity: 1;
     border:1px solid grey;
     padding: 0.4em 1.5em;
@@ -119,17 +121,17 @@
   }
   
   /* Register button & checkbox*/
-  .checkbox-register{
+  .regcheckboxinput{
      margin:0 auto;     
   }
 
-  .checkbox{
+  .regcheckbox{
     margin:0.2em 0 0.6em 0;
     width: 100%;
     text-align: center;
   }
 
-  .checkbox-span{
+  .regcheckboxspan {
       font-size:0.8rem;
   }
 
@@ -137,7 +139,7 @@
     color:	#58b1ff;
   }
 
-  .btn-register{
+  .regbtn{
     font-size:0.8rem;
     font-weight: bold;
     color:white;
@@ -153,15 +155,14 @@
   
   /* Right Box*/
   
-  .right-h2{
+  .regrightH2{
     margin:0;
   }
-  .right-p{
+  .regrightP{
     margin:1em 1.1em;
     font-size: 0.9rem;
   }
-  .right-btn{
-    cursor: pointer;
+  .regrightbtn{
     padding:0.6em 0.8em;
     border-radius: 20px;
     border:none;
@@ -174,6 +175,95 @@
   
   
   
+@media screen and (max-width:550px){
+  /*Layout*/
+  .regleftbox{
+    min-width: 220px;
+    margin-top:3.2em ;
+    border-radius: 20px;
+  }
+  
+  .regrightbox{
+    margin-left:-1.2em;
+    padding:9em 1em;
+    min-width:160px ;
+  }
+
+/*images*/
+ 
+.regmainlogo{
+  width:4.5rem;
+  height:4rem;
+  margin-bottom: 0.3em;
+}
+
+.regreloads{
+  height: 1.4rem;
+  width: 1.4rem;   
+}
+
+/*Form-Inputs*/
+
+.regforminput {
+  margin: 1em 1.5em 0 1.5em; 
+  padding: 0em 0.5em;
+}
+ 
+.reginput{  
+  font-size: 11px;
+}
+  
+
+/* Captcha */ 
+
+.regcaptcha{
+ 
+   margin:0.8em 0;
+ }
+ 
+ .regleftP{
+   padding: 0.2em 1em;
+   font-size: 0.9rem;
+ }
+ 
+  /* Register button & checkbox*/
+
+ .regcheckbox{
+   margin:0.1em 0 0.6em 0;
+ }
+
+ .regcheckboxspan {
+     font-size:0.7rem;
+ }
+
+ 
+ .regbtn{
+   font-size:0.7rem;
+   padding:0.8em 3.5em;
+ }
+
+ /* Right Box*/
+ 
+ .regrightH2{
+   font-size: 1.2rem;
+   margin-left:0em;
+ }
+
+ .regrightP{
+   margin:1em 0em 1em 0.8em;
+   font-size: 0.75rem;
+ }
+
+ .regrightbtn{
+   padding:0.5em 0.8em;
+   font-size: 0.75rem;
+ }
+
+
+
+
+
+}
   
   
   

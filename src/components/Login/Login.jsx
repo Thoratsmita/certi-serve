@@ -68,16 +68,16 @@ const Login = () => {
       transition={Flip}
     />
 
-     <div className="container-login">
-        <div className="left-box">
-          <img className="mainlogo" src={logo} alt="Logo" />
-          <form className="form" onSubmit={HandleSubmit}>
+     <div className="Logincontainer">
+        <div className="Loginleftbox">
+          <img className="Loginmainlogo" src={logo} alt="Logo" />
+          <form className="Loginform" onSubmit={HandleSubmit}>
 
-            <div className="form-input">
-              <span className="icon"><img className="image-icons" src={Email} alt="email" /> | </span>
+            <div className="Loginforminput">
+              <span className="Loginicon"><img className="Loginimageicons" src={Email} alt="email" /> | </span>
                   <input type="email"
                   name="email"   
-                  className="input"
+                  className="Logininput"
                   value={email}
                   onChange={HandleChange}
                   autoComplete="off" 
@@ -85,48 +85,48 @@ const Login = () => {
                
               </div>
               
-              <div className="form-input">
-              <span className="icon"><img className="image-icons" src={key} alt="email" />|</span>
+              <div className="Loginforminput">
+              <span className="Loginicon"><img className="Loginimageicons" src={key} alt="email" />|</span>
                   <input type="password"
                   name="password"   
-                  className="input"
+                  className="Logininput"
                   value={password}
                   onChange={HandleChange}
                   autoComplete="off" 
                   placeholder="Enter Password" />
               </div>
 
-              <div className="form-input">
-              <span className="icon"><img className="image-icons" src={text} alt="email" />|</span>
+              <div className="Loginforminput">
+              <span className="Loginicon"><img className="Loginimageicons" src={text} alt="email" />|</span>
                   <input type="text"
                   name="captcha"   
-                  className="input"
+                  className="Logininput"
                   value={captcha}
                   onChange={HandleChange}
                   autoComplete="off" 
                   placeholder="Enter Captcha" />
               </div>
 
-             <div className="captcha">
-               <p className="left-p">{gencaptcha}</p>
-               <img src={reload} className="reload" onClick={e=>generatecaptcha()} alt="img-reload" />
+             <div className="Logincaptcha">
+               <p className="LoginleftP">{gencaptcha}</p>
+               <img src={reload} className="Loginreloads" onClick={e=>generatecaptcha()} alt="img-reload" />
              </div>{/*captcha*/}
       
 
-              <div className="login-btn">
-                <button className="btn-submit" type="submit">
+              <div className="Loginbtn">
+                <button className="Loginbtnsubmit" type="submit">
                 LOG IN  
                 </button>
-                <a href="#" className="forgot-pass">Forgot Password?</a>
+                <a href="#" className="Loginforgotpass">Forgot Password?</a>
               </div>{/*login-btn*/}
             </form>
           </div>  {/*leftbox*/}
       
-            <div className="rightbox">
-              <h2 className="right-h2">WELCOME!</h2>
-              <p className="right-p">Enter your details and start journey with us.</p>
+            <div className="Loginrightbox">
+              <h2 className="LoginrightH2">WELCOME!</h2>
+              <p className="LoginrightP">Enter your details and start journey with us.</p>
               <Link to='/signup'>
-              <button className="right-btn">SIGN UP</button>
+              <button className="Loginrightbtn" >SIGN UP</button>
               </Link>
             </div>  {/*rightbox*/}
         
