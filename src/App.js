@@ -1,4 +1,5 @@
 import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SelectAccount from "./SelectAccount";
 import ProjectsServee from "./Projects_Servee";
 import PostProject from "./PostProject";
@@ -8,7 +9,6 @@ import FinancialDashboardServer from "./FinancialDashboard_Server";
 import ProjectsServer from "./Projects_Server";
 import Portfolio from "./Portfolio";
 import Inbox from "./Inbox";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import WelcomePage from "./components/Welcome/WelcomePage";
 import Login from "./components/Login/Login";
 import Signup from "./components/Login/Signup";
