@@ -58,12 +58,12 @@ const Signup = () => {
       toast.error("password doesn't match");
       console.log("password doesnt match");
       // setData({ username:username, email:email, password:password, repeatpassword:"", mobilenumber:mobilenumber, captcha:captcha, checkbox })
-      setData({ username, email, password, repeatpassword:"", mobilenumber, captcha, checkbox } )
+      setData({ ...data, repeatpassword:""  } )
     }else{ 
       if(captcha !== gencaptcha){
       toast.error("Captcha doesn't match");
       console.log("captcha doesnt match");
-      setData({ username, email, password, repeatpassword, mobilenumber, captcha:"", checkbox } )
+      setData({ ...data, captcha:"" } )
 
      
     }else{
@@ -71,15 +71,15 @@ const Signup = () => {
         console.log(data);
         console.log('form submitted')
         toast.success("Form submitted");
-        setData({
-          username:"",
-          email: "",
-          password: "",
-          repeatpassword:"",
-          mobilenumber:"",
-          captcha: "",
-          checkbox:false,
-        });
+        // setData({
+        //   username:"",
+        //   email: "",
+        //   password: "",
+        //   repeatpassword:"",
+        //   mobilenumber:"",
+        //   captcha: "",
+        //   checkbox:false,
+        // });
         
       }}}}
     

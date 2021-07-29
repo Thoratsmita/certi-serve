@@ -38,7 +38,7 @@ const Login = () => {
       if (email && password && captcha === gencaptcha) {
         console.log(data);
         toast.success("Form submitted");
-        setData({ email: "", password: "", captcha: "" });
+        // setData({ email: "", password: "", captcha: "" });
       } else{
 
       if(!email || !password || !captcha){
@@ -49,7 +49,7 @@ const Login = () => {
       if(captcha !== gencaptcha){
         toast.error("Captcha doesn't match");
         console.log("form not submitted");
-        setData({ email:email, password:password, captcha:""});
+        setData({ ...data, captcha:""});
   
       }
 

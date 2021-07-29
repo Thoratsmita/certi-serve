@@ -9,10 +9,13 @@ import ProjectsServer from "./Projects_Server";
 import Portfolio from "./Portfolio";
 import Inbox from "./Inbox";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import WelcomePageServer from "./components/Welcome/WelcomePageServer";
-import WelcomePageServee from "./components/Welcome/WelcomePageServee";
+import WelcomePage from "./components/Welcome/WelcomePage";
 import Login from "./components/Login/Login";
 import Signup from "./components/Login/Signup";
+import Approval from "./components/Approval/Approval";
+import Premium from "./components/Premium/Premium";
+
+
 
 
 /**
@@ -25,9 +28,10 @@ function App() {
     <Router>
       <Switch>
         <Route path="/" exact component={SelectAccount} />
-        <Route path="/server" exact component={WelcomePageServer} />
-        <Route path="/servee" exact component={WelcomePageServee} />
+        <Route path="/start" exact component={WelcomePage} />
         <Route path="/login" exact component={Login} />
+        <Route path="/approval" exact component={Approval} />
+        <Route path="/premium" exact component={Premium} />
         <Route path="/signup" exact component={Signup} />
         <Route path="/servee/projects" exact component={ProjectsServee} />
         <Route path="/servee/postproject" exact component={PostProject} />
