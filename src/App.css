@@ -79,8 +79,8 @@ SELECT ACCOUNT (SIGN UP)
   background-color: #ffffff;
   border-radius: 24px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  width: 450px;  
-  padding: 25px 30px 40px;  
+  width: 450px;
+  padding: 25px 30px 40px;
 }
 
 .selectAction img:first-child {
@@ -126,7 +126,7 @@ SELECT ACCOUNT (SIGN UP)
   display: inline;
 }
 
-.selectActionArr {  
+.selectActionArr {
   height: 40px;
   width: auto;
   float: right;
@@ -1400,6 +1400,19 @@ input[type="checkbox"] {
 }
 
 @media only screen and (max-width: 750px) {
+
+  /* =================================================================
+  SELECT ACCOUNT (SIGN UP)
+  ==================================================================*/
+
+  .selectAction {
+    font-size: .85rem;
+  }
+
+  .selectCointainer {
+    width: 420px;
+  }
+
   /* =================================================================
   PROJECTS SERVEE (NAVBAR)
   ==================================================================*/
@@ -1434,6 +1447,14 @@ input[type="checkbox"] {
 
 @media only screen and (max-width: 480px) {
   /* =================================================================
+  SELECT ACCOUNT (SIGN UP)
+  ==================================================================*/
+
+  .selectCointainer {
+    width: 400px;
+  }
+
+  /* =================================================================
   PROJECTS SERVEE (MAIN COMPONENT)
   ==================================================================*/
 
@@ -1452,4 +1473,24 @@ input[type="checkbox"] {
   .PrjServeeForm select {
     font-size: 0.75rem;
   }
+}
+
+@media only screen and (max-width: 480px) {
+  /* =================================================================
+  SELECT ACCOUNT (SIGN UP)
+  ==================================================================*/
+
+  .selectCointainer {
+    width: 275px;
+  }  
+
+  .selectAction {
+    font-size: .75rem;
+  }
+
+  .selectActionLogo {
+    height: 115px;
+    margin-left: -30px;
+  }
+
 }
