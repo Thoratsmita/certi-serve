@@ -12,7 +12,12 @@ import Inbox from "./Inbox";
 import WelcomePageServer from "./components/Welcome/WelcomePageServer";
 import WelcomePageServee from "./components/Welcome/WelcomePageServee";
 import Login from "./components/Login/Login";
+<<<<<<< HEAD
 // import Signup from "./components/Signup/Signup";
+=======
+import Signup from "./components/Login/Signup";
+
+>>>>>>> bc20ad4be986d8cad74b6b3a0b18839108c06dd8
 
 /**
  * @author Parth Chaturvedi
@@ -27,7 +32,11 @@ function App() {
         <Route path="/server" exact component={WelcomePageServer} />
         <Route path="/servee" exact component={WelcomePageServee} />
         <Route path="/login" exact component={Login} />
+<<<<<<< HEAD
         {/* <Route path="/signup" exact component={Signup} /> */}
+=======
+        <Route path="/signup" exact component={Signup} />
+>>>>>>> bc20ad4be986d8cad74b6b3a0b18839108c06dd8
         <Route path="/servee/projects" exact component={ProjectsServee} />
         <Route path="/servee/postproject" exact component={PostProject} />
         <Route

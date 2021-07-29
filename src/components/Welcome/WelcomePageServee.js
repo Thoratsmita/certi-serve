@@ -25,7 +25,7 @@ const WelcomePageServee = () => {
               <li>Job Categories</li>
             </Link>
             <li className="empty"></li>
-            <Link to="/" className="list_items">
+            <Link to="/login" className="list_items">
               <li>Log In</li>
             </Link>
             <Link to="/" className="list_items">
@@ -37,6 +37,7 @@ const WelcomePageServee = () => {
           </Link>
         </div>
       </div>
+
       <div className="nav_2">
         <div className="nav_2_div">
           <ul>
@@ -54,7 +55,7 @@ const WelcomePageServee = () => {
             </Link>
             <li className="empty_2"></li>
           </ul>
-          <Link to="/" className="list_items_2 test">
+          <Link to="/" className="list_items_2 ">
             <button className="Subscription">Subscription</button>
           </Link>
         </div>

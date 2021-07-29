@@ -22,14 +22,14 @@ const WelcomePageServer = () => {
               <li>Job Categories</li>
             </Link>
             <li className="empty"></li>
-            <Link to="/" className="list_items">
+            <Link to="/login" className="list_items">
               <li>Log In</li>
             </Link>
             <Link to="/" className="list_items">
               <li>Sign Up</li>
             </Link>
           </ul>
-          <Link to="/">
+          <Link to="/findjobs">
             <img src={FindJob} className="FindJob" />
           </Link>
         </div>
@@ -40,21 +40,21 @@ const WelcomePageServer = () => {
             <Link to="/" className="list_items_2">
               <li>MyJob</li>
             </Link>
-            <Link to="/" className="list_items_2">
+            <Link to="/server/financialdashboard" className="list_items_2">
               <li>DashBoard</li>
             </Link>
-            <Link to="/" className="list_items_2">
+            <Link to="/inbox" className="list_items_2">
               <li>Inbox</li>
             </Link>
             <Link to="/" className="list_items_2">
               <li>Feedback</li>
             </Link>
-            <Link to="/" className="list_items_2">
+            <Link to="/portfolio" className="list_items_2">
               <li>Portfolio</li>
             </Link>
             <li className="empty_2"></li>
           </ul>
-          <Link to="/" className="list_items_2 test">
+          <Link to="/" className="list_items_2 ">
             <button className="Subscription">Subscription</button>
           </Link>
           <li className="empty_2"></li>

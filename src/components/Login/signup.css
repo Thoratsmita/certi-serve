@@ -1,0 +1,270 @@
+  
+/*Layout*/
+
+.regcontainer{
+    width:70%;
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .regleftbox{
+    margin:2.5em 0;
+    text-align: center;
+    width:40%;
+    min-width: 280px;
+    border-radius: 8%;
+    z-index: 1;
+   background-color: white;   
+   box-shadow: 0.025rem 0.025rem 2.25rem 1rem rgba(163, 163, 163, 0.61);
+  }
+  
+  .regrightbox{
+    margin:3.5em 0;
+    border-radius: 30px;
+    margin-left:-1.5em;
+    padding:10.5em 1em;
+    width:37%;
+    min-width:230px ;
+    text-align:center;
+    color:white;
+    background-image: linear-gradient(30deg, #7abb45,#7abb45, #0aab09);
+    box-shadow:  0 3px 5px 2px #a0a0a0  ;
+  
+  }
+  
+  /*images*/
+  
+  .regmainlogo{
+    margin-top:0.4em;
+    width:6rem;
+    height:5rem;
+  }
+  
+  .regicon{
+  display: flex;
+  
+  
+  }
+  
+  .regimageicons{
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-right: 10px;
+  }
+  
+  .regreloads{
+    cursor: pointer;
+    height: 1.7rem;
+    width: 1.7rem;   
+    margin-left:2em;
+  
+  }
+  
+  /*Form-Inputs*/
+  
+  .regforminput {
+    border-radius: 6px;
+    margin: 1.1em 3em 0 3em;
+    padding: 0.15em 0.5em;
+    position: relative;
+    display: flex;
+    box-shadow: -4px 0 1px #60ac24, 0 0 5px 1px #a0a0a0  ;
+    align-items: center;   
+  }
+  
+  .regforminput:first-child{
+      margin-top:0.3em;
+  }
+
+  .reginput{  
+    padding: 0 0.5rem;
+    border:none;
+    width: 100%;
+    font-size: 12px;
+    line-height: 30px;
+    opacity:0.6; 
+    
+  }
+  .reginputcheckbox:focus {
+    outline: none;
+  }
+  .reginput:focus {
+    outline: none;
+  }
+  /* Captcha */ 
+  
+  .regcaptcha{
+   display:flex;
+   justify-content: center;
+    margin-top:0.5em;
+  }
+  
+  .regleftP{
+    opacity: 1;
+    border:1px solid grey;
+    padding: 0.4em 1.5em;
+    text-align: center;
+    font-size: 1.1rem;
+    text-decoration: line-through;
+    text-decoration-color:white;
+    text-decoration-style:wavy;
+   
+    /* font-family: 'Shadows Into Light', cursive; */
+    margin:0;
+    border-radius: 16px;
+    letter-spacing:5px;
+    box-shadow:  0 0 4px 2.5px #a0a0a0;
+  
+  }
+  
+  /* Register button & checkbox*/
+  .regcheckboxinput{
+     margin:0 auto;     
+  }
+
+  .regcheckbox{
+    margin:0.2em 0 0.6em 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .regcheckboxspan {
+      font-size:0.8rem;
+  }
+
+  .terms-color{
+    color:	#58b1ff;
+  }
+
+  .regbtn{
+    font-size:0.8rem;
+    font-weight: bold;
+    color:white;
+    border:none;
+    border-radius: 18px;
+    background-image: linear-gradient(to right, #7abb45, #0aab09);
+    padding:1em 7em;
+    margin-bottom: 1em;
+    box-shadow:  0 0 5px 1px #a0a0a0  ;
+  
+  }
+  
+  
+  /* Right Box*/
+  
+  .regrightH2{
+    margin:0;
+  }
+  .regrightP{
+    margin:1em 1.1em;
+    font-size: 0.9rem;
+  }
+  .regrightbtn{
+    padding:0.6em 0.8em;
+    border-radius: 20px;
+    border:none;
+    color:#0fc80b;
+    font-size: 0.9rem;
+    font-weight: bold;
+    box-shadow:  0 0 5px 2px #a0a0a0;
+  
+  }
+  
+  
+  
+@media screen and (max-width:550px){
+  /*Layout*/
+  .regleftbox{
+    min-width: 220px;
+    margin-top:3.2em ;
+    border-radius: 20px;
+  }
+  
+  .regrightbox{
+    margin-left:-1.2em;
+    padding:9em 1em;
+    min-width:160px ;
+  }
+
+/*images*/
+ 
+.regmainlogo{
+  width:4.5rem;
+  height:4rem;
+  margin-bottom: 0.3em;
+}
+
+.regreloads{
+  height: 1.4rem;
+  width: 1.4rem;   
+}
+
+/*Form-Inputs*/
+
+.regforminput {
+  margin: 1em 1.5em 0 1.5em; 
+  padding: 0em 0.5em;
+}
+ 
+.reginput{  
+  font-size: 11px;
+}
+  
+
+/* Captcha */ 
+
+.regcaptcha{
+ 
+   margin:0.8em 0;
+ }
+ 
+ .regleftP{
+   padding: 0.2em 1em;
+   font-size: 0.9rem;
+ }
+ 
+  /* Register button & checkbox*/
+
+ .regcheckbox{
+   margin:0.1em 0 0.6em 0;
+ }
+
+ .regcheckboxspan {
+     font-size:0.7rem;
+ }
+
+ 
+ .regbtn{
+   font-size:0.7rem;
+   padding:0.8em 3.5em;
+ }
+
+ /* Right Box*/
+ 
+ .regrightH2{
+   font-size: 1.2rem;
+   margin-left:0em;
+ }
+
+ .regrightP{
+   margin:1em 0em 1em 0.8em;
+   font-size: 0.75rem;
+ }
+
+ .regrightbtn{
+   padding:0.5em 0.8em;
+   font-size: 0.75rem;
+ }
+
+
+
+
+
+}
+  
+  
+  
+  

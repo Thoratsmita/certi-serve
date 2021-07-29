@@ -85,6 +85,8 @@
 
 .Image_div {
   background-image: url(../../images/welcome_background_image.gif);
+  z-index: -1;
+
   box-sizing: border-box;
   width: 100%;
   height: 45rem;
