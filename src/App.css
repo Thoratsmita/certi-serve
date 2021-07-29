@@ -22,7 +22,7 @@ PROJECTS SERVEE (NAVBAR)
 }
 
 .Navbar .leftside {
-  flex: 50%;
+  flex: 5;
   display: flex;
   justify-content: left;
   padding-right: 10%;
@@ -1443,6 +1443,18 @@ input[type="checkbox"] {
     width: 25%;
     padding: 4px 4px 4px 30px;
   }
+
+  /* =================================================================
+  PROJECTS SERVEE (NAVBAR)
+  ==================================================================*/
+
+  .rightside {
+    margin-right: 20px;
+  }
+
+  .rightName {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1473,16 +1485,14 @@ input[type="checkbox"] {
   .PrjServeeForm select {
     font-size: 0.75rem;
   }
-}
 
-@media only screen and (max-width: 480px) {
   /* =================================================================
   SELECT ACCOUNT (SIGN UP)
   ==================================================================*/
 
   .selectCointainer {
     width: 275px;
-  }  
+  }
 
   .selectAction {
     font-size: .75rem;
@@ -1491,6 +1501,15 @@ input[type="checkbox"] {
   .selectActionLogo {
     height: 115px;
     margin-left: -30px;
+  }
+
+  /* =================================================================
+  PROJECTS SERVEE (NAVBAR)
+  ==================================================================*/
+
+  .Navbar .leftside .links a {
+    font-size: 0.75rem;
+    margin-left: 10px;
   }
 
 }
