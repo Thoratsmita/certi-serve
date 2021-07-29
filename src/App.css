@@ -1397,6 +1397,47 @@ input[type="checkbox"] {
   .PrjServeeForm input {
     width: 50%;
   }
+
+  /* =================================================================
+  POST PROJECT (MAIN COMPONENT)
+  ==================================================================*/
+
+  .PostPrjTxt {
+    margin: 0 100px;
+  }
+
+  .PostPrjLogo img {  
+    margin-left: 100px; 
+  }
+
+  .PostPrjForm {
+    margin: 0 105px;
+  }
+
+  .PostPrjForm label {
+    font-size: 1.5rem
+  }
+
+  .PostPrjForm input[type="text"] {
+    font-size: 0.95rem;
+  }
+
+  .PostPrjForm select {
+    font-size: 0.95rem;
+  }
+
+  .PostPrjForm p {
+    font-size: 0.95rem;
+  }
+
+  .PostPrjForm textarea {
+    font-size: 0.95rem;
+  }
+
+  .postPrjBtn {
+    font-size: 0.95rem;
+    left: 80%;
+  }
 }
 
 @media only screen and (max-width: 750px) {
@@ -1455,6 +1496,51 @@ input[type="checkbox"] {
   .rightName {
     display: none;
   }
+
+  /* =================================================================
+  POST PROJECT (MAIN COMPONENT)
+  ==================================================================*/
+
+  .PostPrjTxt {
+    margin: 0 75px;
+  }
+
+  .PostPrjTxt h1 {
+    font-size: 1.75rem;
+  }
+
+  .PostPrjLogo img {  
+    margin-left: 75px; 
+  }
+
+  .PostPrjForm {
+    margin: 0 80px;
+  }
+
+  .PostPrjForm label {
+    font-size: 1.45rem
+  }
+
+  .PostPrjForm input[type="text"] {
+    font-size: 0.85rem;
+  }
+
+  .PostPrjForm select {
+    font-size: 0.85rem;
+  }
+
+  .PostPrjForm p {
+    font-size: 0.85rem;
+  }
+
+  .PostPrjForm textarea {
+    font-size: 0.85rem;
+  }
+
+  .postPrjBtn {
+    font-size: 0.85rem;
+    left: 75%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1510,6 +1596,48 @@ input[type="checkbox"] {
   .Navbar .leftside .links a {
     font-size: 0.75rem;
     margin-left: 10px;
+  }
+
+  /* =================================================================
+  POST PROJECT (MAIN COMPONENT)
+  ==================================================================*/
+
+  .PostPrjTxt {
+    margin: 0 25px;
+  }
+
+  .PostPrjTxt h1 {
+    font-size: 1.5rem;
+  }
+
+  .PostPrjTxt p {
+    font-size: 0.85rem;
+  }
+
+  .PostPrjLogo img {  
+    margin-left: 25px; 
+  }
+
+  .PostPrjForm {
+    margin: 0 30px 13px;
+    padding: 10px 35px;
+  }
+
+  .PostPrjForm label {
+    font-size: 1.25rem
+  }
+
+  .PostPrjForm p {
+    font-size: 0.8rem;
+  }
+
+  .wordcount {
+    font-size: 0.6rem;
+  }
+
+  .postPrjBtn {
+    font-size: 0.85rem;
+    left: 70%;
   }
 
 }
