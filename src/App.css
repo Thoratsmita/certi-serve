@@ -139,6 +139,7 @@ PROJECTS SERVEE (MAIN COMPONENT)
 .PrjServee {
   padding: 20px 12%;
   height: 85.25vh;
+  background-image: -webkit-linear-gradient(#ffffff 50%, #81be3d 50%);
 }
 
 .PrjServeeHead h1 {
@@ -730,6 +731,12 @@ input[type="checkbox"] {
 
 .finanDashboard img {
   height: 60px;
+}
+
+.finanDashboardBg {
+  background-image: -webkit-linear-gradient(#ffffff 50%, #81be3d 50%);  
+  background-attachment: fixed;
+  background-size: 100%;
 }
 
 .finanDashboardHead {
@@ -1398,6 +1405,16 @@ input[type="checkbox"] {
     width: 50%;
   }
 
+  
+  .PrjServeeHead h1 {
+    font-size: 1.75rem;
+  }
+  
+  .PrjServeeHead button {
+    font-size: 14px;
+    padding: 7px 28px;
+  }
+
   /* =================================================================
   POST PROJECT (MAIN COMPONENT)
   ==================================================================*/
@@ -1555,6 +1572,30 @@ input[type="checkbox"] {
   /* =================================================================
   PROJECTS SERVEE (MAIN COMPONENT)
   ==================================================================*/
+  
+  .PrjServee {
+  padding: 20px 8%;
+  height: 90vh;
+
+  }
+
+  .PrjServeeHead h1 {
+    font-size: 1.5rem;
+  }  
+
+  .PrjServeeHead button {
+    font-size: 12px;
+    padding: 7px 24px;
+  }
+
+  .PrjServeeTab {
+    margin: 20px 0 30px;
+  }
+
+  .PrjServeeTab a {
+    font-size: 0.75rem;
+    margin-right: 10px;
+  }
 
   .PrjServeeForm input {
     width: 25%;
@@ -1570,6 +1611,24 @@ input[type="checkbox"] {
 
   .PrjServeeForm select {
     font-size: 0.75rem;
+  }
+
+  .PrjServeeResult {
+    height: 525px;
+  }
+
+  .PrjServeeNew {
+    padding-top: 150px;
+  }
+
+  .PrjServeeNew p {
+    font-size: 0.65rem;
+  }
+
+  .PrjServeeNew button {
+    padding: 12px 45px;
+    font-size: 0.75rem;
+    margin-top: 10px;
   }
 
   /* =================================================================
@@ -1639,5 +1698,5 @@ input[type="checkbox"] {
     font-size: 0.85rem;
     left: 70%;
   }
-
+  
 }

@@ -75,78 +75,123 @@ export default function FinancialDashboardServee() {
                     </div>
                 </div>
             </div> */}
-            <Navbar_Servee nav='2'/>
-            <div className="finanDashboardHead">
-                <div className="PrjServeeHead">
-                    <h1>Financial Dashboard</h1>
-                    <button>Servee <AccountBalanceWalletOutlinedIcon style={{ fontSize: '17px' }} /></button>
+            <Navbar_Servee nav='2' />
+            <div className="finanDashboardBg">
+                <div className="finanDashboardHead">
+                    <div className="PrjServeeHead">
+                        <h1>Financial Dashboard</h1>
+                        <button>Servee <AccountBalanceWalletOutlinedIcon style={{ fontSize: '17px' }} /></button>
+                    </div>
+                    <div className="PrjServeeTab">
+                        <a className="tab active-tab" style={{ paddingLeft: '10px', paddingRight: '10px' }} onClick={allTab}>All</a>
+                        <a className="tab" onClick={transacHisTab} >Transaction History</a>
+                    </div>
+                    <form className="PrjServeeForm">
+                        <input type="text" name="search" placeholder="Search Transaction" />
+                        <label id="show" htmlFor="show">Show</label>
+                        <select id="show">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="40">30</option>
+                            <option value="100">100</option>
+                        </select>
+                        <label htmlFor="view">View</label>
+                        <select id="view">
+                            <option value="all">All</option>
+                            <option value="lorem">lorem</option>
+                            <option value="lorem">lorem</option>
+                            <option value="lorem">lorem</option>
+                            <option value="lorem">lorem</option>
+                        </select>
+                    </form>
                 </div>
-                <div className="PrjServeeTab">
-                    <a className="tab active-tab" style={{ paddingLeft: '10px', paddingRight: '10px' }} onClick={allTab}>All</a>
-                    <a className="tab" onClick={transacHisTab} >Transaction History</a>
-                </div>
-                <form className="PrjServeeForm">
-                    <input type="text" name="search" placeholder="Search Transaction" />
-                    <label id="show" htmlFor="show">Show</label>
-                    <select id="show">
-                        <option value="10">10</option>
-                        <option value="20">20</option>
-                        <option value="40">30</option>
-                        <option value="100">100</option>
-                    </select>
-                    <label htmlFor="view">View</label>
-                    <select id="view">
-                        <option value="all">All</option>
-                        <option value="lorem">lorem</option>
-                        <option value="lorem">lorem</option>
-                        <option value="lorem">lorem</option>
-                        <option value="lorem">lorem</option>
-                    </select>
-                </form>
-            </div>
-            {all &&
-                <div className="finanDashboardMain">
-                    <div className="dashLeftSide">
-                        <h3>Payment Methods</h3>
-                        <div className="dashMainBtn">
-                            <button className="dashSideSlt">Card</button>
-                            <button>NetBanking</button>
-                            <button>Other</button>
+                {all &&
+                    <div className="finanDashboardMain">
+                        <div className="dashLeftSide">
+                            <h3>Payment Methods</h3>
+                            <div className="dashMainBtn">
+                                <button className="dashSideSlt">Card</button>
+                                <button>NetBanking</button>
+                                <button>Other</button>
+                            </div>
+                            <div className="payInfo">
+                                <div className="payInfoOut selectPay">
+                                    <div className="innerBox"></div>
+                                    <div className="payDetails">
+                                        <span select="selectPayNum" id="payDetailNum">12**88</span>
+                                        <span id="payDetailCmp">Master Card</span>
+                                    </div>
+                                    <div className="payCrl selectPayCir"><DoneIcon id='doneIcon' style={{ color: '#ffffff' }} /></div>
+                                </div>
+
+                                <div className="payInfoOut">
+                                    <div className="innerBox"></div>
+                                    <div className="payDetails">
+                                        <span select="selectPayNum" id="payDetailNum">12**88</span>
+                                        <span id="payDetailCmp">Master Card</span>
+                                    </div>
+                                    <div className="payCrl"><DoneIcon id='doneIcon' style={{ color: '#ffffff', display: 'none' }} /></div>
+                                </div>
+
+                                <div className="payInfoOut">
+                                    <div className="innerBox"></div>
+                                    <div className="payDetails">
+                                        <span select="selectPayNum" id="payDetailNum">12**88</span>
+                                        <span id="payDetailCmp">Master Card</span>
+                                    </div>
+                                    <div className="payCrl"><DoneIcon id='doneIcon' style={{ color: '#ffffff', display: 'none' }} /></div>
+                                </div>
+
+                                <button className="payDetailView" type="button">View All <ExpandMoreIcon style={{ fontSize: '16px', color: '#73b43c' }} /></button>
+
+                                <button className="payDetailAdd" type="button">Add New <AddIcon style={{ fontSize: '16px' }} /></button>
+                            </div>
                         </div>
-                        <div className="payInfo">
-                            <div className="payInfoOut selectPay">
-                                <div className="innerBox"></div>
-                                <div className="payDetails">
-                                    <span select="selectPayNum" id="payDetailNum">12**88</span>
-                                    <span id="payDetailCmp">Master Card</span>
-                                </div>
-                                <div className="payCrl selectPayCir"><DoneIcon id='doneIcon' style={{ color: '#ffffff' }} /></div>
+                        <div className="dashRightSide">
+                            <table className='dashTable'>
+                                <thead>
+                                    <tr>
+                                        <th>Sr No.</th>
+                                        <th>Server Name</th>
+                                        <th>Work</th>
+                                        <th>Amount</th>
+                                        <th>Date / Time</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {transaction.map((tran, index) => {
+
+                                        const { name, work, amount, date, time, status } = tran;
+                                        const dateTime = date + ' | ' + time;
+                                        const pay = amount + '/-';
+
+                                        return (
+                                            <tr>
+                                                <td>{index + 1}</td>
+                                                <td>{name}</td>
+                                                <td>{work}</td>
+                                                <td>{pay}</td>
+                                                <td>{dateTime}</td>
+                                                <td style={{ color: '#66ad4f', fontWeight: 'bold' }}>{status}</td>
+                                            </tr>
+                                        )
+
+                                    })}
+                                </tbody>
+                            </table>
+                            <div className="dashIcon">
+                                <ChevronRightIcon />
                             </div>
-
-                            <div className="payInfoOut">
-                                <div className="innerBox"></div>
-                                <div className="payDetails">
-                                    <span select="selectPayNum" id="payDetailNum">12**88</span>
-                                    <span id="payDetailCmp">Master Card</span>
-                                </div>
-                                <div className="payCrl"><DoneIcon id='doneIcon' style={{ color: '#ffffff', display: 'none' }} /></div>
+                            <div className="dashIcon">
+                                <ChevronLeftIcon />
                             </div>
-
-                            <div className="payInfoOut">
-                                <div className="innerBox"></div>
-                                <div className="payDetails">
-                                    <span select="selectPayNum" id="payDetailNum">12**88</span>
-                                    <span id="payDetailCmp">Master Card</span>
-                                </div>
-                                <div className="payCrl"><DoneIcon id='doneIcon' style={{ color: '#ffffff', display: 'none' }} /></div>
-                            </div>
-
-                            <button className="payDetailView" type="button">View All <ExpandMoreIcon style={{ fontSize: '16px', color: '#73b43c' }} /></button>
-
-                            <button className="payDetailAdd" type="button">Add New <AddIcon style={{ fontSize: '16px' }} /></button>
                         </div>
                     </div>
-                    <div className="dashRightSide">
+                }
+
+                {transHistory &&
+                    <div className="traHis">
                         <table className='dashTable'>
                             <thead>
                                 <tr>
@@ -186,51 +231,8 @@ export default function FinancialDashboardServee() {
                             <ChevronLeftIcon />
                         </div>
                     </div>
-                </div>
-            }
-
-            {transHistory &&
-                <div className="traHis">
-                    <table className='dashTable'>
-                        <thead>
-                            <tr>
-                                <th>Sr No.</th>
-                                <th>Server Name</th>
-                                <th>Work</th>
-                                <th>Amount</th>
-                                <th>Date / Time</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {transaction.map((tran, index) => {
-
-                                const { name, work, amount, date, time, status } = tran;
-                                const dateTime = date + ' | ' + time;
-                                const pay = amount + '/-';
-
-                                return (
-                                    <tr>
-                                        <td>{index + 1}</td>
-                                        <td>{name}</td>
-                                        <td>{work}</td>
-                                        <td>{pay}</td>
-                                        <td>{dateTime}</td>
-                                        <td style={{ color: '#66ad4f', fontWeight: 'bold' }}>{status}</td>
-                                    </tr>
-                                )
-
-                            })}
-                        </tbody>
-                    </table>
-                    <div className="dashIcon">
-                        <ChevronRightIcon />
-                    </div>
-                    <div className="dashIcon">
-                        <ChevronLeftIcon />
-                    </div>
-                </div>
-            }
+                }
+            </div>
         </>
     )
 }
