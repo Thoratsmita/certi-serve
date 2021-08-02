@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ToastContainer, toast,Flip } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import axios from "axios";
 import logo from "../../images/certi-serv-logo.png";
 import mobile from "../../images/Phone_icon.png";
 import user from "../../images/User_icon.png";
@@ -46,48 +47,52 @@ const Signup = () => {
   //   setCheckbox({  [e.target.name]:e.target.checked});
   // }
 
-  const HandleSubmit = (e) => {
+ 
+  const HandleSubmit = async(e) => {
     e.preventDefault();
-    if( !password || !captcha || !repeatpassword || !username || !mobilenumber || !checkbox  ){
+    if( !password || !captcha || !repeatpassword || !username || !mobilenumber || !checkbox ){
       toast.error("Fill all fields");
       console.log("form not submitted");
    
         
-    }else{
-     if(password !== repeatpassword){
+    }else if(password !== repeatpassword){
       toast.error("password doesn't match");
       console.log("password doesnt match");
       // setData({ username:username, email:email, password:password, repeatpassword:"", mobilenumber:mobilenumber, captcha:captcha, checkbox })
       setData({ ...data, repeatpassword:""  } )
-    }else{ 
-      if(captcha !== gencaptcha){
+
+     }else if(captcha !== gencaptcha){
       toast.error("Captcha doesn't match");
       console.log("captcha doesnt match");
       setData({ ...data, captcha:"" } )
 
-     
-    }else{
-       if (username && email && password === repeatpassword && mobilenumber && captcha === gencaptcha && checkbox   ) {
-        console.log(data);
+      }else{
+        // console.log(data);
         console.log('form submitted')
         toast.success("Form submitted");
-        // setData({
-        //   username:"",
-        //   email: "",
-        //   password: "",
-        //   repeatpassword:"",
-        //   mobilenumber:"",
-        //   captcha: "",
-        //   checkbox:false,
-        // });
-        
-      }}}}
-    
-     
-      
-     
-    
-    {/*setData({ email: "", password: "", captcha: "" });*/}
+       
+        const newUser={username,email,password,mobilenumber}
+
+        try{
+          const config={
+            headers:{
+              'Content-Type':'application/json'
+            }
+          }
+          
+
+          const sendUser = JSON.stringify(newUser)
+
+         const res= await axios.post('',sendUser,config)
+          alert(res.data.message)
+ 
+
+        }catch(err){
+          alert('invalid input')
+
+        }
+
+      }
     generatecaptcha();
   }
   
