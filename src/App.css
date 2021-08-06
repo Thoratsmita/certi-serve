@@ -720,164 +720,118 @@ input[type="checkbox"] {
   FINANCIAL DASHBOARD (MAIN COMPONENT)
   ==================================================================*/
 
-.finanDashboard {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-  margin: 20px 0 0;
-  display: flex;
-  padding: 0 65px;
-  overflow: hidden;
-}
-
-.finanDashboard img {
-  height: 60px;
-}
-
-.finanDashboardBg {
-  background-image: -webkit-linear-gradient(#ffffff 50%, #81be3d 50%);  
+.finanDash {
+  background-image: -webkit-linear-gradient(#ffffff 50%, #81be3d 50%);
   background-attachment: fixed;
   background-size: 100%;
+  height: 90.25vh;
+  padding: 10px 125px 0;
 }
 
-.finanDashboardHead {
-  padding: 20px 12%;
+.finanDash h2 {
+  color: #056839;
+  margin-bottom: 0;
 }
 
-.finanDashboardMain {
-  margin: 10px 12%;
-  height: 290px;
+.finanDashCont {
+  display: flex;
 }
 
-.finanDashboardMain:after {
-  content: "";
-  display: table;
-  clear: both;
+.finanDashCont h2 {
+  color: #58a43c;
+  margin-bottom: 15px;
 }
 
-.dashLeftSide {
-  float: left;
-  width: 27%;
-  height: 100%;
+.finanDashWall {
+  flex: 1;
+  margin-right: 40px;
+}
+
+.finanDashTrans {
+  flex: 2;
+}
+
+.finanDashBox1 {
   background-color: #ffffff;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-radius: 6px;
-  padding: 15px 10px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  width: 90%;
+  height: 415px;
+  padding: 2px 25px;
 }
 
-.dashLeftSide h3 {
-  margin: 0 0 10px;
-  color: #8b8b8b;
-  font-size: 1.1rem;
-}
-
-.dashMainBtn {
+.finanDashBox2 {
+  background-color: #ffffff;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   width: 100%;
+  height: 419px;
+  padding: 0px;
 }
 
-.dashMainBtn button {
-  margin: 5px 0;
-  padding: 7px 15px;
-  font-size: 1rem;
-  border: none;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+.finanDashBox1 h3 {
   color: #8b8b8b;
-  font-weight: bold;
-  transition: 0.3s;
+  font-size: 0.95rem;  
 }
 
-.dashMainBtn button:hover {
-  background-color: #93cc3c;
+.finanDashBox1 h2 {
+  color: #606060;
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+.finanDashBoxBtn {
+  margin: 10px 0;
+}
+
+.finanDashAddFunds {
   color: #ffffff;
-}
-
-.dashSideSlt {
-  background-color: #d3ff97;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
-.dashRightSide {
-  float: left;
-  width: 65%;
-  height: 110%;
-  background-color: #ffffff;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-radius: 6px;
-  margin-left: 35px;
-}
-
-.payInfo {
-  margin-top: 5px;
-}
-
-.payInfoOut {
-  display: flex;
-  border: 2px solid #eeefef;
-  border-radius: 8px;
-  padding: 5px 10px;
-  margin-bottom: 0.5px;
-}
-
-.selectPay {
-  border: 2px solid #acd09e !important;
-}
-
-.innerBox {
-  border: 2px solid #eeefef;
-  border-radius: 8px;
-  width: 40px;
-  height: 20px;
-  margin-right: 15px;
-}
-
-#payDetailNum {
-  font-size: 0.8rem;
-  display: block;
-}
-
-#payDetailCmp {
-  font-size: 0.65rem;
-  color: #cccccc;
-}
-
-.selectPayNum {
-  color: #000000 !important;
-}
-
-.payCrl {
-  position: relative;
-  top: 5px;
-  left: 80px;
-  background-color: #eeefef;
-  width: 26.25px;
-  height: 26.25px;
-  border-radius: 50%;
-}
-
-.selectPayCir {
-  background-color: #59a23c;
-}
-
-.payDetailView {
-  color: #73b43c;
-  background-color: #edffdc;
-  border-radius: 24px;
   border: none;
-  margin: 7px auto;
-  padding: 2px 15px;
-  display: flex;
-  justify-content: center;
-}
-
-.payDetailAdd {
-  color: #afafae;
-  width: 100%;
-  border: none;
-  margin-top: 7px;
-  border-radius: 8px;
+  border-radius: 12px;
+  background-color: #056839;
+  padding: 5px 17px;
   font-weight: bold;
-  padding: 7px auto;
+  font-size: 0.8rem;
+  margin-right: 25px;
+}
+
+.finanDashWidthdraw {
+  color: #606060;
+  border: none;
+  border-radius: 12px;
+  background-color: #e8e8e8;
+  padding: 5px 17px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-right: 25px;
+}
+
+.finanDashCard {
+  background-color: #8b8b8b;  
+  width: 80%;
+  padding: 7px 20px;
+  border-radius: 8px;
+  margin-bottom: 7px;
+}
+
+.finanDashCard h3 {
+  color: #ffffff;
+  display: inline;
+}
+
+.finanDashCard span {
+  color: #ffffff;
+  float: right;
+}
+
+.addCard {
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  background-color: #056839;
+  padding: 5px 17px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-left: 100px;
+  margin-top: 7px;
 }
 
 .dashTable {
@@ -896,171 +850,33 @@ input[type="checkbox"] {
 
 .dashTable th,
 .dashTable td {
-  padding: 12px 15px;
+  padding: 18px 15px;
 }
 
 .dashTable tbody tr {
   border-bottom: 3px solid #eeefef;
 }
 
-.dashIcon {
-  margin-top: 10px;
-  margin-right: 10px;
+#transacId {
+  color: #57a33c;
+}
+
+.dashPages {
   float: right;
-  background-color: rgb(226, 226, 226);
-  border: 1px solid #8f8f8f;
-}
-
-.traHis {
-  background-color: #ffffff;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-radius: 6px;
-  margin: 10px 12%;
-  height: 320px;
-}
-
-/* =================================================================
-  FINANCIAL DASHBOARD SERVER (MAIN COMPONENT)
-  ==================================================================*/
-
-.lftsideDash {
-  float: left;
-  width: 32%;
-  height: 100%;
-  background-color: #ffffff;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-radius: 6px;
-  padding: 15px 10px;
-}
-
-.lftsideDash h3 {
-  margin: 0;
-  color: #8b8a8a;
-}
-
-.balance {
-  padding: 15px;
-  background-color: #d2fe97;
-  border-radius: 6px;
-  margin: 20px 0;
-}
-
-.balance h5 {
-  margin: 0;
-  color: #8b8a8a;
-  font-size: 0.8em;
-}
-
-.balance p {
-  margin: 5px 0 10px;
-  font-size: 3rem;
-  font-weight: bold;
-  color: #606161;
-  letter-spacing: 3px;
-}
-
-.mnyAdd {
-  font-weight: bold;
-  width: 100%;
-  text-align: left;
-}
-
-.head {
-  color: #8b8a8a;
-  font-size: 0.8em;
-}
-
-.r1 {
-  color: #7c7c7c;
-}
-
-.r2 {
-  color: #cdd3c5;
-}
-
-.rghsideDash {
-  float: left;
-  width: 64%;
-  height: 110%;
-  background-color: #ffffff;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-radius: 6px;
-  margin-left: 15px;
-}
-
-.ctnDash {
-  padding: 5px 30px;
-}
-
-.ctnDash h3 {
-  color: #848484;
-  font-size: 1.2rem;
-}
-
-.ctnDash span {
-  color: #6aaf52;
-  font-size: 2.5rem;
-  font-weight: bold;
-  letter-spacing: 3px;
-}
-
-.ctnDash p {
-  color: #aeafaf;
-  font-weight: bold;
-}
-
-.ctnDash input {
-  font-size: 1rem;
-  padding: 15px 20px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  width: 60%;
-  display: block;
-}
-
-.ctnDash button {
-  background-color: #d2fe97;
-  color: #5ea83d;
-  width: 67%;
-  border: none;
-  border-radius: 24px;
-  font-size: 1rem;
-  font-weight: bold;
-  padding: 15px 80px;
   margin-top: 20px;
+  margin-right: 20px;
 }
 
-.PrjServerAll {
-  margin: 20px 200px;
-  text-align: center;
+.nextBtn {
+  font-size: 1.25rem;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  padding: 5px 7px;
+  margin-right: 10px;
 }
 
-.PrjServerAll img {
-  height: 110px;
-  width: auto;
-}
-
-.PrjServerAll h3 {
-  font-weight: bolder;
-  font-size: 1.5rem;
-  margin: 0 0 10px;
-  letter-spacing: 1px;
-}
-
-.PrjServerBtn {
-  background-color: #f8f9f8;
-  color: #528d31;
-  width: 45%;
-  height: 75px;
-}
-
-.PrjServerDis {
-  display: inline;
-}
-
-.PrjServerDis span {
-  display: inline;
-}
 
 /* =================================================================
   INBOX (MAIN COMPONENT)
@@ -1386,6 +1202,11 @@ input[type="checkbox"] {
   .PrjServeeForm input {
     width: 55%;
   }
+
+  /* =================================================================
+  FINANCIAL DASHBOARD (MAIN COMPONENT)
+  ==================================================================*/
+
 }
 
 @media only screen and (max-width: 850px) {
@@ -1405,11 +1226,11 @@ input[type="checkbox"] {
     width: 50%;
   }
 
-  
+
   .PrjServeeHead h1 {
     font-size: 1.75rem;
   }
-  
+
   .PrjServeeHead button {
     font-size: 14px;
     padding: 7px 28px;
@@ -1423,8 +1244,8 @@ input[type="checkbox"] {
     margin: 0 100px;
   }
 
-  .PostPrjLogo img {  
-    margin-left: 100px; 
+  .PostPrjLogo img {
+    margin-left: 100px;
   }
 
   .PostPrjForm {
@@ -1455,6 +1276,11 @@ input[type="checkbox"] {
     font-size: 0.95rem;
     left: 80%;
   }
+
+  /* =================================================================
+  FINANCIAL DASHBOARD (MAIN COMPONENT)
+  ==================================================================*/
+
 }
 
 @media only screen and (max-width: 750px) {
@@ -1526,8 +1352,8 @@ input[type="checkbox"] {
     font-size: 1.75rem;
   }
 
-  .PostPrjLogo img {  
-    margin-left: 75px; 
+  .PostPrjLogo img {
+    margin-left: 75px;
   }
 
   .PostPrjForm {
@@ -1558,6 +1384,12 @@ input[type="checkbox"] {
     font-size: 0.85rem;
     left: 75%;
   }
+
+  /* =================================================================
+  FINANCIAL DASHBOARD (MAIN COMPONENT)
+  ==================================================================*/
+
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -1572,20 +1404,20 @@ input[type="checkbox"] {
   /* =================================================================
   PROJECTS SERVEE (MAIN COMPONENT)
   ==================================================================*/
-  
+
   .PrjServee {
-  padding: 20px 8%;
-  height: 90vh;
+    padding: 20px 8%;
+    height: 90vh;
 
   }
 
   .PrjServeeHead h1 {
-    font-size: 1.5rem;
-  }  
+    font-size: 1.25rem;
+  }
 
   .PrjServeeHead button {
     font-size: 12px;
-    padding: 7px 24px;
+    padding: 7px 20px;
   }
 
   .PrjServeeTab {
@@ -1673,8 +1505,8 @@ input[type="checkbox"] {
     font-size: 0.85rem;
   }
 
-  .PostPrjLogo img {  
-    margin-left: 25px; 
+  .PostPrjLogo img {
+    margin-left: 25px;
   }
 
   .PostPrjForm {
@@ -1698,5 +1530,9 @@ input[type="checkbox"] {
     font-size: 0.85rem;
     left: 70%;
   }
-  
+
+  /* =================================================================
+  FINANCIAL DASHBOARD (MAIN COMPONENT)
+  ==================================================================*/
+
 }
