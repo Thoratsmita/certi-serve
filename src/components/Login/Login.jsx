@@ -2,9 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ToastContainer, toast, Flip } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import axios from "axios";
 import logo from "../../images/certi-serv-logo.png";
 import reload from "../../images/Reload_icon.png";
-import Email from "../../images/Email_icon.png";
+import user from "../../images/User_icon.png";
 import key from "../../images/Key_icon.png";
 import text from "../../images/Text_icon.png";
 import "./login.css";
@@ -12,7 +13,7 @@ import "./login.css";
 const Login = () => {
   const [gencaptcha, setGencaptcha] = useState("");
   const [data, setData] = useState({
-    email: "",
+    username: "",
     password: "",
     captcha: "",
   });
@@ -27,33 +28,45 @@ const Login = () => {
     generatecaptcha();
   }, []);
 
-  const { email, password, captcha } = data;
+  const { username, password, captcha } = data;
 
   const HandleChange = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
   };
 
-  const HandleSubmit = (e) => {
+  const HandleSubmit = async(e) => {
     e.preventDefault();
-      if (email && password && captcha === gencaptcha) {
-        console.log(data);
-        toast.success("Form submitted");
-        // setData({ email: "", password: "", captcha: "" });
-      } else{
-
-      if(!email || !password || !captcha){
+      if(!username|| !password || !captcha){
         toast.error("Fill all fields");
         console.log("form not submitted");
-      }else{
 
-      if(captcha !== gencaptcha){
+      }else if(captcha !== gencaptcha){
         toast.error("Captcha doesn't match");
         console.log("form not submitted");
         setData({ ...data, captcha:""});
   
+      }else{
+        const existingUser = {username,password} 
+        // toast.success('form submitted');
+   
+        try{
+          const config={
+            headers:{ 'Content-Type':'application/json'}
+          }
+          const body = JSON.stringify(existingUser)
+
+          const res = await axios.post('https://mocki.io/v1/56f5a96b-518c-4026-8ba1-d4243a34d11e',config,body)
+          console.log(res)
+
+          console.log('form submitted');
+        }catch(error){
+
+          alert(error)
+
+        }
       }
 
-    }}    
+     
     {/*setData({ email: "", password: "", captcha: "" });*/}
     generatecaptcha();
   }
@@ -74,14 +87,14 @@ const Login = () => {
           <form className="Loginform" onSubmit={HandleSubmit}>
 
             <div className="Loginforminput">
-              <span className="Loginicon"><img className="Loginimageicons" src={Email} alt="email" /> | </span>
-                  <input type="email"
-                  name="email"   
+              <span className="Loginicon"><img className="Loginimageicons" src={user} alt="email" /> | </span>
+                  <input type="text"
+                  name="username"   
                   className="Logininput"
-                  value={email}
+                  value={username}
                   onChange={HandleChange}
                   autoComplete="off" 
-                  placeholder="Enter Email-id" />
+                  placeholder="Enter Usename" />
                
               </div>
               
@@ -114,7 +127,7 @@ const Login = () => {
       
 
               <div className="Loginbtn">
-                <button className="Loginbtnsubmit" type="submit">
+                <button className="Loginbtnsubmit" type="submit" >
                 LOG IN  
                 </button>
                 <a href="#" className="Loginforgotpass">Forgot Password?</a>

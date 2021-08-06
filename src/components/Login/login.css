@@ -103,9 +103,9 @@ display: flex;
   padding: 0.4em 1.5em;
   text-align: center;
   font-size: 1.1rem;
-  text-decoration: line-through;
+  /* text-decoration: line-through;
   text-decoration-color:white;
-  text-decoration-style:wavy;
+  text-decoration-style:wavy; */
   width:25%;
   /* min-width: 10%; */
   /* font-family: 'Shadows Into Light', cursive; */
