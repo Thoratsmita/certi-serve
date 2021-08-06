@@ -15,9 +15,6 @@ import Signup from "./components/Login/Signup";
 import Approval from "./components/Approval/Approval";
 import Premium from "./components/Premium/Premium";
 
-
-
-
 /**
  * @author Parth Chaturvedi
  * @version 22-06-21

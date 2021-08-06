@@ -877,6 +877,11 @@ input[type="checkbox"] {
   margin-right: 10px;
 }
 
+.finanDashImg {
+  height: 200px;
+  width: auto;
+  float: right;
+}
 
 /* =================================================================
   INBOX (MAIN COMPONENT)

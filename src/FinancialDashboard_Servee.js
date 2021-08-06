@@ -1,13 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import $ from 'jquery';
 import './App.css';
 import Navbar_Servee from './Navbar_Servee';
-import AccountBalanceWalletOutlinedIcon from '@material-ui/icons/AccountBalanceWalletOutlined';
-import DoneIcon from '@material-ui/icons/Done';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import AddIcon from '@material-ui/icons/Add';
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 
 /**
  * @author Parth Chaturvedi
