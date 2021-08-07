@@ -137,75 +137,69 @@ PROJECTS SERVEE (MAIN COMPONENT)
 ==================================================================*/
 
 .PrjServee {
-  padding: 20px 12%;
-  height: 85.25vh;
+  padding: 10px 125px 0;
+  height: 90.25vh;
   background-image: -webkit-linear-gradient(#ffffff 50%, #81be3d 50%);
 }
 
-.PrjServeeHead h1 {
-  color: #026938;
-  display: inline;
-}
-
-.PrjServeeHead button {
-  background-image: linear-gradient(15deg, #92ca3c, #63aa3d);
-  border: none;
-  color: white;
-  padding: 10px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  font-size: 16px;
-  float: right;
+.PrjServeeHead h2 {
+  color: #056839;
+  margin-bottom: 0;
 }
 
 .PrjServeeTab {
-  margin: 30px 0;
+  margin: 15px 0 30px;
 }
 
 .PrjServeeTab a {
   margin-right: 20px;
   text-decoration: none;
   color: #666666;
+  font-size: 1.15rem;
   font-weight: bold;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
+  cursor: pointer;
 }
 
 .PrjServeeTab a:hover {
-  border-bottom: 5px solid #58a53d;
+  border-bottom: 3px solid #58a53d;
   color: #58a53d;
   transition: 0.5s;
 }
 
 .active-tab {
-  border-bottom: 5px solid #58a53d;
+  border-bottom: 3px solid #58a53d;
   color: #58a53d !important;
 }
 
 .PrjServeeForm input {
   width: 70%;
-  padding: 4px 4px 4px 40px;
-  border-radius: 3px;
+  padding: 10px 10px 10px 40px;
+  border-radius: 12px;
   border: 0.5px solid #b6b6b6;
   box-shadow: 1px 4px 8px 2px rgba(0, 0, 0, 0.2);
   background-image: url(./images/search.png);
-  background-position: 7px 5px;
+  background-position: 10px 10px;
   background-repeat: no-repeat;
-  background-size: 15px 15px;
+  background-size: 17px 17px;
   cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .PrjServeeForm select {
   box-shadow: 1px 4px 8px 2px rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
+  border-radius: 6px;
   border: 0.5px solid #b6b6b6;
-  padding: 4px;
+  padding: 8px;
   cursor: pointer;
+  font-size: 1rem;
 }
 
 .PrjServeeForm label {
-  margin: 0 10px;
+  margin: 0 7px;
   color: #666666;
+  font-size: 1rem;
 }
 
 .PrjServeeResult {
@@ -218,23 +212,27 @@ PROJECTS SERVEE (MAIN COMPONENT)
 
 .PrjServeeNew {
   text-align: center;
-  padding-top: 65px;
+  padding-top: 30px;
 }
 
-.PrjServeeNew p {
-  color: #666666;
-  font-weight: 600;
-  font-size: 0.75rem;
+.PrjServeeNew h2 {
+  color: #0a6b3d;
+}
+
+.PrjServeeNew img {
+  display: block;
+  margin-left: 45%;  
 }
 
 .PrjServeeNew button {
   background-image: linear-gradient(15deg, #92ca3c, #63aa3d);
   color: #ffffff;
   border: none;
-  padding: 15px 50px;
-  border-radius: 50px;
+  font-size: 1.15rem;
+  padding: 10px 35px;
+  border-radius: 12px;
   font-weight: bold;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .PrjServeePast {

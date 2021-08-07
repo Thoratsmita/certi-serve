@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar_Servee';
 import $ from 'jquery';
 import { Link } from "react-router-dom";
+import img from './images/post_project.png';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 
@@ -57,13 +58,12 @@ export default function Projects_Servee() {
             <Navbar nav='1'/>
             <div className="PrjServee">
                 <div className="PrjServeeHead">
-                    <h1>Projects</h1>
-                    <button>Servee</button>
+                    <h2>Projects</h2>                 
                 </div>
                 <div className="PrjServeeTab">
-                    <a className="tab active-tab" onClick={() => handleOpenPrj()}>Open Project</a>
-                    <a className="tab " onClick={() => handleWorkPrj()}>Work in Progress</a>
-                    <a className="tab " onClick={() => handlePastPrj()}>Past Project</a>
+                    <a className="tab active-tab" onClick={() => handleOpenPrj()}>Previous Projects</a>
+                    <a className="tab " onClick={() => handlePastPrj()}>Current(On-going)</a> 
+                    <a className="tab " onClick={() => handleWorkPrj()}>Create Project</a>
                 </div>
                 <form className="PrjServeeForm">
                     <input type="text" name="search" placeholder="Search Project" />
@@ -86,8 +86,8 @@ export default function Projects_Servee() {
                 <div className="PrjServeeResult">
                     {openPrj && (
                         <div className="PrjServeeNew">
-                            <h3>Create a New Project</h3>
-                            <p>Millions of talented Servers are ready to help you do amazing things</p>
+                            <h2>You have not posted any job!</h2>  
+                            <img src={img} alt="servee"/>                          
                             <Link to='/servee/postproject'>
                                 <button>Post a Project</button>
                             </Link>
