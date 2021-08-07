@@ -24,8 +24,8 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/" exact component={SelectAccount} />
-        <Route path="/start" exact component={WelcomePage} />
+        <Route path="/selectaccount" exact component={SelectAccount} />
+        <Route path="/" exact component={WelcomePage} />
         <Route path="/login" exact component={Login} />
         <Route path="/approval" exact component={Approval} />
         <Route path="/premium" exact component={Premium} />

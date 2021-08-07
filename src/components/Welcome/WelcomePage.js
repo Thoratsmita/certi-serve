@@ -14,13 +14,13 @@ const WelcomePage = () => {
               <div className="leftNav1">
                 <img src={Logo} alt="Logo" className="welcomelogo" />
                 <Link to="/" className="linksNav1">How it Works</Link>
-                <Link to="/" className="linksNav1">Browse Jobs</Link>
+                <Link to="/findjobs" className="linksNav1">Browse Jobs</Link>
               </div>
 
               <div className="rightNav1">
-                <Link to="/" className="linksNav1">Log In</Link>
-                <Link to="/" className="linksNav1">Sign Up</Link>
-                <Link to="/" >
+                <Link to="/login" className="linksNav1">Log In</Link>
+                <Link to="/signup" className="linksNav1">Sign Up</Link>
+                <Link to="/servee/postproject" >
                 <button className="postprojwelcome">Post a Project</button>
                 </Link>
               </div>
@@ -51,12 +51,7 @@ const WelcomePage = () => {
                   <Link to="/" className="welcomeBtn"> Earn Money</Link>
                   </div>
               </div>
-            </div> 
-  
-      
-
-
-         
+            </div>    
       </>  
     ) 
   };
