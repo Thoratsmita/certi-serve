@@ -1,19 +1,21 @@
-import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import SelectAccount from "./SelectAccount";
-import ProjectsServee from "./Projects_Servee";
-import PostProject from "./PostProject";
-import FindJob from "./FindJob";
-import FinancialDashboardServee from "./FinancialDashboard_Servee";
-import FinancialDashboardServer from "./FinancialDashboard_Server";
-import ProjectsServer from "./Projects_Server";
-import Portfolio from "./Portfolio";
-import Inbox from "./Inbox";
-import WelcomePage from "./components/Welcome/WelcomePage";
-import Login from "./components/Login/Login";
-import Signup from "./components/Login/Signup";
-import Approval from "./components/Approval/Approval";
-import Premium from "./components/Premium/Premium";
+import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import SelectAccount from './SelectAccount';
+import ProjectsServee from './Projects_Servee';
+import PostProject from './PostProject';
+import FindJob from './FindJob';
+import FinancialDashboardServee from './FinancialDashboard_Servee';
+import FinancialDashboardServer from './FinancialDashboard_Server';
+import ProjectsServer from './Projects_Server';
+import Portfolio from './Portfolio';
+import Inbox from './Inbox';
+import WelcomePage from './components/Welcome/WelcomePage';
+import Login from './components/Login/Login';
+import Signup from './components/Login/Signup';
+import Approval from './components/Approval/Approval';
+import Premium from './components/Premium/Premium';
+import serveeFeedback from './components/Feedback/ServeeFeedback/ServeeFeedback';
+import serverFeedback from './components/Feedback/ServerFeedback/ServerFeedback';
 
 /**
  * @author Parth Chaturvedi
@@ -42,6 +44,8 @@ function App() {
           exact
           component={FinancialDashboardServer}
         />
+        <Route path="/servee/feedback" exact component={serveeFeedback} />
+        <Route path="/server/feedback" exact component={serverFeedback} />
         <Route path="/server/projects" exact component={ProjectsServer} />
         <Route path="/findjobs" exact component={FindJob} />
         <Route path="/portfolio" exact component={Portfolio} />
