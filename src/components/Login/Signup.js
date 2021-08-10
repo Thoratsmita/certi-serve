@@ -75,7 +75,7 @@ const Signup = () => {
       // setData({ username:username, email:email, password:password, repeatpassword:"", mobilenumber:mobilenumber, captcha:captcha, checkbox })
       setData({ ...data, repeatpassword: '' });
     } else if (mobilenumber.length > 11) {
-      toast.success('Invalid Contact Number');
+      toast.error('Invalid Contact Number');
     } else if (captcha !== gencaptcha) {
       toast.error("Captcha doesn't match");
       console.log('captcha doesnt match');

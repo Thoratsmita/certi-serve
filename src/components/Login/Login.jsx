@@ -52,11 +52,7 @@ const Login = () => {
         };
         const body = JSON.stringify(existingUser);
 
-        const res = await axios.post(
-          'https://mocki.io/v1/56f5a96b-518c-4026-8ba1-d4243a34d11e',
-          config,
-          body
-        );
+        const res = await axios.post('', config, body);
         console.log(res);
 
         console.log('form submitted');
