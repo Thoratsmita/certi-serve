@@ -6,6 +6,7 @@ import MainComponentProject from './ServerMainComponentProject';
 
 const ServerFeedback = () => {
   const [project, setProject] = useState(false);
+  // const [project, setProject] = useState(true);
 
   if (project) {
     return (

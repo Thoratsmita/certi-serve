@@ -16,6 +16,8 @@ import Approval from './components/Approval/Approval';
 import Premium from './components/Premium/Premium';
 import serveeFeedback from './components/Feedback/ServeeFeedback/ServeeFeedback';
 import serverFeedback from './components/Feedback/ServerFeedback/ServerFeedback';
+import Proposals from './components/Proposal/Proposals';
+import CreateProposal from './components/Proposal/CreateProposal';
 
 /**
  * @author Parth Chaturvedi
@@ -50,6 +52,8 @@ function App() {
         <Route path="/findjobs" exact component={FindJob} />
         <Route path="/portfolio" exact component={Portfolio} />
         <Route path="/inbox" exact component={Inbox} />
+        <Route path="/proposals" exact component={Proposals} />
+        <Route path="/proposals/create" exact component={CreateProposal} />
       </Switch>
     </Router>
   );

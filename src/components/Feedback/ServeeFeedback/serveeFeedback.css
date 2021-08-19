@@ -45,3 +45,61 @@
     padding-top: 3em;
   }
 }
+
+/* feedback 2*/
+
+.star-rating {
+  display: flex;
+}
+.rating-label {
+  float: left;
+  width: 15rem;
+}
+.ratings {
+  display: flex;
+}
+.star {
+  float: left;
+}
+.rate {
+  height: 40px;
+  width: 175px;
+  background-color: #056839;
+  color: #ffffff;
+  border-radius: 200px;
+  border: none;
+  align-self: flex-end;
+  margin-right: 45px;
+}
+.rating-form {
+  margin: 45.5px;
+}
+.choose {
+  margin-left: 5rem;
+}
+.textarea {
+  width: 50rem;
+  height: 10rem;
+}
+@media screen and (max-width: 700px) {
+  .ratings {
+    display: grid;
+    grid-template-columns: repeat(1);
+  }
+  .textarea {
+    width: 18rem;
+    height: 5rem;
+  }
+  .rate {
+    margin-right: 5rem;
+  }
+  .choose {
+    margin-left: 0;
+  }
+  .rating-label {
+    width: 7.75rem;
+  }
+  .star {
+    margin-bottom: 1rem;
+  }
+}

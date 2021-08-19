@@ -1,0 +1,49 @@
+.containerProposals {
+  background-image: linear-gradient(180deg, #ffffff 60%, #7abb45 40%);
+  width: 100%;
+  height: 88vh;
+}
+.contMainProposal {
+  width: 68%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.headingFServee {
+  padding-top: 4em;
+  color: #056839;
+  font-size: 18px;
+}
+.contsecMainProposal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  box-shadow: 0 0 10px 2px grey;
+  padding: 1em 0;
+  /* z-index: 1; */
+  background-color: #ffffff;
+}
+.contsecMainProposal h3 {
+  color: darkgreen;
+  font-size: 1.5rem;
+  padding-top: 3em;
+}
+.btnFProposal {
+  margin: 5em 0;
+  border: none;
+  border-radius: 10px;
+  padding: 0.7em 2.2em;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  background-image: linear-gradient(30deg, #7abb45, #7abb45, #0aab09);
+}
+
+@media screen and (max-width: 700px) {
+  .contsecMainProposal h3 {
+    color: darkgreen;
+    font-size: 1rem;
+    padding-top: 3em;
+  }
+}
