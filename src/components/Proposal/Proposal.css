@@ -29,6 +29,10 @@
   font-size: 1.5rem;
   padding-top: 3em;
 }
+.contsecMainProposal h4 {
+  color: darkgreen;
+  font-size: 1rem;
+}
 .btnFProposal {
   margin: 5em 0;
   border: none;
@@ -45,5 +49,95 @@
     color: darkgreen;
     font-size: 1rem;
     padding-top: 3em;
+  }
+}
+/* Create proposal */
+.contsecMainProposal form {
+  margin-left: 5rem;
+}
+.proposal-form {
+  display: flex;
+}
+.proposal-form-left {
+  float: left;
+  margin-right: 10rem;
+}
+.proposal-textarea {
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
+  padding: 5px;
+  border: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+.textarea-label {
+  color: darkgreen;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.label-proposal {
+  font-weight: 600;
+  color: #606060;
+}
+.proposal-form input {
+  height: 30px;
+  width: 96px;
+  margin: 2px;
+  /* border: 1px solid #8b8b8b; */
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+.create-proposal-btn {
+  border: none;
+  border-radius: 10px;
+  padding: 0.7em 2.2em;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  background-image: linear-gradient(30deg, #7abb45, #7abb45, #0aab09);
+  margin-left: 120px;
+}
+.milestone {
+  padding-left: 4px;
+}
+.input-milestone {
+  margin-left: 3rem;
+}
+.add-milestone {
+  border: none;
+  background-color: #ffffff;
+  color: blue;
+}
+.proposal-form-right {
+  margin-top: 1.2rem;
+}
+@media screen and (max-width: 700px) {
+  .proposal-form {
+    display: block;
+  }
+  .proposal-form-left {
+    margin-left: 5rem;
+  }
+  .proposal-form-right {
+    margin-left: 2rem;
+  }
+  .proposal-textarea {
+    width: 180px;
+    height: 250px;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+  }
+  .create-proposal-btn {
+    border: none;
+    border-radius: 10px;
+    padding: 0.7em 2.2em;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    background-image: linear-gradient(30deg, #7abb45, #7abb45, #0aab09);
+    margin-left: 0.4rem;
   }
 }

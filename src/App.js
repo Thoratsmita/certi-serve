@@ -18,6 +18,10 @@ import serveeFeedback from './components/Feedback/ServeeFeedback/ServeeFeedback'
 import serverFeedback from './components/Feedback/ServerFeedback/ServerFeedback';
 import Proposals from './components/Proposal/Proposals';
 import CreateProposal from './components/Proposal/CreateProposal';
+import ProfileOne from './components/profile/ProfileOne';
+import ProfileTwo from './components/profile/ProfileTwo';
+import ProfileThree from './components/profile/ProfileThree';
+import ProfileFour from './components/profile/ProfileFour';
 
 /**
  * @author Parth Chaturvedi
@@ -54,6 +58,10 @@ function App() {
         <Route path="/inbox" exact component={Inbox} />
         <Route path="/proposals" exact component={Proposals} />
         <Route path="/proposals/create" exact component={CreateProposal} />
+        <Route path="/profile/one" exact component={ProfileOne} />
+        <Route path="/profile/two" exact component={ProfileTwo} />
+        <Route path="/profile/three" exact component={ProfileThree} />
+        <Route path="/profile/four" exact component={ProfileFour} />
       </Switch>
     </Router>
   );

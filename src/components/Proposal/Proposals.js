@@ -1,6 +1,7 @@
 import React from 'react';
 import './Proposal.css';
 import NavbarProposal from '../../NavbarProposal';
+import { Link } from 'react-router-dom';
 
 const Proposals = () => {
   return (<>
@@ -9,7 +10,7 @@ const Proposals = () => {
        <main className="contMainProposal">
         <section className="contsecMainProposal">
           <h3>Ahh you have not created any proposals!!</h3>
-          <button className="btnFProposal">Create a proposal</button>
+          <Link to="/proposals/create"><button className="btnFProposal">Create a proposal</button></Link>
         </section>
       </main>
     </div>
