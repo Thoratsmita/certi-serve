@@ -31,7 +31,7 @@ export default function Navbar_Server(props) {
                     <Link id="project" to='/server/projects' className="nav-link">Details</Link>
                     <Link id="dashboard" to='/server/financialdashboard' className="nav-link">Proposals</Link>
                     <Link id="inbox" to='/inbox' className="nav-link">Your Proposals</Link>
-                    <Link id="portfolio" to='/portfolio' className="nav-link">Manegement</Link>
+                    <Link id="portfolio" to='/milestone' className="nav-link">Manegement</Link>
                 </div>
             </div>
             <div className="rightside">

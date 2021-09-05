@@ -1197,6 +1197,88 @@ input[type="checkbox"] {
   align-items: center;
 }
 
+ /* =================================================================
+  Milestone (MAIN COMPONENT)
+  ==================================================================*/
+
+  .MileMain {
+    background-image: linear-gradient(#ffffff 50%, #81be3d 50%);
+    /* height: 85vh; */
+    padding: 10px 75px;
+  }
+
+  .Mileheads {
+    display: inline;
+    margin-right: 40px;
+    font-size: 1.75rem;
+    color: #606060;
+  }
+
+  .MileSelected {
+    color: #056839 !important;
+  }
+
+  .btnMile {
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 5px 1px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.15rem;
+    background-color: #0a6b3d;
+    color: #fff;
+  }
+  
+  .MileBox {
+    margin: 20px 0;
+    padding: 20px 45px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  }
+
+  .MileStn {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 15px 25px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  .MileStn span {
+    color: #606060;
+    font-weight: bold;
+  }
+
+  .MileStn p {
+    margin: 5px 0 10px;
+  }
+
+  .btnMileStn {
+    margin-left: 30px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    font-weight: bold;
+    padding: 5px 20px;
+  }
+
+  .btnMileApp {
+    float: right;
+    margin-right: 75px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 5px 75px;
+    background-color: #8b8b8b;
+    border: none;
+    border-radius: 6px;
+  }
+
+  .MileIcon {
+    
+  }
+
 @media only screen and (max-width: 1240px) {
   /* =================================================================
   PROJECTS SERVEE (MAIN COMPONENT)
