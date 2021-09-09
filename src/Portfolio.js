@@ -30,14 +30,22 @@ export default function portfolio() {
             <div className="portfolio">
                 <div className="portfolioLft">
                     <h3 className="portfolioHead">My portfolio</h3>
-                    <div className="portfolioCover"></div>
+                    <div className="portfolioCover">
+                        <button className="upgrade-btn">Upgrade</button>
+                    </div>
                     <div className="portfolioName">
-                        <h2>Full Name</h2>
                         <EditIcon style={{ color: '#0a6b3d', float: 'right', marginTop: '-30px' }} />
-                        <p className="desig">Designation</p>
-                        <p className="address">Full Address (City, State, Country)</p>
-                        <button>Contact</button>
-                        <span> Status</span>
+                        <input type="text" placeholder="update phone number" className="portfolio-server-input"></input><br></br>
+                        <div>
+                            <input type="text" placeholder="Update Email Address" className="portfolio-server-input"></input>
+                            <button className="portfolio-server-email-verify">verify</button>
+                        </div>
+                        <input type="text" placeholder="Add Alternate Phone no" className="portfolio-server-input"></input><br></br>
+                        <select name="gender" placeholder="select gender" className="portfolio-server-input">
+                            <option value="male">male</option>
+                            <option value="female">female</option>
+                       </select><br></br>
+                        <input type="text" placeholder="Update Address" className="portfolio-server-input"></input><br></br>
                     </div>
                     <PersonOutlineOutlinedIcon style={profile} />
 
@@ -81,9 +89,17 @@ export default function portfolio() {
                     </div>
                 </div>
                 <div className="portfolioRgh">
+                    <div className="server-bio-details">
+                    <EditIcon style={{ color: '#0a6b3d', float: 'right' }} />
+                    <h3>BIO</h3>
+                    <hr/>
+                    <div >
+                        <textarea placeholder="describe yourself" className="bio-textarea"></textarea>
+                    </div>
+                    </div>
                     <div className="portfolioPast">
                         <EditIcon style={{ color: '#0a6b3d', float: 'right' }} />
-                        <h3>Past Projects</h3>
+                        <h3>Post Projects</h3>
                         <span>(with Certi serv)</span>
                         <hr />
                         <div className="prj">
@@ -108,8 +124,9 @@ export default function portfolio() {
                                 duo dolores et ea rebum. Stet ...
                             </p>
                             <hr />
+                            <button className="payDetailView" type="button">View All <ExpandMoreIcon style={{ fontSize: '16px', color: '#73b43c' }} /></button>
                         </div>
-                        <div className="prj">
+                        {/* <div className="prj">
                             <b>Project Name </b>
                             <span>(Servee Name)</span>
                             <table>
@@ -132,7 +149,7 @@ export default function portfolio() {
                             </p>
                             <hr />
                             <button className="payDetailView" type="button">View All <ExpandMoreIcon style={{ fontSize: '16px', color: '#73b43c' }} /></button>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="portfolioSkill">
                         <EditIcon style={{ color: '#0a6b3d', float: 'right' }} />
@@ -146,7 +163,10 @@ export default function portfolio() {
                         <hr />
                         <button className="payDetailView" type="button">View All <ExpandMoreIcon style={{ fontSize: '16px', color: '#73b43c' }} /></button>
                     </div>
-                    <button className="portfolioUpdate">Update All</button>
+                    <div >
+                        <input type="file" className="cv-upload"></input>
+                    </div>
+                    <button className="portfolioUpdate">SAVE</button>
                 </div>
             </div>
         </>

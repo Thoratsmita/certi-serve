@@ -105,7 +105,8 @@ SELECT ACCOUNT (SIGN UP)
   text-decoration: none;
   color: #000000;
   border-radius: 12px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   padding: 15px 10px;
   display: flex;
   margin: 20px 0;
@@ -221,7 +222,7 @@ PROJECTS SERVEE (MAIN COMPONENT)
 
 .PrjServeeNew img {
   display: block;
-  margin-left: 45%;  
+  margin-left: 45%;
 }
 
 .PrjServeeNew button {
@@ -751,7 +752,8 @@ input[type="checkbox"] {
 
 .finanDashBox1 {
   background-color: #ffffff;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   width: 90%;
   height: 415px;
   padding: 2px 25px;
@@ -759,7 +761,8 @@ input[type="checkbox"] {
 
 .finanDashBox2 {
   background-color: #ffffff;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   width: 100%;
   height: 419px;
   padding: 0px;
@@ -767,7 +770,7 @@ input[type="checkbox"] {
 
 .finanDashBox1 h3 {
   color: #8b8b8b;
-  font-size: 0.95rem;  
+  font-size: 0.95rem;
 }
 
 .finanDashBox1 h2 {
@@ -803,7 +806,7 @@ input[type="checkbox"] {
 }
 
 .finanDashCard {
-  background-color: #8b8b8b;  
+  background-color: #8b8b8b;
   width: 80%;
   padding: 7px 20px;
   border-radius: 8px;
@@ -1056,27 +1059,55 @@ input[type="checkbox"] {
 .portfolioName {
   background-color: #ffffff;
   border-radius: 12px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
   margin-top: -90px;
   padding: 60px 20px 10px;
 }
-
-.portfolioName h2 {
+.portfolio-server-email-verify {
+  border: none;
+  background-color: green;
+  color: white;
+  height: 20px;
+  width: 60px;
+  border-radius: 4px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.02);
+  margin-left: 100px;
+}
+.portfolio-server-input {
+  width: 200px;
+  border: none;
+  border-bottom: 2px solid green;
+  margin-bottom: 5px;
+  padding: 5px;
+  font-size: 16px;
+}
+.upgrade-btn {
+  border: none;
+  background-color: green;
+  color: white;
+  border-radius: 2px;
+  width: 100px;
+  height: 21px;
+  margin-left: 500px;
+  margin-top: 20px;
+}
+/* .portfolioName h2 {
   display: inline;
   margin: 7px 0;
-}
+} */
 
-.portfolioName p {
+/* .portfolioName p {
   margin: 0;
-}
+} */
 
-.portfolioName button {
+/* .portfolioName button {
   border: none;
   background-color: transparent;
   color: #45a04b;
   font-weight: bold;
   font-size: 1rem;
-}
+} */
 
 .portfolioName span {
   display: block;
@@ -1085,7 +1116,7 @@ input[type="checkbox"] {
 }
 
 .portfolioName span::before {
-  content: '....';
+  content: "....";
   color: #45a04b;
   background-color: #45a04b;
   border-radius: 50%;
@@ -1104,7 +1135,8 @@ input[type="checkbox"] {
 .portfolioEdu {
   background-color: #fff;
   border-radius: 12px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
   padding: 20px 20px 10px;
   margin-top: 20px;
 }
@@ -1133,14 +1165,37 @@ input[type="checkbox"] {
   width: 450px;
 }
 
-.portfolioPast {
+.server-bio-details {
   background-color: #ffffff;
   border-radius: 12px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
   padding: 20px 20px 10px;
   margin-top: 20px;
 }
 
+.bio-textarea {
+  border: none;
+  border-radius: 12px;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px; */
+  height: 100px;
+  width: 400px;
+}
+
+.portfolioPast {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  padding: 20px 20px 10px;
+  margin-top: 20px;
+}
+.cv-upload {
+  margin-top: 25px;
+  height: 20px;
+  width: 300px;
+}
 .portfolioPast h3 {
   margin: 0;
 }
@@ -1170,7 +1225,8 @@ input[type="checkbox"] {
 .portfolioSkill {
   background-color: #ffffff;
   border-radius: 12px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
   padding: 20px 20px 10px;
   margin-top: 20px;
 }
@@ -1197,87 +1253,85 @@ input[type="checkbox"] {
   align-items: center;
 }
 
- /* =================================================================
+/* =================================================================
   Milestone (MAIN COMPONENT)
   ==================================================================*/
 
-  .MileMain {
-    background-image: linear-gradient(#ffffff 50%, #81be3d 50%);
-    /* height: 85vh; */
-    padding: 10px 75px;
-  }
+.MileMain {
+  background-image: linear-gradient(#ffffff 50%, #81be3d 50%);
+  /* height: 85vh; */
+  padding: 10px 75px;
+}
 
-  .Mileheads {
-    display: inline;
-    margin-right: 40px;
-    font-size: 1.75rem;
-    color: #606060;
-  }
+.Mileheads {
+  display: inline;
+  margin-right: 40px;
+  font-size: 1.75rem;
+  color: #606060;
+}
 
-  .MileSelected {
-    color: #056839 !important;
-  }
+.MileSelected {
+  color: #056839 !important;
+}
 
-  .btnMile {
-    float: right;
-    margin-right: 20px;
-    margin-top: 20px;
-    padding: 5px 1px;
-    border: none;
-    border-radius: 6px;
-    font-size: 1.15rem;
-    background-color: #0a6b3d;
-    color: #fff;
-  }
-  
-  .MileBox {
-    margin: 20px 0;
-    padding: 20px 45px;
-    background-color: #ffffff;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.btnMile {
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: 5px 1px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.15rem;
+  background-color: #0a6b3d;
+  color: #fff;
+}
 
-  }
+.MileBox {
+  margin: 20px 0;
+  padding: 20px 45px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
-  .MileStn {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    padding: 15px 25px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-  }
+.MileStn {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 15px 25px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
 
-  .MileStn span {
-    color: #606060;
-    font-weight: bold;
-  }
+.MileStn span {
+  color: #606060;
+  font-weight: bold;
+}
 
-  .MileStn p {
-    margin: 5px 0 10px;
-  }
+.MileStn p {
+  margin: 5px 0 10px;
+}
 
-  .btnMileStn {
-    margin-left: 30px;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 6px;
-    background-color: #ffffff;
-    font-weight: bold;
-    padding: 5px 20px;
-  }
+.btnMileStn {
+  margin-left: 30px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  font-weight: bold;
+  padding: 5px 20px;
+}
 
-  .btnMileApp {
-    float: right;
-    margin-right: 75px;
-    color: #ffffff;
-    font-weight: bold;
-    padding: 5px 75px;
-    background-color: #8b8b8b;
-    border: none;
-    border-radius: 6px;
-  }
+.btnMileApp {
+  float: right;
+  margin-right: 75px;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 5px 75px;
+  background-color: #8b8b8b;
+  border: none;
+  border-radius: 6px;
+}
 
-  .MileIcon {
-    
-  }
+.MileIcon {
+}
 
 @media only screen and (max-width: 1240px) {
   /* =================================================================
@@ -1291,7 +1345,6 @@ input[type="checkbox"] {
   /* =================================================================
   FINANCIAL DASHBOARD (MAIN COMPONENT)
   ==================================================================*/
-
 }
 
 @media only screen and (max-width: 850px) {
@@ -1310,7 +1363,6 @@ input[type="checkbox"] {
   .PrjServeeForm input {
     width: 50%;
   }
-
 
   .PrjServeeHead h1 {
     font-size: 1.75rem;
@@ -1338,7 +1390,7 @@ input[type="checkbox"] {
   }
 
   .PostPrjForm label {
-    font-size: 1.5rem
+    font-size: 1.5rem;
   }
 
   .PostPrjForm input[type="text"] {
@@ -1365,17 +1417,15 @@ input[type="checkbox"] {
   /* =================================================================
   FINANCIAL DASHBOARD (MAIN COMPONENT)
   ==================================================================*/
-
 }
 
 @media only screen and (max-width: 750px) {
-
   /* =================================================================
   SELECT ACCOUNT (SIGN UP)
   ==================================================================*/
 
   .selectAction {
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
 
   .selectCointainer {
@@ -1446,7 +1496,7 @@ input[type="checkbox"] {
   }
 
   .PostPrjForm label {
-    font-size: 1.45rem
+    font-size: 1.45rem;
   }
 
   .PostPrjForm input[type="text"] {
@@ -1473,8 +1523,6 @@ input[type="checkbox"] {
   /* =================================================================
   FINANCIAL DASHBOARD (MAIN COMPONENT)
   ==================================================================*/
-
-
 }
 
 @media only screen and (max-width: 480px) {
@@ -1493,7 +1541,6 @@ input[type="checkbox"] {
   .PrjServee {
     padding: 20px 8%;
     height: 90vh;
-
   }
 
   .PrjServeeHead h1 {
@@ -1557,7 +1604,7 @@ input[type="checkbox"] {
   }
 
   .selectAction {
-    font-size: .75rem;
+    font-size: 0.75rem;
   }
 
   .selectActionLogo {
@@ -1600,7 +1647,7 @@ input[type="checkbox"] {
   }
 
   .PostPrjForm label {
-    font-size: 1.25rem
+    font-size: 1.25rem;
   }
 
   .PostPrjForm p {
@@ -1619,5 +1666,57 @@ input[type="checkbox"] {
   /* =================================================================
   FINANCIAL DASHBOARD (MAIN COMPONENT)
   ==================================================================*/
+}
+/* =================================================================
+  PORTFOLIO SERVEE (MAIN COMPONENT)
+  ==================================================================*/
 
+.portfolio-servee-input {
+  width: 200px;
+  border: none;
+  border-bottom: 2px solid green;
+  margin-bottom: 5px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.portfolio-servee {
+  width: 100%;
+  margin-right: 40px;
+  padding-left: 40px;
+}
+
+.portfolio-servee-details {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  margin-top: -90px;
+  padding: 60px 50px 10px;
+}
+
+.portfolio-servee-email-verify {
+  border: none;
+  background-color: green;
+  color: white;
+  height: 20px;
+  width: 60px;
+  border-radius: 4px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.02);
+  margin-left: 100px;
+}
+
+.portfolio-servee-input-border {
+  border-bottom: 2px solid yellowgreen;
+}
+
+/* =================================================================
+  SELECT ACCOUNT (MAIN COMPONENT)
+  ==================================================================*/
+
+.select-user-btn {
+  width: 100%;
+  height: 80px;
+  border: none;
+  background-color: white;
 }

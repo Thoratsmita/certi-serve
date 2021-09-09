@@ -23,6 +23,7 @@ import ProfileTwo from './components/profile/ProfileTwo';
 import ProfileThree from './components/profile/ProfileThree';
 import ProfileFour from './components/profile/ProfileFour';
 import Milestone from './Milestone';
+import PortfolioServee from './PortfolioServee';
 
 /**
  * @author Parth Chaturvedi
@@ -64,6 +65,7 @@ function App() {
         <Route path="/profile/three" exact component={ProfileThree} />
         <Route path="/profile/four" exact component={ProfileFour} />
         <Route path="/milestone" exact component={Milestone} />
+        <Route path="/portfolio/servee" exact component={PortfolioServee} />
       </Switch>
     </Router>
   );

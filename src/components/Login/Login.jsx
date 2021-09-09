@@ -9,6 +9,7 @@ import user from '../../images/User_icon.png';
 import key from '../../images/Key_icon.png';
 import text from '../../images/Text_icon.png';
 import './login.css';
+import { useHistory } from 'react-router';
 
 const Login = () => {
   const [gencaptcha, setGencaptcha] = useState('');
@@ -17,6 +18,7 @@ const Login = () => {
     password: '',
     captcha: '',
   });
+  let history = useHistory();
 
   const generatecaptcha = () => {
     const c = Math.random().toString(36).substring(7);
@@ -52,10 +54,11 @@ const Login = () => {
         };
         const body = JSON.stringify(existingUser);
 
-        const res = await axios.post('', config, body);
-        console.log(res);
-
-        console.log('form submitted');
+        const res = await axios.get('/api/usersdisplay', config, body)
+        .then(res=>{
+          console.log('form submitted');
+          history.push('/')
+        })
       } catch (error) {
         alert(error);
       }

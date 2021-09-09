@@ -11,21 +11,24 @@ import Email from '../../images/Email_icon.png';
 import key from '../../images/Key_icon.png';
 import text from '../../images/Text_icon.png';
 import './signup.css';
+import { useHistory } from 'react-router';
 
-const Signup = () => {
+
+const Signup = (props) => {
+  const user_type =props.location.state
   const [gencaptcha, setGencaptcha] = useState('');
   const [data, setData] = useState({
     username: '',
     email: '',
     password: '',
     repeatpassword: '',
-    mobilenumber: '',
+    phone_number: '',
     captcha: '',
     checkbox: false,
   });
 
   // const [checkbox, setCheckbox] = useState(false);
-
+ let history = useHistory()
   const generatecaptcha = () => {
     const c = Math.random().toString(36).substring(7);
     setGencaptcha(c);
@@ -40,7 +43,7 @@ const Signup = () => {
     email,
     password,
     repeatpassword,
-    mobilenumber,
+    phone_number,
     captcha,
     checkbox,
   } = data;
@@ -64,7 +67,7 @@ const Signup = () => {
       !captcha ||
       !repeatpassword ||
       !username ||
-      !mobilenumber ||
+      !phone_number ||
       !checkbox
     ) {
       toast.error('Fill all fields');
@@ -72,9 +75,9 @@ const Signup = () => {
     } else if (password !== repeatpassword) {
       toast.error("password doesn't match");
       console.log('password doesnt match');
-      // setData({ username:username, email:email, password:password, repeatpassword:"", mobilenumber:mobilenumber, captcha:captcha, checkbox })
+      // setData({ username:username, email:email, password:password, repeatpassword:"", phone_number:phone_number, captcha:captcha, checkbox })
       setData({ ...data, repeatpassword: '' });
-    } else if (mobilenumber.length > 11) {
+    } else if (phone_number.length > 11) {
       toast.error('Invalid Contact Number');
     } else if (captcha !== gencaptcha) {
       toast.error("Captcha doesn't match");
@@ -85,7 +88,7 @@ const Signup = () => {
       console.log('form submitted');
       toast.success('Form submitted');
 
-      const newUser = { username, email, password, mobilenumber };
+      const newUser = { username, email, password, phone_number,user_type};
 
       try {
         const config = {
@@ -96,8 +99,10 @@ const Signup = () => {
 
         const sendUser = JSON.stringify(newUser);
 
-        const res = await axios.post('', sendUser, config);
-        alert(res.data.message);
+        const res = await axios.post('/api/userscreate', sendUser, config).then(res=>{
+          history.push('/')
+        })
+        // alert(res.data.message);
       } catch (err) {
         alert('invalid input');
       }
@@ -178,10 +183,10 @@ const Signup = () => {
               </span>
               <input
                 type="text"
-                name="mobilenumber"
+                name="phone_number"
                 pattern="[0-9]{10}"
                 className="reginput"
-                value={mobilenumber}
+                value={phone_number}
                 onChange={HandleChange}
                 autoComplete="off"
                 placeholder="Enter Mobile no."

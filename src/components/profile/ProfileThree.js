@@ -1,6 +1,6 @@
 import React from 'react'
 import "./profile.css"
-import ProfileHeader from './ProfileHeader'
+import ProfileHeader from '../../ProfileHeader';
 import { Component } from 'react'
 import { Link } from 'react-router-dom';
 
